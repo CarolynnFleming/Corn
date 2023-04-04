@@ -1,21 +1,25 @@
+// cheese = price_1Mt1vyK4xNPEK2uzhuikAS83
+// poppinMix = price_1Mt21FK4xNPEK2uzVTn3EhFa
+// caramel = price_1Mt23bK4xNPEK2uzlP7CbcxX
+
 const gngdata = {
     gng: [
         {
-            id:'17',
+            id:'price_1Mt1vyK4xNPEK2uzhuikAS83',
             name: 'cheese',
             image:'/public/Cheddar-popcorn.jpg',
             price: 4.50,
             countInStock:10,  
         },
         {
-            id:'18',
+            id:'price_1Mt21FK4xNPEK2uzVTn3EhFa',
             name: 'poppin mix',
             image:'/public/Mix.jpg',
             price: 4.95,
             countInStock:10,  
         },
         {
-            id:'19',
+            id:'price_1Mt23bK4xNPEK2uzlP7CbcxX',
             name: 'caramel',
             image:'/public/caramel.jpeg',
             price: 5.50,
