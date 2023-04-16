@@ -8,7 +8,7 @@ export default function HomeScreen() {
         <img className="home-popcorn"src="./public/popcorn.gif" alt="popcorn"/>
        
         <div className='line'></div>
-        <span className='first'>It all starts with the best popcorn seeds<br/> <span className='second'>We serve Popcorn and Italian Ice<br/> <br/><a className="button-85"href="/signIn">Sign In</a></span></span>
+        <span className='first'>It all starts with the best popcorn seeds<br/> <span className='second'>We serve Popcorn and Italian Ice<br/> <br/><a className="button-85"href="/offeringscreen">Checkout our Offerings</a></span></span>
        
         </div>
     </div>

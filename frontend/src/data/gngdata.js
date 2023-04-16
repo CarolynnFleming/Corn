@@ -5,21 +5,21 @@
 const gngdata = {
     gng: [
         {
-            id:'price_1Mt1vyK4xNPEK2uzhuikAS83',
+            id:'17',
             name: 'cheese',
             image:'/public/Cheddar-popcorn.jpg',
             price: 4.50,
             countInStock:10,  
         },
         {
-            id:'price_1Mt21FK4xNPEK2uzVTn3EhFa',
+            id:'18',
             name: 'poppin mix',
             image:'/public/Mix.jpg',
             price: 4.95,
             countInStock:10,  
         },
         {
-            id:'price_1Mt23bK4xNPEK2uzlP7CbcxX',
+            id:'19',
             name: 'caramel',
             image:'/public/caramel.jpeg',
             price: 5.50,

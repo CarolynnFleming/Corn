@@ -25,6 +25,8 @@ import CartScreen from './screens/CartScreen';
 import { useContext } from 'react';
 import CartContext from './Context/Cart/CartContext';
 import { Link } from 'react-router-dom';
+import Success from './components/success';
+import Canceled from './components/canceled';
 function App() {
   const { cartItems } = useContext(CartContext);
   return (
@@ -74,7 +76,6 @@ function App() {
       <Route path="/Gng" element={<GrabnGoScreen/>}></Route>
       <Route path="/contactscreen" element={<ContactScreen/>}></Route>
       <Route path="/offeringscreen" element={<OfferingScreen/>}></Route>
-      <Route path="/offeringscreen" element={<OfferingScreen/>}></Route>
       <Route path='/cartscreen' element={<CartScreen/>}></Route>
       <Route path="/Bags/:id" element={<BagDetail/>}></Route>
       <Route path="/Gng/:id" element={<GngDetail/>}></Route>
@@ -83,6 +84,8 @@ function App() {
       <Route path="/mixesbags" element={<MixesScreen/>}></Route>
       <Route path="/mixesbags/:id" element={<MixesDetail/>}></Route>
       <Route path="/oneg/:id" element={<OnegDetail/>}></Route>
+      <Route path='/success' element={<Success/>}></Route>
+      <Route path='/canceled' element={<Canceled/>}></Route>
       <Route path="/" element={<HomeScreen/>} exact></Route>
       </Routes>
 

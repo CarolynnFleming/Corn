@@ -3,11 +3,11 @@ import { useContext } from "react";
 import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 import Checkout from "../components/Checkout";
-import { Link } from "react-router-dom";
+
 
 const CartScreen = () => {
   // Extract the cart state from the context
-  const { cartItems, checkout, clearCart } = useContext(CartContext);
+  const { cartItems } = useContext(CartContext);
 
   return (
     <>
@@ -18,18 +18,7 @@ const CartScreen = () => {
         </h1>
       </Heading>
 
-      {checkout && (
-        <CheckoutMsg>
-          <h4>Thank you for your purchase!</h4>
-          <p>
-            Your order has been placed and will be delivered to you within 24
-            hours.
-          </p>
-          <Link to="/">
-            <ShopBtn onClick={clearCart}>Continue Shopping</ShopBtn>
-          </Link>
-        </CheckoutMsg>
-      )}
+     
 
       <Layout>
         <div>
@@ -51,7 +40,7 @@ const CartScreen = () => {
         </div>
 
         <div>
-          {/* Checkout component  */}
+          
           {cartItems.length > 0 && <Checkout />}
         </div>
       </Layout>
@@ -89,26 +78,5 @@ const CartItemWrapper = styled.div`
   text-align: center;
 `;
 
-const CheckoutMsg = styled.div`
-  color: green;
-  text-align: center;
-  padding: 1.5rem;
-  p {
-    margin: 0.5rem 0 1.5rem 0;
-  }
-`;
 
-const ShopBtn = styled.button`
-  outline: none;
-  border: 1px solid green;
-  background-color: transparent;
-  padding: 0.75rem;
-  color: green;
-  margin-top: 1rem;
-  cursor: pointer;
-  &:hover {
-    background-color: green;
-    color: white;
-  }
-`;
 export default CartScreen;
