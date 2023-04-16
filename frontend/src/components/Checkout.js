@@ -2,9 +2,10 @@
 import { formatCurrency } from "../price";
 import { useContext } from "react";
 import CartContext from "../Context/Cart/CartContext";
+import StripeCheckout from './stripe-checkout';
 
 const Checkout = () => {
-  const { clearCart, handleCheckout, itemCount, total } =
+  const { itemCount, total } =
     useContext(CartContext);
 
   return (
@@ -14,10 +15,8 @@ const Checkout = () => {
       <h1>Total Payment:</h1>
       <h2>{formatCurrency(total)}</h2>
       <hr />
-      <div>
-        <button className='button-85' onClick={handleCheckout}>CHECKOUT</button>
-        <button className='button-85' onClick={clearCart}>CLEAR</button>
-      </div>
+      <StripeCheckout/>
+     
     </div>
   );
 };

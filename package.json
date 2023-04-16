@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "react-router-dom": "^6.10.0"
+    "@stripe/react-stripe-js": "^2.1.0"
   }
 }

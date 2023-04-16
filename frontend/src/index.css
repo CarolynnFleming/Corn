@@ -301,7 +301,7 @@ img.medium {
   -webkit-user-select: none;
   touch-action: manipulation;
 }
-.del,select, textarea,input:hover{
+.del,select, textarea,input {
   padding: 0.6em 1em;
   border: none;
   font-family: creepster;
@@ -356,7 +356,9 @@ img.medium {
     background-position: 0 0;
   }
 }
-
+.raw{
+  padding: 20px;
+}
 .button-85:after {
   z-index: -1;
   content: "";
