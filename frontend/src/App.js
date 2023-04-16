@@ -50,7 +50,7 @@ function App() {
 
                       <span className='badge'>{cartItems.length}</span>
                       )}</Link>
-            <Link className="rainbow-4" to="/signIn">Sign In</Link>
+            
             
               </div>
         
