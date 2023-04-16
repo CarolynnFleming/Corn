@@ -20,14 +20,10 @@ import {
   // Export function to calculate the total price of the cart and the total quantity of the cart
   export const sumItems = (cartItems) => {
     Storage(cartItems);
-    let itemCount = cartItems.reduce(
-      (total, item) => total + item.quantity,
-      0
-    );
-    let total = cartItems
-      .reduce((total, item) => total + item.price * item.quantity, 0)
-      .toFixed(2);
-    return { itemCount, total };
+    return {
+      itemCount: cartItems.reduce((total, prod) => total + prod.quantity , 0),
+      total: cartItems.reduce((total, prod) => total + (prod.price * prod.quantity), 0)
+    }
   };
   
   // The reducer is listening for an action, which is the type that we defined in the CartTypes.js file
@@ -68,8 +64,9 @@ import {
         ].quantity++;
         return {
           ...state,
-          ...sumItems(state.cartItems),
           cartItems: [...state.cartItems],
+          ...sumItems(state.cartItems),
+          
         };
   
       // If the action type is DECREASE, we want to decrease the quantity of the particular item in the cartItems array
@@ -79,8 +76,9 @@ import {
         ].quantity--;
         return {
           ...state,
-          ...sumItems(state.cartItems),
           cartItems: [...state.cartItems],
+          ...sumItems(state.cartItems),
+          
         };
   
       // If the action type is CHECKOUT, we want to clear the cartItems array and set the checkout to true

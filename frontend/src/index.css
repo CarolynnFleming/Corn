@@ -1,5 +1,5 @@
 html{
-  font-size: 62.5%;
+  font-size: 70.5%;
   box-sizing: border-box;
 }
 
@@ -7,10 +7,10 @@ body{
   margin:0;
   height: 100vh;
   font-size: 1rem;
-  font-family:creepster;
+  font-family:Alegreya Sans SC;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #c7ffed;
+  background-color: #840000;
 }
 #root {
   height: 100%;
@@ -30,8 +30,9 @@ body{
 
 header{
   grid-area: header;
-  background-color: #08bdbd;
+  background-color: #c60000;
  /* box-shadow: 10px 10px 60px #ff9914; */
+ padding-right: 7rem;
 
 }
 .badge{
@@ -49,8 +50,8 @@ main {
 }
 footer {
   grid-area: footer;
-  background-color: #08bdbd;
-  color: #abff4f;
+  background-color: #c60000;
+  color: #f1b534;
   
 }
 .bottom{
@@ -66,7 +67,7 @@ footer {
 h2{
   font-size: 2.5rem;
   padding: 1rem 0;
-  color:#1be7ff
+  color:#f1b534;
 }
 
 .popcorn{
@@ -95,8 +96,8 @@ header a {
   padding: 1rem;
 }
 .brand{
-  color:#abff4f;
-  font-size: 2rem;
+  color:#f1b534;
+  font-size: 1.5rem;
   font-weight: bold;
  
 }
@@ -182,7 +183,7 @@ img.medium {
   border:.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
   border-radius: 0.5rem;
-  box-shadow: 10px 10px 60px #29bf12;
+  box-shadow: 10px 10px 60px #f1b534;
   margin: 2rem;
   
   
@@ -230,7 +231,7 @@ img.medium {
   margin:3rem;
   border:0.1rem #c0c0c0 solid;
   background-color: #f8f8f8;
-  box-shadow: 10px 10px 60px #29bf12;
+  box-shadow: 10px 10px 60px #f1b534;
   
 }
 /* .first{
@@ -247,8 +248,8 @@ img.medium {
   background: linear-gradient(to right, 
                               transparent 0%, 
                               transparent calc(50% - 0.81px), 
-                              #08bdbd  calc(50% - 0.8px), 
-                              #08bdbd calc(50% + 0.8px), 
+                              #f1b534 calc(50% - 0.8px), 
+                              #f1b534 calc(50% + 0.8px), 
                               transparent calc(50% + 0.81px), 
                               transparent 100%);
                                
@@ -306,7 +307,7 @@ img.medium {
   border: none;
   font-family: creepster;
   outline: none;
-  color: rgb(35, 244, 188);
+  color: rgb(250, 196, 59);
   background: #111;
   cursor: pointer;
   position: relative;
