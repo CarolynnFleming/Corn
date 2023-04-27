@@ -36,7 +36,7 @@ function App() {
         <div><Link to="/">
             <img className="popcorn"src={popcorn} alt="popcorn"/></Link>
            
-            <Link to="/" className="brand">WHATS POPPIN</Link>
+            <Link to="/" className="brand">WHATS POPPING</Link>
         </div>
     
             
