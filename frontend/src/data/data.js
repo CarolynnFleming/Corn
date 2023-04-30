@@ -1,5 +1,5 @@
-const data = {
-    offerings: [
+const offerings =
+     [
         {
             _id:'1',
             name: 'Bags',
@@ -14,7 +14,7 @@ const data = {
     location:'/Gng',
     image:'/public/grabngo.jpg',
     flavors: 10,
-    sizes: 1,  
+    size: 1,  
 },
 {
     _id:'3',
@@ -30,7 +30,7 @@ const data = {
     location:'/bucket',
     image:'/public/Bucket.jpg',
     flavors: 7,
-    sizes: 1,  
+    size: 1,  
 },
 {
     _id:'5',
@@ -38,7 +38,7 @@ const data = {
     location:'/oneg',
     image:'/public/oneG.jpg',
     flavors: 7,
-    sizes: 1,  
+    size: 1,  
 },
 {
     _id:'6',
@@ -46,7 +46,7 @@ const data = {
     location:'/sportstin',
     image:'/public/sportsT.jpeg',
     flavors: 7,
-    sizes: 1,  
+    size: 1,  
 },
 {
     _id:'7',
@@ -54,7 +54,7 @@ const data = {
     location:'/twog',
     image:'/public/goldTin.jpeg',
     flavors: 10,
-    sizes: 1,  
+    size: 1,  
 },
 {
     _id:'8',
@@ -62,7 +62,7 @@ const data = {
     location:'/threeg',
     image:'/public/whiteTin.jpeg',
     flavors: 7,
-    sizes: 1,  
+    size: 1,  
 },
 {
     _id:'9',
@@ -70,8 +70,8 @@ const data = {
     location:'/italianice',
     image:'/public/iice.jpeg',
     flavors: 12,
-    sizes: 4,  
+    size: 4,  
 }
 ]
-}
-export default data;
+
+export default offerings;
