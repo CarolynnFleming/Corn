@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const Canceled = () => {
+  console.log(Canceled,'wtf')
   return (
     <div>
          <CheckoutMsg>
