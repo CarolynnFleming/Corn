@@ -48,7 +48,7 @@ header{
   padding: 0.2rem 0.7rem;
   font-size: 1.4rem;
   margin-left: 0.2rem;
-  font-family: creepster;
+  font-family: comfortaa;
 }
 main {
   grid-area: main;
@@ -291,7 +291,7 @@ img.medium {
 .del,select, textarea,input {
   padding: 0.6em 1em;
   border: none;
-  font-family: creepster;
+  font-family: comfortaa;
   outline: none;
   color: rgb(250, 196, 59);
   background: #111;
@@ -411,7 +411,13 @@ img.large{
   font-size: 2rem;
   margin: 2rem;
   padding-left: 2rem;
+  padding-right: 2rem;
 } 
+.roman{
+  margin-left: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
