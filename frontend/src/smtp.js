@@ -3,7 +3,7 @@ import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import toast, { Toaster } from 'react-hot-toast';
 
-// npm i @emailjs/browser
+
 const notify = () => toast('Your email was Sent🍿')
 const Smtp = () => {
   const form = useRef();

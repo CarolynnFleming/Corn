@@ -1,5 +1,4 @@
-const threegdata = {
-    threeg: [
+const threeg = [
         {
             id:'67',
             name: 'cheese',
@@ -54,5 +53,5 @@ const threegdata = {
             
         },
 
-    ]}
-export default threegdata;
+    ]
+export default threeg;

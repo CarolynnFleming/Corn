@@ -1,5 +1,4 @@
-const sportstindata = {
-    sportstin: [
+const sportstin = [
         {
             id:'53',
             name: 'cheese',
@@ -53,5 +52,5 @@ const sportstindata = {
             countInStock:10,
         },
 
-    ]}
-export default sportstindata;
+    ]
+export default sportstin;

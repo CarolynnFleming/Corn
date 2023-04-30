@@ -1,5 +1,4 @@
-const twogdata = {
-    twog: [
+const twog = [
         {
             id:'60',
             name: 'cheese',
@@ -54,5 +53,5 @@ const twogdata = {
             
         },
 
-    ]}
-export default twogdata;
+    ]
+export default twog;

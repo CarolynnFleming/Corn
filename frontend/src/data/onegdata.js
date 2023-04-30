@@ -1,5 +1,4 @@
-const onegdata = {
-    oneg: [
+const oneg = [
         {
            id:'46',
             name: 'cheese',
@@ -54,5 +53,5 @@ const onegdata = {
             
         },
 
-    ]}
-export default onegdata;
+    ]
+export default oneg;

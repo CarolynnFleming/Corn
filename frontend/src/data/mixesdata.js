@@ -1,5 +1,4 @@
-const mixesdata = {
-    mixes: [
+const mixes = [
         {
            id:'27',
             name: 'poppin mix',
@@ -97,5 +96,5 @@ const mixesdata = {
             countInStock:10, 
         }
 
-    ]}
-export default mixesdata;
+    ]
+export default mixes;
