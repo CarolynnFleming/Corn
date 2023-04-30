@@ -12,7 +12,7 @@ export default function HomeScreen() {
         
        
         <span className='first'>It all starts with the best popcorn seeds<br/> <span className='second'>We serve Popcorn and Italian Ice<br/> <br/>
-        <Link className="button-85 center" to="/offeringscreen">Go Shopping
+        <Link className="button-85 roman" to="/offeringscreen">Go Shopping
         </Link>
         </span>
         </span>
