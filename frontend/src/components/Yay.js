@@ -4,7 +4,7 @@ import { useContext, useEffect } from 'react';
 import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 
-const Success = () => {
+const Yay = () => {
     const { cartItems, clearCart } = useContext(CartContext);
     useEffect(() => {
         if (cartItems.length !==0) { clearCart() }
@@ -25,7 +25,7 @@ const Success = () => {
     </div>
   )
 }
-export default Success;
+export default Yay;
 
 const CheckoutMsg = styled.div`
   color: green;
