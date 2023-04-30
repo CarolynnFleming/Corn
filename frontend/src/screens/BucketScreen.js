@@ -7,7 +7,7 @@ export default function BucketScreen() {
     {
     bucket.map((buckets) =>(
       <div key={buckets.id}className="card">
-      <Link to={`/buckets/${buckets.id}`}>
+      <Link to={`/bucket/${buckets.id}`}>
              <img className="medium"src={buckets.image} alt="popcorn buckets"/>
          </Link>
          <div className="card-body">
