@@ -77,38 +77,38 @@
 
 
 import React from 'react'
-import mixesdata from '../data/mixesdata';
+import mixes from '../data/mixesdata';
 import { Link, useParams } from 'react-router-dom';
 import CartContext from '../Context/Cart/CartContext';
 import { useContext } from 'react'
 
 export default function MixesDetail() {
     const { id } = useParams();
-    const mixes = mixesdata.mixes.find((x) => x.id === id);
+    const mixe = mixes.find((x) => x.id === id);
     const { addToCart, increase, cartItems } = useContext(CartContext);
-    if(!mixes) {
+    if(!mixe) {
         return <div> Product Not Found</div>
     }
-    const isInCart = (mixes) => {
-      return !!cartItems.find((item) => item.id === mixes.id);
+    const isInCart = (mixe) => {
+      return !!cartItems.find((item) => item.id === mixe.id);
     };
     return (
       <div>
-        <Link className="back"to="/mixes">Back to Bags</Link>
+        <Link className="back"to="/mixesbags">Back to Bags</Link>
           <div className='row top'>
               <div className='col-2'>
-              <img className='large' src={mixes.image} alt={mixes.name}/>
+              <img className='large' src={mixe.image} alt={mixe.name}/>
               </div>
               <div className='col-1'>
                 <ul>
                     <li>
-                  <h1>{mixes.name}</h1>
+                  <h1>{mixe.name}</h1>
                   </li>
                   <li>
-                    Price : ${mixes.price}
+                    Price : ${mixe.price}
                   </li>
                   <li>
-                    description: {mixes.description}
+                    description: {mixe.description}
                   </li>
                 </ul>
               </div>
@@ -118,22 +118,22 @@ export default function MixesDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${mixes.price}</div>
+                                <div className='price'>${mixe.price}</div>
                             </div>
                         </li>
                         <li>
                             <div className='row'>
                                 <div>Status</div>
                                 <div >
-                                    {mixes.countInStock> 0 ? ( <span className='success'>In Stock</span>): (<span className='error'>Unavailable</span>)}
+                                    {mixe.countInStock> 0 ? ( <span className='success'>In Stock</span>): (<span className='error'>Unavailable</span>)}
                                     </div>
                             </div>
                         </li>
                          <li>
-                            {isInCart(mixes) && (
-                              <button className='button-85 block' onClick={() => {increase(mixes)}}>Add More</button>
+                            {isInCart(mixe) && (
+                              <button className='button-85 block' onClick={() => {increase(mixe)}}>Add More</button>
                             )}
-                            {!isInCart(mixes) && (<button className='button-85 block' onClick={() => addToCart(mixes)}>Add to Cart</button>)}
+                            {!isInCart(mixe) && (<button className='button-85 block' onClick={() => addToCart(mixe)}>Add to Cart</button>)}
                         </li>
                     </ul>
                 </div>

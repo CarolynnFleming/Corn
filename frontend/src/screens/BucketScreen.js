@@ -1,49 +1,23 @@
-// import React from 'react'
-// import { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { listBucket } from '../actions/bucketActions';
-// import MessageBox from '../components/MessageBox'
-// import LoadingBox from '../components/LoadingBox'
-// import Bucket from '../components/Bucket';
-// export default function BucketScreen() {
-//   const dispatch = useDispatch();
-//   const bucketList = useSelector((state) => state.bucketList);
-//   const { loading, error, bucket  } = bucketList;
-//   useEffect(() => {
-//     dispatch(listBucket());
-//   }, [dispatch])
-//   return (
-//     <div>
-//       <Link className="back"to="/offeringscreen">Back to Offerings</Link>
-//     {loading ? (
-//     <LoadingBox></LoadingBox>
-//     ): error ? (
-//     <MessageBox variant='danger'>{error}</MessageBox>
-//  ):( 
-//  <div className="row center">
-//       {bucket.map((bucket) =>(
-//         <Bucket key={bucket.id} bucket={bucket}></Bucket>
-
-//       ))}
-//       </div>
-//    )}
- 
-    
-//     </div>
-//   )
-// }
-
-
 import React from 'react'
-import bucketdata from '../data/bucketdata';
-import Bucket from '../components/Bucket';
+import bucket from '../data/bucketdata';
+import { Link } from 'react-router-dom';
 export default function BucketScreen() {
   return (
     <div className="row center">
     {
-    bucketdata.bucket.map((bucket) =>(
-      <Bucket key={bucket.id} bucket={bucket}></Bucket>
+    bucket.map((buckets) =>(
+      <div key={buckets.id}className="card">
+      <Link to={`/buckets/${buckets.id}`}>
+             <img className="medium"src={buckets.image} alt="popcorn buckets"/>
+         </Link>
+         <div className="card-body">
+             <Link to={`/bucket/${buckets.id}`}>
+                 <h2>{buckets.name}</h2>
+             </Link>
+             
+           <div className="detail">{buckets.sizes}<br/> ${buckets.price}</div>
+         </div>
+         </div>
 
     ))
   }

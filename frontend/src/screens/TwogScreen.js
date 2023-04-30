@@ -1,49 +1,23 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom';
-// import { useEffect } from 'react';
-// import { useSelector, useDispatch } from 'react-redux';
-// import { listTwog } from '../actions/twogActions';
-// import MessageBox from '../components/MessageBox'
-// import LoadingBox from '../components/LoadingBox'
-// import Twog from '../components/Twog';
-// export default function TwogScreen() {
-//   const dispatch = useDispatch();
-//   const twogList = useSelector((state) => state.twogList);
-//   const { loading, error, twog  } = twogList;
-//   useEffect(() => {
-//     dispatch(listTwog());
-//   }, [dispatch])
-//   return (
-//     <div>
-//       <Link className="back"to="/offeringscreen">Back to Offerings</Link>
-//     {loading ? (
-//     <LoadingBox></LoadingBox>
-//     ): error ? (
-//     <MessageBox variant='danger'>{error}</MessageBox>
-//  ):( 
-//  <div className="row center">
-//       {twog.map((twog) =>(
-//         <Twog key={twog.id} twog={twog}></Twog>
-
-//       ))}
-//       </div>
-//    )}
- 
-    
-//     </div>
- 
-//   )
-// }
-
 import React from 'react'
-import twogdata from '../data/twogdata'
-import Twog from '../components/Twog';
+import twog from '../data/twogdata'
+import {Link} from 'react-router-dom'
 export default function TwogScreen() {
   return (
     <div className="row center">
     {
-    twogdata.twog.map((twog) =>(
-      <Twog key={twog._id} twog={twog}></Twog>
+    twog.map((twogs) =>(
+      <div key={twogs.id}className="card">
+      <Link to={`/twog/${twogs.id}`}>
+             <img className="medium"src={twogs.image} alt="popcorn twogs"/>
+         </Link>
+         <div className="card-body">
+             <Link to={`/twog/7/${twogs.id}`}>
+                 <h2>{twogs.name}</h2>
+             </Link>
+             
+           <div className="detail">{twogs.sizes}<br/> ${twogs.price}</div>
+         </div>
+         </div>
 
     ))
   }

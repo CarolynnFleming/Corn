@@ -1,9 +1,4 @@
-// cheese = price_1Mt1vyK4xNPEK2uzhuikAS83
-// poppinMix = price_1Mt21FK4xNPEK2uzVTn3EhFa
-// caramel = price_1Mt23bK4xNPEK2uzlP7CbcxX
-
-const gngdata = {
-    gng: [
+const gng =  [
         {
             id:'17',
             name: 'cheese',
@@ -81,5 +76,5 @@ const gngdata = {
               
         },
 
-    ]}
-export default gngdata;
+    ]
+export default gng;
