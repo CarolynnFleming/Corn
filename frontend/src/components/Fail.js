@@ -2,8 +2,8 @@ import React from 'react'
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Canceled = () => {
-  console.log(Canceled,'wtf')
+const Fail = () => {
+  
   return (
     <div>
          <CheckoutMsg>
@@ -17,7 +17,7 @@ const Canceled = () => {
   )
 }
 
-export default Canceled;
+export default Fail;
 const CheckoutMsg = styled.div`
   color: green;
   text-align: center;

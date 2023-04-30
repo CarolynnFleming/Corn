@@ -22,9 +22,9 @@ import SportstinDetail from './detail/SportstinDetail';
 import TwogDetail from './detail/TwogDetail';
 import ThreegDetail from './detail/ThreegDetail';
 import CartScreen from './screens/CartScreen';
-import Success from './components/Success';
-import Canceled from './components/Canceled';
 import Header from './components/Header';
+import Fail from './components/Fail';
+import Yay from'./components/Yay';
 function App() {
  
   return (
@@ -60,8 +60,8 @@ function App() {
       <Route path="/mixesbags" element={<MixesScreen/>}></Route>
       <Route path="/mixesbags/:id" element={<MixesDetail/>}></Route>
       <Route path="/oneg/:id" element={<OnegDetail/>}></Route>
-      <Route path='/success' element={<Success/>}></Route>
-      <Route exact path='/canceled' element={<Canceled/>}></Route>
+      <Route path='/success' element={<Yay/>}/>
+      <Route path='/canceled' element={<Fail/>}/>
       <Route path="/" element={<HomeScreen/>} exact></Route>
       </Routes>
 
