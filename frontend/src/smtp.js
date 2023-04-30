@@ -38,7 +38,7 @@ const Smtp = () => {
         <input type="email" name="user_email" />
         <label>Message</label>
         <textarea name="message" />
-        <input type="submit" value="Send" onClick={notify}/>
+        <button className="button-85" type="submit" value="Send" onClick={notify}><h3>Send🍿</h3></button>
       </form>
       <Toaster/>
     </StyledContactForm>
@@ -84,11 +84,9 @@ const StyledContactForm = styled.div`
     label {
       margin-top: 1rem;
     }
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: rgb(249, 105, 14);
-      color: white;
-      border: none;
-    }
+   button{
+    margin: 1rem;
+    width: 35rem;
+    justify-content:center;
+   }
   }`;
