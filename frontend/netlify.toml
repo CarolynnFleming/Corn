@@ -3,9 +3,3 @@ command = 'CI= npm run build'
 functions = 'functions'
 publish = 'build'
 
-
-[[redirects]]
-from = "/offeringscreen"
-to = "/offeringscreen"
-status = 200
-force = true
