@@ -5,7 +5,7 @@ publish = 'build'
 
 
 [[redirects]]
-from = "/cartscreen"
+from = "https://checkout.stripe.com/c/pay/:splat"
 to = "/canceled"
 status = 200
 force = true
