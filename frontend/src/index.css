@@ -233,6 +233,7 @@ img.medium {
   animation-timing-function: linear; 
   animation-name: flip_animation;
     /* animation-duration: 1s; */
+    margin-top: 12rem;
  
 }
 .home-card{
@@ -409,16 +410,13 @@ img.large{
   flex-direction: column;
   justify-content: center;
   font-size: 2rem;
-  margin: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
 } 
-.roman{
-  margin-left: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
 
+.goldenrule{
+  margin-top: 13rem;
+}
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 
