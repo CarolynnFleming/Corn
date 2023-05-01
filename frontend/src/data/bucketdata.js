@@ -3,7 +3,7 @@ const bucket =  [
             id:'39',
             name: 'cheese',
             image:'/public/Cheddar-popcorn.jpg',
-            price: 18.99,
+            price: 19.00,
             countInStock:10,  
         },
         {

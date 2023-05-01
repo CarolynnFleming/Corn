@@ -2,3 +2,10 @@
 command = 'CI= npm run build'
 functions = 'functions'
 publish = 'build'
+
+
+[[redirects]]
+from = "/cartscreen"
+to = "/canceled"
+status = 200
+force = true

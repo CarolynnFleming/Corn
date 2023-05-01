@@ -23,7 +23,7 @@ const StripeCheckout = () => {
         }
       }
     });
-
+    console.log(line_items, 'noooo')
     const response = await fetchFromAPI('create-checkout-session', {
       body: { line_items, customer_email: email },
     });
