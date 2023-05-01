@@ -2,3 +2,9 @@
 command = 'CI= npm run build'
 functions = 'functions'
 publish = 'build'
+
+
+[redirects]
+from = "https://checkout.stripe.com/c/pay/*"
+to = "/canceled"
+status=404
