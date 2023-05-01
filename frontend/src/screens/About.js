@@ -17,7 +17,7 @@ export default function About() {
 
 <span className='message'><h2 className='lead'>Our Mission</h2>Build the best product that creates the most value <br/>for our customers, use business to inspire and <br/>implement environmentally friendly solutions.</span>
 
-<span ><h2 className='lead'>Our Vission</h2>We strive to go above and beyond for our clients no <br/>matter the challenge. We aim to deliver our very <br/>best work every single day across our services.</span>
+<span ><h2 className='lead'>Our Vision</h2>We strive to go above and beyond for our clients no <br/>matter the challenge. We aim to deliver our very <br/>best work every single day across our services.</span>
 </div>
     
     </div>
