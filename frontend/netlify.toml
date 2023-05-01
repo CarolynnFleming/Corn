@@ -4,7 +4,7 @@ functions = 'functions'
 publish = 'build'
 
 
-[redirects]
+[[redirects]]
 from = "/cartscreen"
 to = "/canceled"
 status = 200
