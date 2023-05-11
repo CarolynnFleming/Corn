@@ -6,7 +6,7 @@ export default function BucketScreen() {
     <div>
     <Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
-       <Link className="back"to="/offeringscreen">Back</Link>
+      
     {
     bucket.map((buckets) =>(
       <div key={buckets.id}className="card">
