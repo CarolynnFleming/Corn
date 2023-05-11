@@ -19,7 +19,7 @@ export default function bagScreen() {
                  <h2>{bags.name}</h2>
              </Link>
              
-           <div className="detail">{bags.sizes} ${bags.price}</div>
+           <div className="detail">{bags.sizes} ${bags.price.toFixed(2)}</div>
          </div>
          </div>
 

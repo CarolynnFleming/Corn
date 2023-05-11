@@ -19,7 +19,7 @@ export default function MixesScreen() {
                      <h2>{mixe.name}</h2>
                  </Link>
                  
-               <div className="detail">{mixe.sizes}<br/> ${mixe.price}</div>
+               <div className="detail">{mixe.sizes}<br/> ${mixe.price.toFixed(2)}</div>
              </div>
              </div>
 

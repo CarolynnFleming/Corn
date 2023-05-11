@@ -56,7 +56,7 @@ export default function GrabnGoScreen() {
                      <h2>{gngs.name}</h2>
                  </Link>
                  
-               <div className="detail">{gngs.sizes}<br/> ${gngs.price}</div>
+               <div className="detail">{gngs.sizes}<br/> ${gngs.price.toFixed(2)}</div>
              </div>
              </div>
 

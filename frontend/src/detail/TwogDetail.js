@@ -26,9 +26,7 @@ export default function TwogDetail() {
                     <li>
                   <h1>{twogs.name}</h1>
                   </li>
-                  <li>
-                    Price : ${twogs.price}
-                  </li>
+                  
                   <li>
                     description: {twogs.description}
                   </li>
@@ -40,7 +38,7 @@ export default function TwogDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${twogs.price}</div>
+                                <div className='price'>${twogs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

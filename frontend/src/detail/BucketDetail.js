@@ -26,9 +26,7 @@ export default function BucketDetail() {
                     <li>
                   <h1>{buckets.name}</h1>
                   </li>
-                  <li>
-                    Price : ${buckets.price}
-                  </li>
+                  
                   <li>
                     description: {buckets.description}
                   </li>
@@ -40,7 +38,7 @@ export default function BucketDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${buckets.price}</div>
+                                <div className='price'>${buckets.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

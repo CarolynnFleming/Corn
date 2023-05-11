@@ -18,7 +18,7 @@ export default function SportstinScreen() {
                      <h2>{sportstins.name}</h2>
                  </Link>
                  
-               <div className="detail">{sportstins.sizes}<br/> ${sportstins.price}</div>
+               <div className="detail">{sportstins.sizes}<br/> ${sportstins.price.toFixed(2)}</div>
              </div>
              </div>
 

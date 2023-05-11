@@ -105,9 +105,6 @@ export default function MixesDetail() {
                   <h1>{mixe.name}</h1>
                   </li>
                   <li>
-                    Price : ${mixe.price}
-                  </li>
-                  <li>
                     description: {mixe.description}
                   </li>
                 </ul>
@@ -118,7 +115,7 @@ export default function MixesDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${mixe.price}</div>
+                                <div className='price'>${mixe.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

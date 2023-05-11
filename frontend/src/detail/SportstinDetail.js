@@ -26,9 +26,7 @@ export default function SportstinDetail() {
                     <li>
                   <h1>{sportstins.name}</h1>
                   </li>
-                  <li>
-                    Price : ${sportstins.price}
-                  </li>
+                  
                   <li>
                     description: {sportstins.description}
                   </li>
@@ -40,7 +38,7 @@ export default function SportstinDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${sportstins.price}</div>
+                                <div className='price'>${sportstins.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

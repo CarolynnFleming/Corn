@@ -27,9 +27,6 @@ export default function OnegDetail() {
                   <h1>{onegs.name}</h1>
                   </li>
                   <li>
-                    Price : ${onegs.price}
-                  </li>
-                  <li>
                     description: {onegs.description}
                   </li>
                 </ul>
@@ -40,7 +37,7 @@ export default function OnegDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${onegs.price}</div>
+                                <div className='price'>${onegs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

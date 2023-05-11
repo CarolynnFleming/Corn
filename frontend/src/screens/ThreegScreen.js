@@ -18,7 +18,7 @@ export default function ThreegScreen() {
               <h2>{threegs.name}</h2>
           </Link>
           
-        <div className="detail">{threegs.sizes}<br/> ${threegs.price}</div>
+        <div className="detail">{threegs.sizes}<br/> ${threegs.price.toFixed(2)}</div>
       </div>
       </div>
 

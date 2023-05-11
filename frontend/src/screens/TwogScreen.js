@@ -19,7 +19,7 @@ export default function TwogScreen() {
                  <h2>{twogs.name}</h2>
              </Link>
              
-           <div className="detail">{twogs.sizes}<br/> ${twogs.price}</div>
+           <div className="detail">{twogs.sizes}<br/> ${twogs.price.toFixed(2)}</div>
          </div>
          </div>
 

@@ -26,9 +26,7 @@ export default function ThreegDetail() {
                     <li>
                   <h1>{threegs.name}</h1>
                   </li>
-                  <li>
-                    Price : ${threegs.price}
-                  </li>
+                
                   <li>
                     description: {threegs.description}
                   </li>
@@ -40,7 +38,7 @@ export default function ThreegDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${threegs.price}</div>
+                                <div className='price'>${threegs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

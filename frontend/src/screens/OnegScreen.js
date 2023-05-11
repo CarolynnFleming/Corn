@@ -19,7 +19,7 @@ export default function OnegScreen() {
               <h2>{onegs.name}</h2>
           </Link>
           
-        <div className="detail">{onegs.sizes}<br/> ${onegs.price}</div>
+        <div className="detail">{onegs.sizes}<br/> ${onegs.price.toFixed(2)}</div>
       </div>
       </div>
     ))
