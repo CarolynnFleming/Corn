@@ -3,8 +3,10 @@ import threeg from '../data/threegdata'
 import {Link} from 'react-router-dom'
 export default function ThreegScreen() {
   return (
+    <div>
+    <Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
-       <Link className="back"to="/offeringscreen">Back</Link>
+       
     {
     threeg.map((threegs) =>(
       <div key={threegs.id}className="card">
@@ -23,6 +25,7 @@ export default function ThreegScreen() {
     ))
   }
 
+  </div>
   </div>
   )
 }

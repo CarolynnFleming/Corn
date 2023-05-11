@@ -3,6 +3,8 @@ import sportstin from '../data/sportstindata'
 import {Link} from 'react-router-dom'
 export default function SportstinScreen() {
   return (
+    <div>
+    <Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
        <Link className="back"to="/offeringscreen">Back</Link>
         {
@@ -23,6 +25,7 @@ export default function SportstinScreen() {
         ))
       }
 
+      </div>
       </div> 
   )
 }

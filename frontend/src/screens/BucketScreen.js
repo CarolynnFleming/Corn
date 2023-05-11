@@ -3,6 +3,8 @@ import bucket from '../data/bucketdata';
 import { Link } from 'react-router-dom';
 export default function BucketScreen() {
   return (
+    <div>
+    <Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
        <Link className="back"to="/offeringscreen">Back</Link>
     {
@@ -23,6 +25,7 @@ export default function BucketScreen() {
     ))
   }
 
+  </div>
   </div>
   )
 }
