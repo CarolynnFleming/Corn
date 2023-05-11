@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default function BucketScreen() {
   return (
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
     {
     bucket.map((buckets) =>(
       <div key={buckets.id}className="card">

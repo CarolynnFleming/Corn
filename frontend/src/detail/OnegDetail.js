@@ -16,7 +16,7 @@ export default function OnegDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/oneg">Back to Bags</Link>
+        <Link className="back"to="/oneg">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={onegs.image} alt={onegs.name}/>

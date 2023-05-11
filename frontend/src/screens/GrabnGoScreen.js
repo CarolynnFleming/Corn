@@ -43,6 +43,7 @@ export default function GrabnGoScreen() {
   return (
 
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
         {
         gng.map((gngs) =>(
           <div key={gngs.id}className="card">

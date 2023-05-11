@@ -125,7 +125,7 @@ export default function BagDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/Bags">Back to Bags</Link>
+        <Link className="back"to="/Bags">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={Bag.image} alt={Bag.name}/>

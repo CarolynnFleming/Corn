@@ -16,7 +16,7 @@ export default function ThreegDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/threeg">Back to Bags</Link>
+        <Link className="back"to="/threeg">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={threegs.image} alt={threegs.name}/>

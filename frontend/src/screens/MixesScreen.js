@@ -6,6 +6,7 @@ export default function MixesScreen() {
   return (
 
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
         {
         mixes.map((mixe) =>(
           <div key={mixe.id}className="card">

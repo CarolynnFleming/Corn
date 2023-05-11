@@ -1,4 +1,4 @@
-const API = 'http://localhost:5050';
+const API = 'https://git.heroku.com/whats-popping-popcorn.git';
 
 export async function fetchFromAPI(endpoint, choices) {
     const { method, body } = { method: 'POST', body: null, ...choices };

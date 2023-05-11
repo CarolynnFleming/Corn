@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 export default function ThreegScreen() {
   return (
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
     {
     threeg.map((threegs) =>(
       <div key={threegs.id}className="card">

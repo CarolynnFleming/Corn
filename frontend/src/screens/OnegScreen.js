@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 export default function OnegScreen() {
   return (
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
     {
     oneg.map((onegs) =>(
       

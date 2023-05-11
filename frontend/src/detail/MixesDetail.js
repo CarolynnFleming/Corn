@@ -94,7 +94,7 @@ export default function MixesDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/mixesbags">Back to Bags</Link>
+        <Link className="back"to="/mixesbags">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={mixe.image} alt={mixe.name}/>

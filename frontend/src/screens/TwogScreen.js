@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 export default function TwogScreen() {
   return (
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
     {
     twog.map((twogs) =>(
       <div key={twogs.id}className="card">

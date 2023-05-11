@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 export default function SportstinScreen() {
   return (
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
         {
         sportstin.map((sportstins) =>(
           <div key={sportstins.id}className="card">

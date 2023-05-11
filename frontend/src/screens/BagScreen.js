@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function bagScreen() {
   return (
     <div className="row center">
+       <Link className="back"to="/offeringscreen">Back</Link>
     {
     bag.map((bags) =>(
       <div key={bags.id}className="card">

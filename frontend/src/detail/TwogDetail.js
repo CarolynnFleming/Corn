@@ -16,7 +16,7 @@ export default function TwogDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/twog">Back to Bags</Link>
+        <Link className="back"to="/twog">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={twogs.image} alt={twogs.name}/>

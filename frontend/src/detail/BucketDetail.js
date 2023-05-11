@@ -16,7 +16,7 @@ export default function BucketDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/bucket">Back to Bags</Link>
+        <Link className="back"to="/bucket">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={buckets.image} alt={buckets.name}/>
