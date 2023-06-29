@@ -107,22 +107,27 @@
 //       </div> 
 //     );
 // }
-import React from 'react'
+import React, {useState}from 'react'
 import bag from '../data/bagdata';
 import { Link, useParams } from 'react-router-dom';
 import CartContext from '../Context/Cart/CartContext';
 import { useContext } from 'react'
 
 export default function BagDetail() {
+  const [amount , setAmount] = useState(null)
     const { id } = useParams();
     const { addToCart, increase, cartItems } = useContext(CartContext);
-    const Bag = bag.find((x) => x.id === id);
+    const Bag = bag?.find((x) => x?.id === id);
     if(!Bag) {
         return <div> Product Not Found</div>
     }
     const isInCart = (Bag) => {
-      return !!cartItems.find((item) => item.id === Bag.id);
+      return !!cartItems.find((item) => item.id === Bag?.id);
     };
+    const handleChange = (value) => {
+      setAmount({ name: Bag?.name, image: Bag?.image, price: Bag?.price[value]})
+      
+    }
     return (
       <div>
         <Link className="back"to="/Bags">Back</Link>
@@ -135,7 +140,10 @@ export default function BagDetail() {
                     <li>
                   <h1>{Bag.name}</h1>
                   </li>
-                 
+                  <li>
+                    {/* Price : ${Bag.price[amount].toFixed(2)} */}
+                    
+                  </li>
                   <li>
                     description: {Bag.description}
                   </li>
@@ -146,8 +154,17 @@ export default function BagDetail() {
                     <ul>
                         <li>
                             <div className='row'>
-                                <div>Price</div>
-                                <div className='price'>${Bag.price.toFixed(2)}</div>
+                             <div>Size:</div>
+                             <select
+                             name="price-dropdown"
+                             id="price-dropdown-element"
+                             onChange={(e) => handleChange(e.target.value)}>
+                              <option value={"small"}>small: ${Bag.price["small"].toFixed(2)}</option>
+                              <option value={"medium"}>medium: ${Bag.price["medium"].toFixed(2)}</option>
+                              <option value={"large"}>large: ${Bag.price["large"].toFixed(2)}</option>
+                              <option value={"x_large"}>X-large: ${Bag.price["x_large"].toFixed(2)}</option>
+                             </select>
+                                {/* <div className='price'>${Bag.price}</div> */}
                             </div>
                         </li>
                         <li>
@@ -159,10 +176,10 @@ export default function BagDetail() {
                             </div>
                         </li>
                         <li>
-                            {isInCart(Bag) && (
-                              <button className='button-85 block' onClick={() => {increase(Bag)}}>Add More</button>
+                            {isInCart(amount) && (
+                              <button className='button-85 block' onClick={() => {increase(amount)}}>Add More</button>
                             )}
-                            {!isInCart(Bag) && (<button className='button-85 block' onClick={() => addToCart(Bag)}>Add to Cart</button>)}
+                            {!isInCart(amount) && (<button className='button-85 block' onClick={() => addToCart(amount)}>Add to Cart</button>)}
                         </li>
                     </ul>
                 </div>
