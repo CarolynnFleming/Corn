@@ -16,7 +16,7 @@ export default function OnegDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/oneg">Back to Bags</Link>
+        <Link className="back"to="/oneg">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={onegs.image} alt={onegs.name}/>
@@ -25,9 +25,6 @@ export default function OnegDetail() {
                 <ul>
                     <li>
                   <h1>{onegs.name}</h1>
-                  </li>
-                  <li>
-                    Price : ${onegs.price}
                   </li>
                   <li>
                     description: {onegs.description}
@@ -40,7 +37,7 @@ export default function OnegDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${onegs.price}</div>
+                                <div className='price'>${onegs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

@@ -3,7 +3,10 @@ import oneg from '../data/onegdata'
 import { Link } from 'react-router-dom'
 export default function OnegScreen() {
   return (
+    <div>
+    <Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
+       
     {
     oneg.map((onegs) =>(
       
@@ -16,12 +19,13 @@ export default function OnegScreen() {
               <h2>{onegs.name}</h2>
           </Link>
           
-        <div className="detail">{onegs.sizes}<br/> ${onegs.price}</div>
+        <div className="detail">{onegs.sizes}<br/> ${onegs.price.toFixed(2)}</div>
       </div>
       </div>
     ))
   }
 
+  </div>
   </div>
   )
 }

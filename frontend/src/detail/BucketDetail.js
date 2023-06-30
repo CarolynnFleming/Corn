@@ -16,7 +16,7 @@ export default function BucketDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/bucket">Back to Bags</Link>
+        <Link className="back"to="/bucket">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={buckets.image} alt={buckets.name}/>
@@ -26,9 +26,7 @@ export default function BucketDetail() {
                     <li>
                   <h1>{buckets.name}</h1>
                   </li>
-                  <li>
-                    Price : ${buckets.price}
-                  </li>
+                  
                   <li>
                     description: {buckets.description}
                   </li>
@@ -40,7 +38,7 @@ export default function BucketDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${buckets.price}</div>
+                                <div className='price'>${buckets.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

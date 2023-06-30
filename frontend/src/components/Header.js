@@ -14,7 +14,7 @@ const Header = () => {
             <img className="popcorn"src={popcorn} alt="popcorn"/></Link>
             
            
-            <Link to="/" className="brand">WHATS POPPING</Link>
+            <Link to="/" className="brand">WHAT'S POPPIN</Link>
             </div> 
 
             <Hamburger />

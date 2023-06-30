@@ -16,7 +16,7 @@ export default function TwogDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/twog">Back to Bags</Link>
+        <Link className="back"to="/twog">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={twogs.image} alt={twogs.name}/>
@@ -26,9 +26,7 @@ export default function TwogDetail() {
                     <li>
                   <h1>{twogs.name}</h1>
                   </li>
-                  <li>
-                    Price : ${twogs.price}
-                  </li>
+                  
                   <li>
                     description: {twogs.description}
                   </li>
@@ -40,7 +38,7 @@ export default function TwogDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${twogs.price}</div>
+                                <div className='price'>${twogs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

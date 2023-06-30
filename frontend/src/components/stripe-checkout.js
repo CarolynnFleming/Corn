@@ -23,6 +23,7 @@ const StripeCheckout = () => {
         }
       }
     });
+    // npm audit fix --force
 
     const response = await fetchFromAPI('create-checkout-session', {
       body: { line_items, customer_email: email },

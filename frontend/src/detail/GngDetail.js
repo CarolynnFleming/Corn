@@ -15,7 +15,7 @@ export default function GngDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/gng">Back to Grab and Go</Link>
+        <Link className="back"to="/gng">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={gngs.image} alt={gngs.name}/>
@@ -25,9 +25,7 @@ export default function GngDetail() {
                     <li>
                   <h1>{gngs.name}</h1>
                   </li>
-                  <li>
-                    Price : ${gngs.price}
-                  </li>
+                  
                   <li>
                     description: {gngs.description}
                   </li>
@@ -39,7 +37,7 @@ export default function GngDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${gngs.price}</div>
+                                <div className='price'>${gngs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

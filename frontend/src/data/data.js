@@ -10,7 +10,7 @@ const offerings =
         },
 {
     _id:'2',
-    name: 'Grab & Go',
+    name: 'Grab & Go Containers',
     location:'/Gng',
     image:'/public/grabngo.jpg',
     flavors: 10,
@@ -18,7 +18,7 @@ const offerings =
 },
 {
     _id:'3',
-    name: 'Mixes Bags',
+    name: 'Mixed Bags',
     location:'/mixesbags',
     image:'/public/Mix.jpg',
     flavors: 3,
@@ -36,7 +36,7 @@ const offerings =
     _id:'5',
     name: '1 Gallon',
     location:'/oneg',
-    image:'/public/oneG.jpg',
+    image:'/public/whiteTin.jpeg',
     flavors: 7,
     size: 1,  
 },

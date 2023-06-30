@@ -3,7 +3,11 @@ import twog from '../data/twogdata'
 import {Link} from 'react-router-dom'
 export default function TwogScreen() {
   return (
+    <div>
+    <Link className="back"to="/offeringscreen">Back</Link>
+    
     <div className="row center">
+    
     {
     twog.map((twogs) =>(
       <div key={twogs.id}className="card">
@@ -15,13 +19,14 @@ export default function TwogScreen() {
                  <h2>{twogs.name}</h2>
              </Link>
              
-           <div className="detail">{twogs.sizes}<br/> ${twogs.price}</div>
+           <div className="detail">{twogs.sizes}<br/> ${twogs.price.toFixed(2)}</div>
          </div>
          </div>
 
     ))
   }
 
+  </div>
   </div>
   )
 }

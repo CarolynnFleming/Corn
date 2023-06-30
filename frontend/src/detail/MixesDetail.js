@@ -94,7 +94,7 @@ export default function MixesDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/mixesbags">Back to Bags</Link>
+        <Link className="back"to="/mixesbags">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={mixe.image} alt={mixe.name}/>
@@ -103,9 +103,6 @@ export default function MixesDetail() {
                 <ul>
                     <li>
                   <h1>{mixe.name}</h1>
-                  </li>
-                  <li>
-                    Price : ${mixe.price}
                   </li>
                   <li>
                     description: {mixe.description}
@@ -118,7 +115,7 @@ export default function MixesDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${mixe.price}</div>
+                                <div className='price'>${mixe.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

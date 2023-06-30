@@ -41,8 +41,10 @@ import { Link } from 'react-router-dom'
 export default function GrabnGoScreen() {
 
   return (
-
+    <div>
+<Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
+       
         {
         gng.map((gngs) =>(
           <div key={gngs.id}className="card">
@@ -54,13 +56,14 @@ export default function GrabnGoScreen() {
                      <h2>{gngs.name}</h2>
                  </Link>
                  
-               <div className="detail">{gngs.sizes}<br/> ${gngs.price}</div>
+               <div className="detail">{gngs.sizes}<br/> ${gngs.price.toFixed(2)}</div>
              </div>
              </div>
 
         ))
       }
 
+      </div>
       </div>
   )
 }

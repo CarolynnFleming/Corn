@@ -1,7 +1,7 @@
 const mixes = [
         {
            id:'27',
-            name: 'poppin mix',
+            name: 'Poppin Mix',
             image:'/public/Mix.jpg',
             price: 6.50,
             sizes: 'SM',
@@ -9,7 +9,7 @@ const mixes = [
         },
         {
            id:'28',
-            name: 'poppin mix',
+            name: 'Poppin Mix',
             image:'/public/Mix.jpg',
             price: 8.75,
             sizes: 'MD', 
@@ -17,7 +17,7 @@ const mixes = [
         },
         {
            id:'29',
-            name: 'poppin mix',
+            name: 'Poppin Mix',
             image:'/public/Mix.jpg',
             price: 12.50,
             sizes: 'LG', 
@@ -25,15 +25,15 @@ const mixes = [
         },
         {
            id:'30',
-            name: 'poppin mix',
+            name: 'Poppin Mix',
             image:'/public/Mix.jpg',
             price: 15.00,
-            sizes: 'LG', 
+            sizes: 'XL', 
             countInStock:10, 
         },
         {
            id:'31',
-            name: 'cheesy caramel',
+            name: 'Cheesy Caramel Mix',
             image:'/public/Mix.jpg',
             price: 6.75,
             sizes: 'SM',
@@ -41,7 +41,7 @@ const mixes = [
         },
         {
            id:'32',
-            name: 'cheesy caramel',
+            name: 'Cheesy Caramel Mix',
             image:'/public/Mix.jpg',
             price: 9.00,
             sizes: 'MD', 
@@ -49,7 +49,7 @@ const mixes = [
         },
         {
            id:'33',
-            name: 'cheesy caramel',
+            name: 'Cheesy Caramel Mix',
             image:'/public/Mix.jpg',
             price: 13.25,
             sizes: 'LG', 
@@ -57,7 +57,7 @@ const mixes = [
         },
         {
            id:'34',
-            name: 'cheesy caramel',
+            name: 'Cheesy Caramel Mix',
             image:'/public/Mix.jpg',
             price: 15.75,
             sizes: 'XL', 
@@ -65,7 +65,7 @@ const mixes = [
         },
         {
            id:'35',
-            name: 'nutty caramel',
+            name: 'Nutty Caramel Mix',
             image:'/public/Sm-bag.jpg',
             price: 7.00,
             sizes: 'SM',
@@ -73,7 +73,7 @@ const mixes = [
         },
         {
            id:'36',
-            name: 'nutty caramel',
+            name: 'Nutty Caramel Mix',
             image:'/public/Sm-bag.jpg',
             price: 10.00,
             sizes: 'MD',
@@ -81,7 +81,7 @@ const mixes = [
         },
         {
            id:'37',
-            name: 'nutty caramel',
+            name: 'Nutty Caramel Mix',
             image:'/public/Sm-bag.jpg',
             price: 13.50,
             sizes: 'LG', 
@@ -89,7 +89,7 @@ const mixes = [
         },
         {
            id:'38',
-            name: 'nutty caramel',
+            name: 'Nutty Caramel Mix',
             image:'/public/Sm-bag.jpg',
             price: 17.00,
             sizes: 'XL', 

@@ -4,7 +4,10 @@ import bag from '../data/bagdata';
 import { Link } from 'react-router-dom';
 export default function bagScreen() {
   return (
+    <div>
+    <Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
+      
     {
     bag.map((bags) =>(
       <div key={bags.id}className="card">
@@ -16,13 +19,13 @@ export default function bagScreen() {
                  <h2>{bags.name}</h2>
              </Link>
              
-           <div className="detail">{bags.sizes} ${bags.price}</div>
          </div>
          </div>
 
     ))
   }
 
+  </div>
   </div>
   )
 }

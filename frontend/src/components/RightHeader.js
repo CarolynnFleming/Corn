@@ -15,7 +15,7 @@ const RightHeader = ({ open }) => {
        <Ul open={open}>
         
        <li ><Link className="rainbow-4" to="/about">About</Link></li>
-                  <li><Link className="rainbow-4" to="/offeringscreen">Offerings</Link></li>
+                  <li><Link className="rainbow-4" to="/offeringscreen">Flavors</Link></li>
                   
                     <li><Link className="rainbow-4" to="/cartscreen">🍿
                     {cartItems.length > 0 && (

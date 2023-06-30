@@ -3,6 +3,7 @@ import { useContext } from "react";
 import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 import Checkout from "../components/Checkout";
+import { Link } from "react-router-dom";
 
 
 const CartScreen = () => {
@@ -11,6 +12,7 @@ const CartScreen = () => {
 
   return (
     <>
+     <Link className="back"to="/offeringscreen">Back</Link>
       <Heading>
         <h1>
           Shopping Cart

@@ -16,7 +16,7 @@ export default function ThreegDetail() {
     };
     return (
       <div>
-        <Link className="back"to="/threeg">Back to Bags</Link>
+        <Link className="back"to="/threeg">Back</Link>
           <div className='row top'>
               <div className='col-2'>
               <img className='large' src={threegs.image} alt={threegs.name}/>
@@ -26,9 +26,7 @@ export default function ThreegDetail() {
                     <li>
                   <h1>{threegs.name}</h1>
                   </li>
-                  <li>
-                    Price : ${threegs.price}
-                  </li>
+                
                   <li>
                     description: {threegs.description}
                   </li>
@@ -40,7 +38,7 @@ export default function ThreegDetail() {
                         <li>
                             <div className='row'>
                                 <div>Price</div>
-                                <div className='price'>${threegs.price}</div>
+                                <div className='price'>${threegs.price.toFixed(2)}</div>
                             </div>
                         </li>
                         <li>

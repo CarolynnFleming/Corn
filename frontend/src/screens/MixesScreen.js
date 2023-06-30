@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 export default function MixesScreen() {
 
   return (
-
+    <div>
+<Link className="back"to="/offeringscreen">Back</Link>
     <div className="row center">
+       
         {
         mixes.map((mixe) =>(
           <div key={mixe.id}className="card">
@@ -17,13 +19,14 @@ export default function MixesScreen() {
                      <h2>{mixe.name}</h2>
                  </Link>
                  
-               <div className="detail">{mixe.sizes}<br/> ${mixe.price}</div>
+               <div className="detail">{mixe.sizes}<br/> ${mixe.price.toFixed(2)}</div>
              </div>
              </div>
 
         ))
       }
 
+      </div>
       </div>
   )
 }
