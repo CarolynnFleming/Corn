@@ -4,10 +4,10 @@ import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 import Checkout from "../components/Checkout";
 
-
 const CartScreen = () => {
   // Extract the cart state from the context
   const { cartItems } = useContext(CartContext);
+  console.log("CART ITEMS IN CART SCREEN", cartItems);
 
   return (
     <>
@@ -17,8 +17,6 @@ const CartScreen = () => {
           <span>({cartItems.length})</span>
         </h1>
       </Heading>
-
-     
 
       <Layout>
         <div>
@@ -39,10 +37,7 @@ const CartScreen = () => {
           }
         </div>
 
-        <div>
-          
-          {cartItems.length > 0 && <Checkout />}
-        </div>
+        <div>{cartItems.length > 0 && <Checkout />}</div>
       </Layout>
     </>
   );
@@ -77,6 +72,5 @@ const CartItemWrapper = styled.div`
   justify-content: space-around;
   text-align: center;
 `;
-
 
 export default CartScreen;
