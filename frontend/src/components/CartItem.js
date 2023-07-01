@@ -1,32 +1,30 @@
-import React, { useContext } from 'react'
+import React, { useContext } from "react";
 
 import styled from "styled-components";
-import CartContext from '../Context/Cart/CartContext'
-import TrashIcon from'../assets/trash.png'
-import Plus from '../assets/plus.png'
-import Minus from '../assets/minus.png'
+import CartContext from "../Context/Cart/CartContext";
+import TrashIcon from "../assets/trash.png";
+import Plus from "../assets/plus.png";
+import Minus from "../assets/minus.png";
 import { formatCurrency } from "../price";
 
-export default function CartItem({product}) {
-
+export default function CartItem({ product }) {
   const { removeFromCart, increase, decrease } = useContext(CartContext);
 
   return (
     <SingleCartItem>
       <CartImage src={product.image} alt={product.name} />
       <div>
-        <h2>{product.name}</h2>
+        <h2>{`${product.name}`}</h2>
         <h1>{formatCurrency(product.price)}</h1>
       </div>
 
-    
       <BtnContainer>
         {product.quantity === 1 && (
           <button onClick={() => removeFromCart(product)} className="btn">
             <Icon src={TrashIcon} alt=" trash" />
           </button>
         )}
-       
+
         {product.quantity > 1 && (
           <button onClick={() => decrease(product)} className="btn">
             <Icon src={Minus} alt="minus" />
@@ -41,16 +39,11 @@ export default function CartItem({product}) {
           className="btn btn-primary btn-sm mr-2 mb-1"
         >
           <Icon src={Plus} alt="plus" />
-          
         </button>
-
-        
       </BtnContainer>
     </SingleCartItem>
   );
-};
-
-
+}
 
 const SingleCartItem = styled.div`
   border-bottom: 1px solid gray;
@@ -81,4 +74,3 @@ const Icon = styled.img`
   width: 1.6rem;
   height: auto;
 `;
-

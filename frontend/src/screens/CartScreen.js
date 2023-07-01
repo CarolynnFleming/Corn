@@ -9,12 +9,19 @@ const CartScreen = () => {
   const { cartItems } = useContext(CartContext);
   console.log("CART ITEMS IN CART SCREEN", cartItems);
 
+  const cartCount = () => {
+    const count = cartItems.reduce((acc, curr) => {
+      return acc + curr.quantity;
+    }, 0);
+    return count;
+  };
+
   return (
     <>
       <Heading>
         <h1>
           Shopping Cart
-          <span>({cartItems.length})</span>
+          <span>({cartCount()})</span>
         </h1>
       </Heading>
 
@@ -28,8 +35,8 @@ const CartScreen = () => {
                 <h4 style={{}}>Cart is empty</h4>
               ) : (
                 <ul>
-                  {cartItems.map((product) => (
-                    <CartItem key={product.id} product={product} />
+                  {cartItems.map((product, i) => (
+                    <CartItem key={product.name + i} product={product} />
                   ))}
                 </ul>
               )}
