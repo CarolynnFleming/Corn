@@ -3,8 +3,8 @@ const cors = require('cors');
 require('dotenv').config({ path: './.env'});
 const path = require('path');
 const app =express();
-const createCheckoutSession = require('./api/checkout')
-const port = 5050;
+const createCheckoutSession = require('./api//checkout')
+const port = 5150;
 
 app.use(express.json());
 app.use(cors({ origin: ['https://jovial-choux-3e4c2c.netlify.app'],
