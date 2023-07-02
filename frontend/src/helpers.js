@@ -1,4 +1,4 @@
-const API = 'https://git.heroku.com/whats-popping-popcorn.git';
+const API = 'https://jovial-choux-3e4c2c.netlify.app';
 
 export async function fetchFromAPI(endpoint, choices) {
     const { method, body } = { method: 'POST', body: null, ...choices };
