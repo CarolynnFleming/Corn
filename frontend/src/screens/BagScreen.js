@@ -22,19 +22,20 @@ export default function BagScreen() {
             <div className="detail">
               {container === "Bags" && (
                 <span>
-                  ${bags.containers.bags.small} - ${bags.containers.bags.xl}
+                  ${bags.containers.bags.small.toFixed(2)} - $
+                  {bags.containers.bags.xl.toFixed(2)}
                 </span>
               )}
               {container === "bucket" && (
-                <span>
-                  ${bags.containers.bucket} - $
-                  {bags.containers.bucket.bucket}
-                </span>
+                <span>$ {bags.containers.bucket.bucket.toFixed(2)}</span>
+              )}
+              {container === "gng" && (
+                <span>$ {bags.containers.gng.gng.toFixed(2)}</span>
               )}
               {container === "tins" && (
                 <span>
-                  ${bags.containers.tins.sport} - $
-                  {bags.containers.tins.threeGallon}
+                  ${bags.containers.tins.sport.toFixed(2)} - $
+                  {bags.containers.tins.threeGallon.toFixed(2)}
                 </span>
               )}
             </div>

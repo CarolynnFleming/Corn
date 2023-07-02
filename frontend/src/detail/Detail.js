@@ -4,15 +4,14 @@ import { Link, useParams } from "react-router-dom";
 import CartContext from "../Context/Cart/CartContext";
 import { useContext } from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 
 export const Detail = () => {
   const { container, product } = useParams();
 
   const { addToCart, increase, cartItems } = useContext(CartContext);
 
-  const [bagItem, setBagItem] = useState({});
-
-  const Bag = products.filter((item) => {
+  const Bag = products.find((item) => {
     if (
       item?.containers[container.toLowerCase()] !== undefined &&
       item.product === product
@@ -20,87 +19,112 @@ export const Detail = () => {
       return item;
   });
 
+  const [bagItem, setBagItem] = useState({
+    id: cartItems.length + 1,
+    image: Bag.image,
+    name: ` ${Bag.name} ${
+      container === "Bucket" || "Grab & Go"
+        ? ""
+        : container === "tins"
+        ? "sports"
+        : "small"
+    } ${Bag.containers[container].type}`,
+    container,
+    quantity: 1,
+    price:
+      Bag.containers[container].small ||
+      Bag.containers[container].sport ||
+      Bag.containers[container][container],
+  });
+
+  const [selected, setSelected] = useState({});
+
+  useEffect(() => {
+    console.log(bagItem);
+  }, [bagItem]);
+
   console.log("CAPITAL B BAG IN DETAIL", Bag);
 
-  if (!Bag[0]) {
+  if (!Bag) {
     return <div> Product Not Found</div>;
   }
   const isInCart = (Bag) => {
-    // return !!cartItems.find((item) => item.id === Bag[0].id);
-    return "this is a fake return";
+    return !!cartItems.find((item) => item.name === bagItem.name);
   };
 
   const handleChange = (e) => {
+    setSelected(e.target.value);
+
     setBagItem({
       id: cartItems.length + 1,
-      name: `${e.target.value}`,
+      image: Bag.image,
+      name: ` ${Bag.name} ${e.target.value} ${Bag.containers[container].type}`,
+      container,
+      quantity: 1,
+      price: Bag.containers[container][e.target.value],
     });
   };
 
-  const handleCart = () => {};
-
   const Dropdown = () => {
     switch (container) {
+      case "gng":
+        return <span>$ {Bag.containers.gng.gng.toFixed(2)}</span>;
       case "bucket":
-        return (
-          <select>
-            <option value={Bag[0].containers.bucket.gng}>
-              Grab 'N' Go - ${Bag[0].containers.bucket.gng}
-            </option>
-            <option value={Bag[0].containers.bucket.bucket}>
-              Bucket - ${Bag[0].containers.bucket.bucket}
-            </option>
-          </select>
-        );
+        return <span>$ {Bag.containers.bucket.bucket.toFixed(2)}</span>;
 
-      case "Bags":
+      case "bags":
         return (
-          <select onChange={(e) => console.log(e.target.value)}>
-            <option value={Bag[0].containers.bags.small}>
-              Small - ${Bag[0].containers.bags.small}
+          <select
+            name="sizeSelect"
+            id="sizeSelect"
+            onChange={(e) => handleChange(e)}
+            value={selected}
+          >
+            <option key={1} value="small">
+              Small - ${Bag.containers.bags.small.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.bags.med}>
-              Medium - ${Bag[0].containers.bags.med}
+            <option key={2} value="med">
+              Medium - ${Bag.containers.bags.med.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.bags.lg}>
-              Large - ${Bag[0].containers.bags.lg}
+            <option key={3} value="lg">
+              Large - ${Bag.containers.bags.lg.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.bags.xl}>
-              X-Large - ${Bag[0].containers.bags.xl}
+            <option key={4} value="xl">
+              X-Large - ${Bag.containers.bags.xl.toFixed(2)}
             </option>
           </select>
         );
       case "mixes":
         return (
-          <select onChange={(e) => console.log(e.target.value)}>
-            <option value={Bag[0].containers.mixes.small}>
-              Small - ${Bag[0].containers.mixes.small}
+          <select value={selected} onChange={(e) => handleChange(e)}>
+            <option value="small">
+              Small - ${Bag.containers.mixes.small.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.mixes.med}>
-              Medium - ${Bag[0].containers.mixes.med}
+            <option value="med">
+              Medium - ${Bag.containers.mixes.med.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.mixes.lg}>
-              Large - ${Bag[0].containers.mixes.lg}
+            <option value="lg">
+              Large - ${Bag.containers.mixes.lg.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.mixes.xl}>
-              X-Large - ${Bag[0].containers.mixes.xl}
+            <option value="xl">
+              X-Large - ${Bag.containers.mixes.xl.toFixed(2)}
             </option>
           </select>
         );
       case "tins":
         return (
-          <select onChange={(e) => console.log(e.target.value)}>
-            <option value={Bag[0].containers.tins.sport}>
-              Sport Tin - ${Bag[0].containers.tins.sport}
+          <select value={selected} onChange={(e) => handleChange(e)}>
+            <option value="sport">
+              Sport Tin - ${Bag.containers.tins.sport.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.tins.oneGallon}>
-              One Gallon- ${Bag[0].containers.tins.oneGallon}
+            <option value="oneGallon">
+              One Gallon- ${Bag.containers.tins.oneGallon.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.tins.twoGallon}>
-              Two Gallon - ${Bag[0].containers.tins.twoGallon}
+            <option value="twoGallon">
+              Two Gallon - ${Bag.containers.tins.twoGallon.toFixed(2)}
             </option>
-            <option value={Bag[0].containers.tins.threeGallon}>
-              Three Gallon - ${Bag[0].containers.tins.threeGallon}
+            <option value="threeGallon">
+              Three Gallon - ${Bag.containers.tins.threeGallon.toFixed(2)}
             </option>
           </select>
         );
@@ -108,13 +132,6 @@ export const Detail = () => {
       default:
         break;
     }
-
-    <select>
-      <option value="small">Small - ${Bag[0].containers.bags.small}</option>
-      <option value="md">Medium - ${Bag[0].containers.bags.med}</option>
-      <option value="lg">Large - ${Bag[0].containers.bags.lg}</option>
-      <option value="xl">Small - ${Bag[0].containers.bags.xl}</option>
-    </select>;
   };
 
   return (
@@ -124,25 +141,20 @@ export const Detail = () => {
       </Link>
       <div className="row top">
         <div className="col-2">
-          <img className="large" src={Bag[0].image} alt={Bag[0].name} />
+          <img className="large" src={Bag.image} alt={Bag.name} />
         </div>
         <div className="col-1">
           <ul>
             <li>
-              <h1>{Bag[0].name}</h1>
+              <h1>{Bag.name}</h1>
             </li>
             <li>
               {container === "Bags" && (
                 <span>
-                  ${Bag[0].containers.bags.small} - ${Bag[0].containers.bags.xl}
+                  ${Bag.containers.bags.small.toFixed(2)} - ${Bag.containers.bags.xl.toFixed(2)}
                 </span>
               )}
-              {container === "bucket" && (
-                <span>
-                  ${Bag[0].containers.bucket.gng} - $
-                  {Bag[0].containers.bucket.bucket}
-                </span>
-              )}
+              {container === "bucket" && <span>$ {Bag.containers.bucket.bucket.toFixed(2)}</span>}
             </li>
           </ul>
         </div>
@@ -161,7 +173,7 @@ export const Detail = () => {
                 <div className="row">
                   <div>Status</div>
                   <div>
-                    {Bag[0].countInStock > 0 ? (
+                    {Bag.countInStock > 0 ? (
                       <span className="success">In Stock</span>
                     ) : (
                       <span className="error">Unavailable</span>
@@ -172,9 +184,9 @@ export const Detail = () => {
               <li>
                 <button
                   className="button-85 block"
-                  onClick={() => addToCart(Bag[0])}
+                  onClick={() => isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)}
                 >
-                  {isInCart(Bag[0]) ? "Add More" : "Add To Cart"}
+                  {isInCart(Bag) ? "Add More" : "Add To Cart"}
                 </button>
               </li>
             </ul>
