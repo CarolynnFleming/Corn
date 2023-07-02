@@ -1,77 +1,52 @@
-const offerings =
-     [
-        {
-            _id:'1',
-            name: 'Bags',
-            location:'/Bags',
-            image:'/public/bags.jpeg',
-            flavors: 4,
-            sizes: 4,  
-        },
-{
-    _id:'2',
-    name: 'Grab & Go Containers',
-    location:'/Gng',
-    image:'/public/grabngo.jpg',
-    flavors: 10,
-    size: 1,  
-},
-{
-    _id:'3',
-    name: 'Mixed Bags',
-    location:'/mixesbags',
-    image:'/public/Mix.jpg',
+const offerings = [
+  {
+    _id: "1",
+    name: "Bags",
+    location: "/bags",
+    image: "/public/bags.jpeg",
+    flavors: 4,
+    sizes: 4,
+  },
+  {
+    _id: "3",
+    name: "Mixed Bags",
+    location: "/mixes",
+    image: "/public/Mix.jpg",
     flavors: 3,
-    sizes: 4,  
-},
-{
-    _id:'4',
-    name: 'Bucket',
-    location:'/bucket',
-    image:'/public/Bucket.jpg',
+    sizes: 4,
+  },
+  {
+    _id: "4",
+    name: "Bucket",
+    location: "/bucket",
+    image: "/public/Bucket.jpg",
     flavors: 7,
-    size: 1,  
-},
-{
-    _id:'5',
-    name: '1 Gallon',
-    location:'/oneg',
-    image:'/public/whiteTin.jpeg',
+    size: 1,
+  },
+  {
+    _id: "69",
+    name: "Grab 'N' Go",
+    location: "/gng",
+    image: "/public/grabngo.jpg",
     flavors: 7,
-    size: 1,  
-},
-{
-    _id:'6',
-    name: '1 Gallon Sports Tin',
-    location:'/sportstin',
-    image:'/public/sportsT.jpeg',
+    size: 1,
+  },
+  {
+    _id: "420",
+    name: "Tins",
+    location: "/tins",
+    image: "/public/whiteTin.jpeg",
     flavors: 7,
-    size: 1,  
-},
-{
-    _id:'7',
-    name: '2 Gallon Tin',
-    location:'/twog',
-    image:'/public/goldTin.jpeg',
-    flavors: 10,
-    size: 1,  
-},
-{
-    _id:'8',
-    name: '3 Gallon Tin',
-    location:'/threeg',
-    image:'/public/whiteTin.jpeg',
-    flavors: 7,
-    size: 1,  
-},
-{
-    _id:'9',
-    name: 'Italian Ice',
-    location:'/italianice',
-    image:'/public/iice.jpeg',
+    size: 4,
+  },
+  {
+    _id: "9",
+    name: "Italian Ice",
+    location: "/italianice",
+    image: "/public/iice.jpeg",
     flavors: 12,
-    size: 4,  
-}
-]
+    size: 4,
+  },
+];
 
 export default offerings;

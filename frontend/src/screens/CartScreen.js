@@ -3,24 +3,28 @@ import { useContext } from "react";
 import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 import Checkout from "../components/Checkout";
-import { Link } from "react-router-dom";
 
 
 const CartScreen = () => {
   // Extract the cart state from the context
   const { cartItems } = useContext(CartContext);
+  console.log("CART ITEMS IN CART SCREEN", cartItems);
+
+  const cartCount = () => {
+    const count = cartItems.reduce((acc, curr) => {
+      return acc + curr.quantity;
+    }, 0);
+    return count;
+  };
 
   return (
     <>
-     <Link className="back"to="/offeringscreen">Back</Link>
       <Heading>
         <h1>
           Shopping Cart
-          <span>({cartItems.length})</span>
+          <span>({cartCount()})</span>
         </h1>
       </Heading>
-
-     
 
       <Layout>
         <div>
@@ -32,8 +36,8 @@ const CartScreen = () => {
                 <h4 style={{}}>Cart is empty</h4>
               ) : (
                 <ul>
-                  {cartItems.map((product) => (
-                    <CartItem key={product.id} product={product} />
+                  {cartItems.map((product, i) => (
+                    <CartItem key={product.name + i} product={product} />
                   ))}
                 </ul>
               )}
@@ -41,10 +45,8 @@ const CartScreen = () => {
           }
         </div>
 
-        <div>
-          
-          {cartItems.length > 0 && <Checkout />}
-        </div>
+        <div>{cartItems.length > 0 && <Checkout />}</div>
+        
       </Layout>
     </>
   );
@@ -79,6 +81,5 @@ const CartItemWrapper = styled.div`
   justify-content: space-around;
   text-align: center;
 `;
-
 
 export default CartScreen;
