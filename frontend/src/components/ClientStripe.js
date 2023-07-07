@@ -12,6 +12,7 @@ const getStripe = () => {
 };
 
 const CheckoutWithStripe = ({ line_Items, email }) => {
+  console.log("LINE ITEMS IN CHECKOUT WITH STRIPE", line_Items);
   //   const [stripeError, setStripeError] = useState(null);
   //   const [isLoading, setLoading] = useState(false);
 
