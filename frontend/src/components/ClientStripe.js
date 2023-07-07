@@ -12,8 +12,8 @@ const getStripe = () => {
 };
 
 const CheckoutWithStripe = ({ line_Items }) => {
-  const [stripeError, setStripeError] = useState(null);
-  const [isLoading, setLoading] = useState(false);
+  //   const [stripeError, setStripeError] = useState(null);
+  //   const [isLoading, setLoading] = useState(false);
 
   const checkoutOptions = {
     lineItems: line_Items,
@@ -23,20 +23,19 @@ const CheckoutWithStripe = ({ line_Items }) => {
   };
 
   const redirectToCheckout = async () => {
-    setLoading(true);
+    // setLoading(true);
     console.log("redirectToCheckout");
 
     const stripe = await getStripe();
     const { error } = await stripe.redirectToCheckout(checkoutOptions);
     console.log("Stripe checkout error", error);
 
-    if (error) setStripeError(error.message);
-    setLoading(false);
+    if (error) console.log(error.message);
+    // setLoading(false);
+    if (error) alert(error.merssage);
   };
 
   redirectToCheckout();
-
-  if (stripeError) alert(stripeError);
 };
 
 export default CheckoutWithStripe;
