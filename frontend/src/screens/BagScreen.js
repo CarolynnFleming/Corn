@@ -27,10 +27,10 @@ export default function BagScreen() {
                 </span>
               )}
               {container === "bucket" && (
-                <span>$ {bags.containers.bucket.toFixed(2)}</span>
+                <span>$ {bags.containers.bucket.bucket.toFixed(2)}</span>
               )}
               {container === "gng" && (
-                <span>$ {bags.containers.gng.toFixed(2)}</span>
+                <span>$ {bags.containers.gng.gng.toFixed(2)}</span>
               )}
               {container === "tins" && (
                 <span>

@@ -22,15 +22,19 @@ export const Detail = () => {
   const [bagItem, setBagItem] = useState({
     id: cartItems.length + 1,
     image: Bag.image,
-    name: ` ${Bag.name} ${container === "tins" ? "sports" : "small"} ${
-      Bag.containers[container].type
-    }`,
+    name: ` ${Bag.name} ${
+      container === "Bucket" || "Grab & Go"
+        ? ""
+        : container === "tins"
+        ? "sports"
+        : "small"
+    } ${Bag.containers[container].type}`,
     container,
     quantity: 1,
     price:
       Bag.containers[container].small ||
       Bag.containers[container].sport ||
-      Bag.containers[container],
+      Bag.containers[container][container],
   });
 
   const [selected, setSelected] = useState({});
@@ -64,9 +68,9 @@ export const Detail = () => {
   const Dropdown = () => {
     switch (container) {
       case "gng":
-        return <span>$ {Bag.containers.gng.toFixed(2)}</span>;
+        return <span>$ {Bag.containers.gng.gng.toFixed(2)}</span>;
       case "bucket":
-        return <span>$ {Bag.containers.bucket.toFixed(2)}</span>;
+        return <span>$ {Bag.containers.bucket.bucket.toFixed(2)}</span>;
 
       case "bags":
         return (
@@ -150,7 +154,9 @@ export const Detail = () => {
                   ${Bag.containers.bags.small} - ${Bag.containers.bags.xl}
                 </span>
               )}
-              {container === "bucket" && <span>$ {Bag.containers.bucket}</span>}
+              {container === "bucket" && (
+                <span>$ {Bag.containers.bucket.bucket}</span>
+              )}
             </li>
           </ul>
         </div>
@@ -180,7 +186,9 @@ export const Detail = () => {
               <li>
                 <button
                   className="button-85 block"
-                  onClick={() => addToCart(bagItem)}
+                  onClick={() =>
+                    isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)
+                  }
                 >
                   {isInCart(Bag) ? "Add More" : "Add To Cart"}
                 </button>
