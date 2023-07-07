@@ -12,9 +12,10 @@ const StripeCheckout = () => {
   const handleGuestCheckout = async (e) => {
     e.preventDefault();
     const line_items = cartItems.map((item) => {
+      const num = item.price * 100;
       return {
         quantity: item.quantity,
-        price: item.price * 100,
+        price: num.toString(),
       };
     });
 
