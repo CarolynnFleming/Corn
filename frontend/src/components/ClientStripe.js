@@ -1,11 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 
 let stripePromise;
 
 const getStripe = () => {
   if (!stripePromise) {
-    stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
+    stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
   }
 
   return stripePromise;
