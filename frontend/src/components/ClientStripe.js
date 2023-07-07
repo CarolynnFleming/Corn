@@ -11,13 +11,13 @@ const getStripe = () => {
   return stripePromise;
 };
 
-const CheckoutWithStripe = ({ line_Items, email }) => {
-  console.log("LINE ITEMS IN CHECKOUT WITH STRIPE", line_Items);
+const CheckoutWithStripe = (lineItems, email) => {
+  console.log("LINE ITEMS IN CHECKOUT WITH STRIPE", lineItems);
   //   const [stripeError, setStripeError] = useState(null);
   //   const [isLoading, setLoading] = useState(false);
 
   const checkoutOptions = {
-    lineItems: line_Items,
+    lineItems,
     mode: "payment",
     successUrl: `${window.location.origin}/success`,
     cancelUrl: `${window.location.origin}/cancel`,
