@@ -20,7 +20,7 @@ const CheckoutWithStripe = ({ line_Items, email }) => {
     mode: "payment",
     successUrl: `${window.location.origin}/success`,
     cancelUrl: `${window.location.origin}/cancel`,
-    shippingAddressCollection: { allowed_countries: ["GB", "US"] },
+    shippingAddressCollection: { allowedCountries: ["GB", "US"] },
     customerEmail: email,
   };
 
