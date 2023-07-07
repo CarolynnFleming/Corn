@@ -25,7 +25,7 @@ const StripeCheckout = () => {
     });
     // npm audit fix --force
 
-    const responseFromStripeCheckout = CheckoutWithStripe(line_items);
+    const responseFromStripeCheckout = CheckoutWithStripe(line_items, email);
     console.log(
       "RESPONSE FROM CLIENT SIDE STRIPE CHECKOUT",
       responseFromStripeCheckout
