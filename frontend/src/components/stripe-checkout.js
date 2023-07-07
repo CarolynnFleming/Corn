@@ -24,7 +24,7 @@ const StripeCheckout = () => {
       };
     });
 
-    const responseFromStripeCheckout = CheckoutWithStripe(line_items);
+    const responseFromStripeCheckout = CheckoutWithStripe(line_items, email);
     console.log(
       "RESPONSE FROM CLIENT SIDE STRIPE CHECKOUT",
       responseFromStripeCheckout

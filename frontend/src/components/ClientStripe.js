@@ -11,7 +11,7 @@ const getStripe = () => {
   return stripePromise;
 };
 
-const CheckoutWithStripe = ({ line_Items }) => {
+const CheckoutWithStripe = ({ line_Items, email }) => {
   //   const [stripeError, setStripeError] = useState(null);
   //   const [isLoading, setLoading] = useState(false);
 
@@ -20,6 +20,8 @@ const CheckoutWithStripe = ({ line_Items }) => {
     mode: "payment",
     successUrl: `${window.location.origin}/success`,
     cancelUrl: `${window.location.origin}/cancel`,
+    customer_email: email,
+    shipping_address_collection: { allowed_countries: ["GB", "US"] },
   };
 
   const redirectToCheckout = async () => {
