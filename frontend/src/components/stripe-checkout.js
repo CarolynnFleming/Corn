@@ -14,13 +14,7 @@ const StripeCheckout = () => {
     const line_items = cartItems.map((item) => {
       return {
         quantity: item.quantity,
-        price_data: {
-          currency: "usd",
-          unit_amount: item.price * 100, // amount is in cents
-          product_data: {
-            name: item.name,
-          },
-        },
+        price: item.price * 100,
       };
     });
 
@@ -33,6 +27,14 @@ const StripeCheckout = () => {
     // const response = await fetchFromAPI("create-checkout-session", {
     //   body: { line_items, customer_email: email },
     // });
+
+    // price: {
+    //   currency: "usd",
+    //   unitAmount: item.price * 100, // amount is in cents
+    //   productData: {
+    //     name: item.name,
+    //   },
+    // },
 
     // const { sessionId } = response;
     // const { error } = await stripe.redirectToCheckout({
