@@ -4,6 +4,7 @@ import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 import Checkout from "../components/Checkout";
 
+
 const CartScreen = () => {
   // Extract the cart state from the context
   const { cartItems } = useContext(CartContext);
@@ -45,6 +46,7 @@ const CartScreen = () => {
         </div>
 
         <div>{cartItems.length > 0 && <Checkout />}</div>
+        
       </Layout>
     </>
   );

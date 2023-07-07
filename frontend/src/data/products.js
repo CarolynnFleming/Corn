@@ -19,16 +19,19 @@ export const products = [
         twoGallon: 38.5,
         threeGallon: 52.25,
       },
-
+      
       gng: {
-        type: "Grab & Go",
-        gng: 4.5,
+        type: 'Grab & Go',
+        gng:4.5,
       },
+
+
 
       bucket: {
-        type: "Bucket",
+        type: 'Bucket',
         bucket: 19,
-      },
+      }
+
     },
   },
   {
@@ -51,14 +54,15 @@ export const products = [
         twoGallon: 46.5,
         threeGallon: 61.25,
       },
-
       gng: {
         type: "Grab & Go",
         gng: 5.5,
+
       },
       bucket: {
         type: "Bucket",
         bucket: 22.99,
+
       },
     },
   },
@@ -118,7 +122,6 @@ export const products = [
         type: "Grab & Go",
         gng: 5.75,
       },
-
       bucket: {
         type: "Bucket",
         bucket: 23.99,
@@ -185,17 +188,14 @@ export const products = [
         twoGallon: 56.5,
         threeGallon: 72.25,
       },
-
       gng: {
         type: "Grab & Go",
         gng: 6.5,
       },
-
       bucket: {
         type: "Bucket",
         bucket: 26.99,
       },
-
       mixes: {
         type: "Mixed Bag",
         small: 7,
@@ -223,7 +223,6 @@ export const products = [
         type: "Grab & Go",
         gng: 4.95,
       },
-
       bucket: {
         type: "Bucket",
         bucket: 19.99,
@@ -256,9 +255,9 @@ export const products = [
     image: "/public/Sm-bag.jpg",
     countInStock: 1,
     containers: {
-      gng: {
-        type: "Grab & Go",
-        gng: 7.5,
+      gng:{ 
+        type: 'Grab & Go',
+        gng: 7.50,
       },
     },
   },
@@ -269,7 +268,7 @@ export const products = [
     countInStock: 1,
     containers: {
       gng: {
-        type: "Grab & Go",
+        type: 'Grab & Go',
         gng: 7.75,
       },
     },

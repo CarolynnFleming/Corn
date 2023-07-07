@@ -23,6 +23,7 @@ const StripeCheckout = () => {
         },
       };
     });
+    // npm audit fix --force
 
     const responseFromStripeCheckout = CheckoutWithStripe(line_items);
     console.log(
