@@ -1,26 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import OfferingScreen from "./screens/OfferingScreen";
-// import BagScreen from "./screens/BagScreen";
 
-// import MixesScreen from "./screens/MixesScreen";
 import About from "./screens/About";
-// import OnegScreen from "./screens/OnegScreen";
-// import BucketScreen from "./screens/BucketScreen";
-// import ContactScreen from "./screens/ContactScreen";
-// import GrabnGoScreen from "./screens/GrabnGoScreen";
-// import SportstinScreen from "./screens/SportstinScreen";
-// import TwogScreen from "./screens/TwogScreen";
-// import ThreegScreen from "./screens/ThreegScreen";
-
-// import BagDetail from "./detail/BagDetail";
-// import GngDetail from "./detail/GngDetail";
-// import MixesDetail from "./detail/MixesDetail";
-// import BucketDetail from "./detail/BucketDetail";
-// import OnegDetail from "./detail/OnegDetail";
-// import SportstinDetail from "./detail/SportstinDetail";
-// import TwogDetail from "./detail/TwogDetail";
-// import ThreegDetail from "./detail/ThreegDetail";
 import CartScreen from "./screens/CartScreen";
 import Header from "./components/Header";
 import Fail from "./components/Fail";
