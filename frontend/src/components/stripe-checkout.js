@@ -15,7 +15,7 @@ const StripeCheckout = () => {
       const num = item.price * 100;
       return {
         quantity: item.quantity,
-        price: "SKU_123",
+        price: item.id,
       };
     });
 

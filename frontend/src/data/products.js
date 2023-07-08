@@ -7,27 +7,27 @@ export const products = [
     containers: {
       bags: {
         type: "Bag",
-        small: 6.25,
-        med: 8.25,
-        lg: 10.5,
-        xl: 13,
+        small: { price: 6.25, id: "kjghvkjyfctrj" },
+        med: { price: 8.25, id: "" },
+        lg: { price: 10.5, id: "" },
+        xl: { price: 13, id: "" },
       },
       tins: {
         type: "Tin",
-        sport: 28.75,
-        oneGallon: 26.75,
-        twoGallon: 38.5,
-        threeGallon: 52.25,
+        sport: { price: 28.75, id: "" },
+        oneGallon: { price: 26.75, id: "" },
+        twoGallon: { price: 38.5, id: "" },
+        threeGallon: { price: 52.25, id: "" },
       },
 
       gng: {
         type: "Grab & Go",
-        gng: 4.5,
+        gng: { price: 4.5, id: "" },
       },
 
       bucket: {
         type: "Bucket",
-        bucket: 19,
+        bucket: { price: 19, id: "" },
       },
     },
   },
@@ -39,26 +39,26 @@ export const products = [
     containers: {
       bags: {
         type: "Bag",
-        small: 6.75,
-        med: 9.5,
-        lg: 14.5,
-        xl: 16.75,
+        small: { price: 6.75, id: "" },
+        med: { price: 9.5, id: "" },
+        lg: { price: 14.5, id: "" },
+        xl: { price: 16.75, id: "" },
       },
       tins: {
         type: "Tin",
-        sport: 32.75,
-        oneGallon: 30.75,
-        twoGallon: 46.5,
-        threeGallon: 61.25,
+        sport: { price: 32.75, id: "" },
+        oneGallon: { price: 30.75, id: "" },
+        twoGallon: { price: 46.5, id: "" },
+        threeGallon: { price: 61.25, id: "" },
       },
 
       gng: {
         type: "Grab & Go",
-        gng: 5.5,
+        gng: { price: 5.5, id: "" },
       },
       bucket: {
         type: "Bucket",
-        bucket: 22.99,
+        bucket: { price: 22.99, id: "" },
       },
     },
   },
@@ -70,33 +70,33 @@ export const products = [
     containers: {
       bags: {
         type: "Bag",
-        small: 7.25,
-        med: 10,
-        lg: 14.5,
-        xl: 18,
+        small: { price: 7.25, id: "" },
+        med: { price: 10, id: "" },
+        lg: { price: 14.5, id: "" },
+        xl: { price: 18, id: "" },
       },
       tins: {
         type: "Tin",
-        sport: 35.25,
-        oneGallon: 33.75,
-        twoGallon: 54.5,
-        threeGallon: 70.25,
+        sport: { price: 35.25, id: "" },
+        oneGallon: { price: 33.75, id: "" },
+        twoGallon: { price: 54.5, id: "" },
+        threeGallon: { price: 70.25, id: "" },
       },
       gng: {
         type: "Grab & Go",
-        gng: 6.05,
+        gng: { price: 6.05, id: "" },
       },
       bucket: {
         type: "Bucket",
-        bucket: 25.99,
+        bucket: { price: 25.99, id: "" },
       },
 
       mixes: {
         type: "Mixed Bag",
-        small: 6.75,
-        med: 9,
-        lg: 13.25,
-        xl: 15.75,
+        small: { price: 6.75, id: "" },
+        med: { price: 9, id: "" },
+        lg: { price: 13.25, id: "" },
+        xl: { price: 15.75, id: "" },
       },
     },
   },
@@ -108,28 +108,28 @@ export const products = [
     containers: {
       tins: {
         type: "Tin",
-        sport: 33.25,
-        oneGallon: 31.75,
-        twoGallon: 50.5,
-        threeGallon: 65.25,
+        sport: { price: 33.25, id: "" },
+        oneGallon: { price: 31.75, id: "" },
+        twoGallon: { price: 50.5, id: "" },
+        threeGallon: { price: 65.25, id: "" },
       },
 
       gng: {
         type: "Grab & Go",
-        gng: 5.75,
+        gng: { price: 5.75, id: "" },
       },
 
       bucket: {
         type: "Bucket",
-        bucket: 23.99,
+        bucket: { price: 23.99, id: "" },
       },
 
       mixes: {
         type: "Mixed Bag",
-        small: 6.75,
-        med: 9,
-        lg: 13.25,
-        xl: 15.75,
+        small: { price: 6.75, id: "" },
+        med: { price: 9, id: "" },
+        lg: { price: 13.25, id: "" },
+        xl: { price: 15.75, id: "" },
       },
     },
   },
@@ -141,34 +141,34 @@ export const products = [
     containers: {
       bags: {
         type: "Bag",
-        small: 7.75,
-        med: 10.5,
-        lg: 14.5,
-        xl: 18,
+        small: { price: 7.75, id: "" },
+        med: { price: 10.5, id: "" },
+        lg: { price: 14.5, id: "" },
+        xl: { price: 18, id: "" },
       },
       tins: {
         type: "Tin",
-        sport: 39.25,
-        oneGallon: 37.75,
-        twoGallon: 58.5,
-        threeGallon: 74.25,
+        sport: { price: 39.25, id: "" },
+        oneGallon: { price: 37.75, id: "" },
+        twoGallon: { price: 58.5, id: "" },
+        threeGallon: { price: 74.25, id: "" },
       },
 
       gng: {
         type: "Grab & Go",
-        gng: 6.75,
+        gng: { price: 6.75, id: "" },
       },
       bucket: {
         type: "Bucket",
-        bucket: 29.99,
+        bucket: { price: 29.99, id: "" },
       },
 
       mixes: {
         type: "Mixed Bag",
-        small: 7,
-        med: 10,
-        lg: 13.5,
-        xl: 17,
+        small: { price: 7, id: "" },
+        med: { price: 10, id: "" },
+        lg: { price: 13.5, id: "" },
+        xl: { price: 17, id: "" },
       },
     },
   },
@@ -180,28 +180,28 @@ export const products = [
     containers: {
       tins: {
         type: "Tin",
-        sport: 37.25,
-        oneGallon: 35.75,
-        twoGallon: 56.5,
-        threeGallon: 72.25,
+        sport: { price: 37.25, id: "" },
+        oneGallon: { price: 35.75, id: "" },
+        twoGallon: { price: 56.5, id: "" },
+        threeGallon: { price: 72.25, id: "" },
       },
 
       gng: {
         type: "Grab & Go",
-        gng: 6.5,
+        gng: { price: 6.5, id: "" },
       },
 
       bucket: {
         type: "Bucket",
-        bucket: 26.99,
+        bucket: { price: 26.99, id: "" },
       },
 
       mixes: {
         type: "Mixed Bag",
-        small: 7,
-        med: 10,
-        lg: 13.5,
-        xl: 17,
+        small: { price: 7, id: "" },
+        med: { price: 10, id: "" },
+        lg: { price: 13.5, id: "" },
+        xl: { price: 17, id: "" },
       },
     },
   },
@@ -213,28 +213,28 @@ export const products = [
     containers: {
       tins: {
         type: "Tin",
-        sport: 29.75,
-        oneGallon: 35.75,
-        twoGallon: 42.5,
-        threeGallon: 57.75,
+        sport: { price: 29.75, id: "" },
+        oneGallon: { price: 35.75, id: "" },
+        twoGallon: { price: 42.5, id: "" },
+        threeGallon: { price: 57.75, id: "" },
       },
 
       gng: {
         type: "Grab & Go",
-        gng: 4.95,
+        gng: { price: 4.95, id: "" },
       },
 
       bucket: {
         type: "Bucket",
-        bucket: 19.99,
+        bucket: { price: 19.99, id: "" },
       },
 
       mixes: {
         type: "Mixed Bag",
-        small: 6.5,
-        med: 8.75,
-        lg: 12.5,
-        xl: 15,
+        small: { price: 6.5, id: "" },
+        med: { price: 8.75, id: "" },
+        lg: { price: 12.5, id: "" },
+        xl: { price: 15, id: "" },
       },
     },
   },
@@ -246,7 +246,7 @@ export const products = [
     containers: {
       gng: {
         type: "Grab & Go",
-        gng: 7.25,
+        gng: { price: 7.25, id: "" },
       },
     },
   },
@@ -258,7 +258,7 @@ export const products = [
     containers: {
       gng: {
         type: "Grab & Go",
-        gng: 7.5,
+        gng: { price: 7.5, id: "" },
       },
     },
   },
@@ -270,7 +270,7 @@ export const products = [
     containers: {
       gng: {
         type: "Grab & Go",
-        gng: 7.75,
+        gng: { price: 7.75, id: "" },
       },
     },
   },
