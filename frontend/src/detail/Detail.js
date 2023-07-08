@@ -19,6 +19,17 @@ export const Detail = () => {
       return item;
   });
 
+  const createId = () => {
+    switch (container.toLowerCase()) {
+      case "bucket" || "grab & go":
+        return Bag.containers[container][container].id;
+      case "tins":
+        return Bag.containers[container].sport.id;
+      default:
+        return Bag.containers[container].small.id;
+    }
+  };
+
   console.log(
     "BBAG (ITEM) IN DETAIL",
     Bag,
@@ -27,10 +38,7 @@ export const Detail = () => {
   );
 
   const [bagItem, setBagItem] = useState({
-    id:
-      Bag.containers[container].small.id ||
-      Bag.containers[container].sport.id ||
-      Bag.containers[container][container].id,
+    id: createId(),
     image: Bag.image,
     name: ` ${Bag.name} ${
       container === "Bucket" || "Grab & Go"
