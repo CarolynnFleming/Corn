@@ -9,6 +9,8 @@ import { useEffect } from "react";
 export const Detail = () => {
   const { container, product } = useParams();
 
+  console.log("CONTAINER", container);
+
   const { addToCart, increase, cartItems } = useContext(CartContext);
 
   const Bag = products.find((item) => {
@@ -68,8 +70,6 @@ export const Detail = () => {
   useEffect(() => {
     console.log(bagItem);
   }, [bagItem]);
-
-  console.log("CAPITAL B BAG IN DETAIL", Bag);
 
   if (!Bag) {
     return <div> Product Not Found</div>;
