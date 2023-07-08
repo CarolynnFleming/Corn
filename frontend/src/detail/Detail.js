@@ -19,7 +19,7 @@ export const Detail = () => {
       return item;
   });
 
-  console.log("BBAG (ITEM) IN DETAIL", Bag);
+  console.log("BBAG (ITEM) IN DETAIL", Bag, "CONTAINERS", container);
 
   const [bagItem, setBagItem] = useState({
     id:
