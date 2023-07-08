@@ -34,7 +34,7 @@ export const Detail = () => {
 
   const createPrice = () => {
     switch (container.toLowerCase()) {
-      case "bucket" || "grab & go":
+      case "bucket" || "gng":
         return Bag.containers[container][container].price;
       case "tins":
         return Bag.containers[container].sport.price;
