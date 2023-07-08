@@ -19,6 +19,8 @@ export const Detail = () => {
       return item;
   });
 
+  console.log("BBAG (ITEM) IN DETAIL", Bag);
+
   const [bagItem, setBagItem] = useState({
     id:
       Bag.containers[container].small.id ||
@@ -190,7 +192,9 @@ export const Detail = () => {
               <li>
                 <button
                   className="button-85 block"
-                  onClick={() => isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)}
+                  onClick={() =>
+                    isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)
+                  }
                 >
                   {isInCart(Bag) ? "Add More" : "Add To Cart"}
                 </button>
