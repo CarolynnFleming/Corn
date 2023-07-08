@@ -23,7 +23,8 @@ export const Detail = () => {
 
   const createId = () => {
     switch (container.toLowerCase()) {
-      case "bucket" || "gng":
+      case "bucket":
+      case "gng":
         return Bag.containers[container][container].id;
       case "tins":
         return Bag.containers[container].sport.id;
@@ -34,7 +35,8 @@ export const Detail = () => {
 
   const createPrice = () => {
     switch (container.toLowerCase()) {
-      case "bucket" || "gng":
+      case "bucket":
+      case "gng":
         return Bag.containers[container][container].price;
       case "tins":
         return Bag.containers[container].sport.price;
