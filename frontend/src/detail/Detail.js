@@ -30,6 +30,17 @@ export const Detail = () => {
     }
   };
 
+  const createPrice = () => {
+    switch (container.toLowerCase()) {
+      case "bucket" || "grab & go":
+        return Bag.containers[container][container].price;
+      case "tins":
+        return Bag.containers[container].sport.price;
+      default:
+        return Bag.containers[container].small.price;
+    }
+  };
+
   console.log(
     "BBAG (ITEM) IN DETAIL",
     Bag,
@@ -49,10 +60,7 @@ export const Detail = () => {
     } ${Bag.containers[container].type}`,
     container,
     quantity: 1,
-    price:
-      Bag.containers[container].small.price ||
-      Bag.containers[container].sport.price ||
-      Bag.containers[container][container].price,
+    price: createPrice(),
   });
 
   const [selected, setSelected] = useState({});
