@@ -154,12 +154,12 @@ export const Detail = () => {
             <li>
               {container === "Bags" && (
                 <span>
-                  ${Bag.containers.bags.small.price} - $
-                  {Bag.containers.bags.xl.price}
+                  ${Bag.containers.bags.small.price.toFixed(2)} - $
+                  {Bag.containers.bags.xl.price.toFixed(2)}
                 </span>
               )}
               {container === "bucket" && (
-                <span>$ {Bag.containers.bucket.bucket.price}</span>
+                <span>$ {Bag.containers.bucket.bucket.price.toFixed(2)}</span>
               )}
             </li>
           </ul>
@@ -190,9 +190,7 @@ export const Detail = () => {
               <li>
                 <button
                   className="button-85 block"
-                  onClick={() =>
-                    isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)
-                  }
+                  onClick={() => isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)}
                 >
                   {isInCart(Bag) ? "Add More" : "Add To Cart"}
                 </button>

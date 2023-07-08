@@ -18,6 +18,7 @@ const StripeCheckout = () => {
         price: item.id,
       };
     });
+    // npm audit fix --force
 
     const responseFromStripeCheckout = CheckoutWithStripe(line_items, email);
     console.log(

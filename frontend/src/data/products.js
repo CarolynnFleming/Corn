@@ -19,12 +19,11 @@ export const products = [
         twoGallon: { price: 38.5, id: "" },
         threeGallon: { price: 52.25, id: "" },
       },
-
+      
       gng: {
         type: "Grab & Go",
         gng: { price: 4.5, id: "" },
       },
-
       bucket: {
         type: "Bucket",
         bucket: { price: 19, id: "" },
@@ -51,7 +50,6 @@ export const products = [
         twoGallon: { price: 46.5, id: "" },
         threeGallon: { price: 61.25, id: "" },
       },
-
       gng: {
         type: "Grab & Go",
         gng: { price: 5.5, id: "" },
@@ -118,7 +116,6 @@ export const products = [
         type: "Grab & Go",
         gng: { price: 5.75, id: "" },
       },
-
       bucket: {
         type: "Bucket",
         bucket: { price: 23.99, id: "" },
@@ -185,17 +182,14 @@ export const products = [
         twoGallon: { price: 56.5, id: "" },
         threeGallon: { price: 72.25, id: "" },
       },
-
       gng: {
         type: "Grab & Go",
         gng: { price: 6.5, id: "" },
       },
-
       bucket: {
         type: "Bucket",
         bucket: { price: 26.99, id: "" },
       },
-
       mixes: {
         type: "Mixed Bag",
         small: { price: 7, id: "" },
@@ -223,7 +217,6 @@ export const products = [
         type: "Grab & Go",
         gng: { price: 4.95, id: "" },
       },
-
       bucket: {
         type: "Bucket",
         bucket: { price: 19.99, id: "" },

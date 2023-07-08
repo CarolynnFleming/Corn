@@ -1,9 +1,27 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import dImage from '../Computer.jpg';
+import mImage from '../iPhone.jpg';
+
 
 export default function HomeScreen() {
+
+  const useWindowFit = () => {
+    const [windowW, setWindowW] = useState(window.innerWidth);
+
+    useEffect(() => {
+      const handleWindowR = () => {
+      setWindowW(window.innerWidth);
+    };
+    window.addEventListener('resize', handleWindowR);
+    return () => window.removeEventListener('resize', handleWindowR)
+  }, []);
+  return windowW;
+  };
+
+  const imageUrl = useWindowFit() >= 650 ? dImage : mImage;
   return(
-    <div className='row center'style={{background: 'url(/iPhone.jpg)', backgroundSize:'cover'}}>
+    <div className='row center' style={{background: `url(${imageUrl})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
    
         <div className='home-card'>
         
@@ -23,3 +41,4 @@ export default function HomeScreen() {
   
   )
 }
+

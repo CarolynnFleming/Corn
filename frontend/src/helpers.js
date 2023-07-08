@@ -1,4 +1,4 @@
-const API = 'http://localhost:5050';
+const API = 'https://jovial-choux-3e4c2c.netlify.app';
 
 export async function fetchFromAPI(endpoint, choices) {
     const { method, body } = { method: 'POST', body: null, ...choices };
@@ -9,6 +9,8 @@ export async function fetchFromAPI(endpoint, choices) {
         headers: {
             'Content-Type': 'application/json',
         },
+        mode: 'cors',
+      credentials: 'include',
     });
     return res.json();
 }
