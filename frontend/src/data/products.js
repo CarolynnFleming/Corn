@@ -133,7 +133,7 @@ export const products = [
   {
     name: "Nutty Cramel",
     product: "nutty_caramel",
-    image: "/public/Sm-bag.jpg",
+    image: "public/Mix.jpg",
     countInStock: 1,
     containers: {
       bags: {
@@ -246,7 +246,7 @@ export const products = [
   {
     name: "Caramel Pecan",
     product: "caramel_pecan",
-    image: "/public/Sm-bag.jpg",
+    image: "/public/caramel.jpeg",
     countInStock: 1,
     containers: {
       gng: {
@@ -258,7 +258,7 @@ export const products = [
   {
     name: "Caramel Cashew",
     product: "caramel_cashew",
-    image: "/public/Sm-bag.jpg",
+    image: "/public/caramel.jpeg",
     countInStock: 1,
     containers: {
       gng: {
