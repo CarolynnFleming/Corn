@@ -36,12 +36,14 @@ export default function BagScreen() {
                 <span>
                   ${bags.containers.tins.sport.price.toFixed(2)} - $
                   {bags.containers.tins.threeGallon.price.toFixed(2)}
+
                 </span>
               )}
               {container === "italianice" && (
                 <span>
                   ${bags.containers.italianice.small.price.toFixed(2)} - $
                   {bags.containers.italianice.xl.price.toFixed(2)}
+
                 </span>
               )}
             </div>

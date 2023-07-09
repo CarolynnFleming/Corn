@@ -1,22 +1,29 @@
 // import styled from "styled-components";
 import { formatCurrency } from "../price";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import CartContext from "../Context/Cart/CartContext";
-import StripeCheckout from './stripe-checkout';
+import StripeCheckout from "./stripe-checkout";
 
 const Checkout = () => {
-  const { itemCount, total } =
-    useContext(CartContext);
+  const { itemCount, total } = useContext(CartContext);
+  const [stripeServiceFee, setStripeServiceFee] = useState(0);
+
+  useEffect(() => {
+    setStripeServiceFee((total + 0.3) / (1 - 0.029) - total);
+  }, [total]);
 
   return (
     <div className="card-body">
-      <h2>Total Items:</h2>
+      <h2>Items Count:</h2>
       <h2>{itemCount}</h2>
+      <h2>Items Total:</h2>
+      <h2>{total}</h2>
+      <h2>Stripe Service Fee:</h2>
+      <h2>{stripeServiceFee.toFixed(2)}</h2>
       <h1>Total Payment:</h1>
-      <h2>{formatCurrency(total)}</h2>
+      <h2>{formatCurrency(total + stripeServiceFee)}</h2>
       <hr />
-      <StripeCheckout/>
-     
+      <StripeCheckout />
     </div>
   );
 };
