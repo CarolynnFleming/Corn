@@ -22,7 +22,7 @@ export const products = [
 
       gng: {
         type: "Grab & Go",
-        gng: { price: 4.5, id: "price_1NRjKfK4xNPEK2uz0ymAQmVQ" },
+        gng: { price: 4.5, id: "price_1NRoBKK4xNPEK2uzylHPM5KV" },
       },
       bucket: {
         type: "Bucket",
