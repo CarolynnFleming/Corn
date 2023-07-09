@@ -46,5 +46,5 @@ const CheckoutWithStripe = (lineItems, email) => {
 
 export default CheckoutWithStripe;
 
-export default CheckoutWithStripe;
+
 
