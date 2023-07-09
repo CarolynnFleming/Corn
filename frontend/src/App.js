@@ -1,10 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import OfferingScreen from "./screens/OfferingScreen";
+
 import { Link } from "react-router-dom";
 import About from "./screens/About.js";
 import ContactScreen from "./screens/ContactScreen";
 import facebook from './facebook.png'
+
+import About from "./screens/About";
+
 import CartScreen from "./screens/CartScreen";
 import Header from "./components/Header";
 import Fail from "./components/Fail";

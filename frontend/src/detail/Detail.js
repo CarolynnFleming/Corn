@@ -194,7 +194,7 @@ export const Detail = () => {
               {container === "bucket" && (
                 <span>$ {Bag.containers.bucket.bucket.price.toFixed(2)}</span>
               )}
-              
+
             </li>
           </ul>
         </div>

@@ -20,7 +20,7 @@ const Yay = () => {
           <Link to="/">
             <ShopBtn onClick={clearCart}>Continue Shopping</ShopBtn>
           </Link>
-        </CheckoutMsg>
+        </CheckoutMsg>checkout-
 
     </div>
   )
