@@ -12,6 +12,7 @@ const Checkout = () => {
     setStripeServiceFee((total + 0.3) / (1 - 0.029) - total);
   }, [total]);
 
+
   return (
     <div className="card-body">
       <h2>Items Count:</h2>
