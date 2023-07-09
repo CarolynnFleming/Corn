@@ -1,8 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { products } from "../data/products";
 import { Link, useParams } from "react-router-dom";
+
 export default function BagScreen() {
   const { container } = useParams();
+
+  const fee = (price) => {
+    const stripeFee = (price + 0.3) / (1 - 0.029) - price;
+    return stripeFee.toFixed(2);
+  };
+
+  useEffect(() => {
+    const serviceFeeList = products.map((item) => {
+      const itemContainers = Object.keys(item.containers);
+      const containerSizes = itemContainers.map((container) => {
+        const arrayOfSizes = Object.keys(item.containers[container]);
+        if (arrayOfSizes[0] === "type") {
+          arrayOfSizes.shift();
+        }
+        const brainFog = arrayOfSizes.map((size) => {
+          return {
+            name: `${item.name} ${size === container ? "" : size} ${container}`,
+            stripe_fee: fee(item.containers[container][size].price),
+          };
+        });
+        return brainFog.flat();
+      });
+      return containerSizes.flat();
+    });
+    console.log(serviceFeeList.flat());
+  }, []);
 
   const bag = products.filter((item) => {
     if (item?.containers[container.toLowerCase()] !== undefined) return item;

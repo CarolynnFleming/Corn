@@ -88,7 +88,6 @@ export const products = [
         type: "Bucket",
         bucket: { price: 25.99, id: "price_1NRjmyK4xNPEK2uzC5QtYn4A" },
       },
-
       mixes: {
         type: "Mixed Bag",
         small: { price: 6.75, id: "price_1NRjoRK4xNPEK2uzd3WHqOh3" },
@@ -233,7 +232,7 @@ export const products = [
   },
   {
     name: "black walnut",
-    product: "blck_walnut",
+    product: "black_walnut",
     image: "/public/Mix.jpg",
     countInStock: 1,
     containers: {
