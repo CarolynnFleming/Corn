@@ -9,8 +9,6 @@ import { useEffect } from "react";
 export const Detail = () => {
   const { container, product } = useParams();
 
-  console.log("CONTAINER", container);
-
   const { addToCart, increase, cartItems } = useContext(CartContext);
 
   const Bag = products.find((item) => {
@@ -44,13 +42,6 @@ export const Detail = () => {
         return Bag.containers[container].small.price;
     }
   };
-
-  console.log(
-    "BBAG (ITEM) IN DETAIL",
-    Bag,
-    "CONTAINERS",
-    Bag.containers[container][container]
-  );
 
   const [bagItem, setBagItem] = useState({
     id: createId(),
