@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import dImage from '../Computer.jpg';
-import mImage from '../iPhone.jpg';
+// import dImage from '../Computer.jpg';
+// import mImage from '../iPhone.jpg';
 
 
 export default function HomeScreen() {
