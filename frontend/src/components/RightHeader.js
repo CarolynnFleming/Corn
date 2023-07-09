@@ -24,7 +24,7 @@ const RightHeader = ({ open }) => {
       </li>
       <li>
         <Link className="rainbow-4" to="/offeringscreen">
-          Offerings
+          Flavors
         </Link>
       </li>
 

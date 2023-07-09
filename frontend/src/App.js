@@ -1,26 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import OfferingScreen from "./screens/OfferingScreen";
-// import BagScreen from "./screens/BagScreen";
-
-// import MixesScreen from "./screens/MixesScreen";
+import { Link } from "react-router-dom";
 import About from "./screens/About";
-// import OnegScreen from "./screens/OnegScreen";
-// import BucketScreen from "./screens/BucketScreen";
-// import ContactScreen from "./screens/ContactScreen";
-// import GrabnGoScreen from "./screens/GrabnGoScreen";
-// import SportstinScreen from "./screens/SportstinScreen";
-// import TwogScreen from "./screens/TwogScreen";
-// import ThreegScreen from "./screens/ThreegScreen";
 
-// import BagDetail from "./detail/BagDetail";
-// import GngDetail from "./detail/GngDetail";
-// import MixesDetail from "./detail/MixesDetail";
-// import BucketDetail from "./detail/BucketDetail";
-// import OnegDetail from "./detail/OnegDetail";
-// import SportstinDetail from "./detail/SportstinDetail";
-// import TwogDetail from "./detail/TwogDetail";
-// import ThreegDetail from "./detail/ThreegDetail";
+import ContactScreen from "./screens/ContactScreen";
+import facebook from './facebook.png'
 import CartScreen from "./screens/CartScreen";
 import Header from "./components/Header";
 import Fail from "./components/Fail";
@@ -41,6 +26,7 @@ function App() {
               element={<OfferingScreen />}
             ></Route>
             <Route exact path="/cartscreen" element={<CartScreen />}></Route>
+            <Route exact path="/contactscreen" element={<ContactScreen />}></Route>
             <Route exact path="/success" element={<Yay />} />
             <Route exact path="/canceled" element={<Fail />} />
             <Route exact path="/:container" element={<BagScreen />} />
@@ -48,12 +34,11 @@ function App() {
             <Route exact path="/" element={<HomeScreen />} />
           </Routes>
         </main>
-        <footer className="bottom">All rights reserved</footer>
+        <footer className="bottom">All rights reserved
+       <Link to="https://www.facebook.com/Whatspoppin11517?mibextid=LQQJ4d"> <img className="facebook" src={facebook} alt="facebook icon"/></Link></footer>
+        
       </div>
     </BrowserRouter>
   );
 }
 export default App;
-
-// GRAB N GO SEPARATE
-//

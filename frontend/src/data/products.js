@@ -1,6 +1,6 @@
 export const products = [
   {
-    name: "cheese",
+    name: "Cheese",
     product: "cheese",
     image: "/public/Cheddar-popcorn.jpg",
     countInStock: 1,
@@ -31,7 +31,7 @@ export const products = [
     },
   },
   {
-    name: "caramel",
+    name: "Caramel",
     product: "caramel",
     image: "/public/caramel.jpeg",
     countInStock: 1,
@@ -61,7 +61,7 @@ export const products = [
     },
   },
   {
-    name: "cheesy caramel",
+    name: "Cheesy Caramel",
     product: "cheesy_caramel",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -99,7 +99,7 @@ export const products = [
     },
   },
   {
-    name: "cheesy caramel mix",
+    name: "Cheesy Caramel Mix",
     product: "cheesy_caramel_mix",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -131,7 +131,7 @@ export const products = [
     },
   },
   {
-    name: "nutty caramel",
+    name: "Nutty Cramel",
     product: "nutty_caramel",
     image: "/public/Sm-bag.jpg",
     countInStock: 1,
@@ -170,7 +170,7 @@ export const products = [
     },
   },
   {
-    name: "nutty caramel mix",
+    name: "Nutty Caramel Mix",
     product: "nutty_caramel_mix",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -200,7 +200,7 @@ export const products = [
     },
   },
   {
-    name: "poppin mix",
+    name: "Poppin Mix",
     product: "poppin_mix",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -232,7 +232,7 @@ export const products = [
     },
   },
   {
-    name: "black walnut",
+    name: "Black Walnut",
     product: "blck_walnut",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -244,7 +244,7 @@ export const products = [
     },
   },
   {
-    name: "caramel pecan",
+    name: "Caramel Pecan",
     product: "caramel_pecan",
     image: "/public/Sm-bag.jpg",
     countInStock: 1,
@@ -256,7 +256,7 @@ export const products = [
     },
   },
   {
-    name: "caramel cashew",
+    name: "Caramel Cashew",
     product: "caramel_cashew",
     image: "/public/Sm-bag.jpg",
     countInStock: 1,
