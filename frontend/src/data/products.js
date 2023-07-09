@@ -380,10 +380,10 @@ countInStock: 1,
 containers: {
 italianice: {
   type: 'Itallian Ice',
-  small: { price: 2.75, id: ''},
-  med: {price: 3.75, id: ''},
-  lg: {price: 4.75, id: ''},
-  xl: {price: 5.75, id: ''}
+  small: { price: 2.75, id: 'price_1NS28iK4xNPEK2uzcWszq4oH'},
+  med: {price: 3.75, id: 'price_1NS2A8K4xNPEK2uzEQuYd9Cs'},
+  lg: {price: 4.75, id: 'price_1NS2AxK4xNPEK2uzQtgfodzc'},
+  xl: {price: 5.75, id: 'price_1NS2CWK4xNPEK2uzz88HVeLp'}
 }
 }  
 },
@@ -395,10 +395,10 @@ countInStock: 1,
 containers: {
 italianice: {
   type: 'Itallian Ice',
-  small: { price: 2.75, id: ''},
-  med: {price: 3.75, id: ''},
-  lg: {price: 4.75, id: ''},
-  xl: {price: 5.75, id: ''}
+  small: { price: 2.75, id: 'price_1NS2DPK4xNPEK2uz01qwjzdN'},
+  med: {price: 3.75, id: 'price_1NS2FWK4xNPEK2uzR4ZUrXUG'},
+  lg: {price: 4.75, id: 'price_1NS2GbK4xNPEK2uzxdGSVONC'},
+  xl: {price: 5.75, id: 'price_1NS2HbK4xNPEK2uzI31v33QK'}
 }
 }  
 },
@@ -410,10 +410,10 @@ countInStock: 1,
 containers: {
 italianIce: {
   type: 'Itallian Ice',
-  small: { price: 2.75, id: ''},
-    med: {price: 3.75, id: ''},
-    lg: {price: 4.75, id: ''},
-    xl: {price: 5.75, id: ''}
+  small: { price: 2.75, id: 'price_1NS2IiK4xNPEK2uzQF8hgn4m'},
+    med: {price: 3.75, id: 'price_1NS2JZK4xNPEK2uzUyuMwB2p'},
+    lg: {price: 4.75, id: 'price_1NS2KRK4xNPEK2uzphjypaPA'},
+    xl: {price: 5.75, id: 'price_1NS2LhK4xNPEK2uz0USlaFkK'}
 }
 }  
 },
@@ -425,10 +425,10 @@ countInStock: 1,
 containers: {
 italianIce: {
   type: 'Itallian Ice',
-  small: { price: 2.75, id: ''},
-    med: {price: 3.75, id: ''},
-    lg: {price: 4.75, id: ''},
-    xl: {price: 5.75, id: ''}
+  small: { price: 2.75, id: 'price_1NS2MjK4xNPEK2uzle0uW8gz'},
+    med: {price: 3.75, id: 'price_1NS2NeK4xNPEK2uzNF3IITu6'},
+    lg: {price: 4.75, id: 'price_1NS2OQK4xNPEK2uzrDAYepM4'},
+    xl: {price: 5.75, id: 'price_1NS2PHK4xNPEK2uzx5h29hqI'}
 }
 }  
 },
@@ -439,10 +439,10 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianIce: {
-  small: { price: 2.75, id: ''},
-  med: {price: 3.75, id: ''},
-  lg: {price: 4.75, id: ''},
-  xl: {price: 5.75, id: ''}
+  small: { price: 2.75, id: 'price_1NS2Q2K4xNPEK2uzmsXfalnu'},
+  med: {price: 3.75, id: 'price_1NS2QnK4xNPEK2uzbg2cZb70'},
+  lg: {price: 4.75, id: 'price_1NS2RWK4xNPEK2uzfDPDIrI0'},
+  xl: {price: 5.75, id: 'price_1NS2SDK4xNPEK2uzIAGYjVWZ'}
 }
 }  
 }

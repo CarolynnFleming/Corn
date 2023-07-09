@@ -40,8 +40,8 @@ export default function BagScreen() {
               )}
               {container === "italianice" && (
                 <span>
-                  ${bags.containers.italianice.small.toFixed(2)} - $
-                  {bags.containers.italianice.xl.toFixed(2)}
+                  ${bags.containers.italianice.small.price.toFixed(2)} - $
+                  {bags.containers.italianice.xl.price.toFixed(2)}
                 </span>
               )}
             </div>
