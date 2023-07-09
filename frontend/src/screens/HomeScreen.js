@@ -6,22 +6,22 @@ import mImage from '../iPhone.jpg';
 
 export default function HomeScreen() {
 
-  const useWindowFit = () => {
-    const [windowW, setWindowW] = useState(window.innerWidth);
+  // const useWindowFit = () => {
+  //   const [windowW, setWindowW] = useState(window.innerWidth);
 
-    useEffect(() => {
-      const handleWindowR = () => {
-      setWindowW(window.innerWidth);
-    };
-    window.addEventListener('resize', handleWindowR);
-    return () => window.removeEventListener('resize', handleWindowR)
-  }, []);
-  return windowW;
-  };
+  //   useEffect(() => {
+  //     const handleWindowR = () => {
+  //     setWindowW(window.innerWidth);
+  //   };
+  //   window.addEventListener('resize', handleWindowR);
+  //   return () => window.removeEventListener('resize', handleWindowR)
+  // }, []);
+  // return windowW;
+  // };
 
-  const imageUrl = useWindowFit() >= 650 ? dImage : mImage;
+  // const imageUrl = useWindowFit() >= 650 ? dImage : mImage;
   return(
-    <div className='row center' style={{background: `url(${imageUrl})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
+  //   <div className='row center' style={{background: `url(${imageUrl})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}>
    
         <div className='home-card'>
         
@@ -37,7 +37,7 @@ export default function HomeScreen() {
         </div>
        
         </div>
-    </div>
+    // </div>
   
   )
 }

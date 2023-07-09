@@ -1,6 +1,6 @@
 export const products = [
   {
-    name: "cheese",
+    name: "Cheese",
     product: "cheese",
     image: "/public/Cheddar-popcorn.jpg",
     countInStock: 1,
@@ -31,7 +31,7 @@ export const products = [
     },
   },
   {
-    name: "caramel",
+    name: "Caramel",
     product: "caramel",
     image: "/public/caramel.jpeg",
     countInStock: 1,
@@ -61,7 +61,7 @@ export const products = [
     },
   },
   {
-    name: "cheesy caramel",
+    name: "Cheesy Caramel",
     product: "cheesy_caramel",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -99,7 +99,7 @@ export const products = [
     },
   },
   {
-    name: "cheesy caramel mix",
+    name: "Cheesy Caramel Mix",
     product: "cheesy_caramel_mix",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -131,9 +131,9 @@ export const products = [
     },
   },
   {
-    name: "nutty caramel",
+    name: "Nutty Cramel",
     product: "nutty_caramel",
-    image: "/public/Sm-bag.jpg",
+    image: "public/Mix.jpg",
     countInStock: 1,
     containers: {
       bags: {
@@ -170,7 +170,7 @@ export const products = [
     },
   },
   {
-    name: "nutty caramel mix",
+    name: "Nutty Caramel Mix",
     product: "nutty_caramel_mix",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -200,7 +200,7 @@ export const products = [
     },
   },
   {
-    name: "poppin mix",
+    name: "Poppin Mix",
     product: "poppin_mix",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -232,7 +232,7 @@ export const products = [
     },
   },
   {
-    name: "black walnut",
+    name: "Black Walnut",
     product: "blck_walnut",
     image: "/public/Mix.jpg",
     countInStock: 1,
@@ -244,9 +244,9 @@ export const products = [
     },
   },
   {
-    name: "caramel pecan",
+    name: "Caramel Pecan",
     product: "caramel_pecan",
-    image: "/public/Sm-bag.jpg",
+    image: "/public/caramel.jpeg",
     countInStock: 1,
     containers: {
       gng: {
@@ -256,9 +256,9 @@ export const products = [
     },
   },
   {
-    name: "caramel cashew",
+    name: "Caramel Cashew",
     product: "caramel_cashew",
-    image: "/public/Sm-bag.jpg",
+    image: "/public/caramel.jpeg",
     countInStock: 1,
     containers: {
       gng: {
@@ -267,4 +267,183 @@ export const products = [
       },
     },
   },
+  {
+    name: 'Lemon',
+  product: 'lemon',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+  italianice: {
+    type: 'Itallian Ice',
+    small: { price: 2.75, id: 'price_1NRpzSK4xNPEK2uz2i5Z04dG'},
+    med: {price: 3.75, id: 'price_1NRq0UK4xNPEK2uz9IpyKrHr'},
+    lg: {price: 4.75, id: 'price_1NRq1CK4xNPEK2uzjGL8zAaC'},
+    xl: {price: 5.75, id: 'price_1NRq22K4xNPEK2uzbjqAIOns'}
+  }
+}  
+},
+{
+  name: 'Lime',
+product: 'lime',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRq2eK4xNPEK2uz6c1XMaYO'},
+    med: {price: 3.75, id: 'price_1NRq3QK4xNPEK2uz2qA4cznA'},
+    lg: {price: 4.75, id: 'price_1NRq3zK4xNPEK2uz1rUWg7bX'},
+    xl: {price: 5.75, id: 'price_1NRq4kK4xNPEK2uzMZSDxalZ'}
+}
+}  
+},
+{
+  name: 'Grape',
+product: 'grape',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRq5kK4xNPEK2uzkvyNLCic'},
+  med: {price: 3.75, id: 'price_1NRq6wK4xNPEK2uz7CkVkP8b'},
+  lg: {price: 4.75, id: 'price_1NRq7aK4xNPEK2uzpunyKd9E'},
+  xl: {price: 5.75, id: 'price_1NRq8HK4xNPEK2uz97e7fSIm'}
+}
+}  
+},
+{
+  name: 'Mango',
+product: 'mango',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRq9HK4xNPEK2uzlkTlblsj'},
+    med: {price: 3.75, id: 'price_1NRqA9K4xNPEK2uzm1MEDh3I'},
+    lg: {price: 4.75, id: 'price_1NRqAuK4xNPEK2uz5rp18aXF'},
+    xl: {price: 5.75, id: 'price_1NRqBUK4xNPEK2uzHHyqKB7w'}
+}
+}  
+},
+{
+  name: 'Cherry',
+product: 'cherry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRqCDK4xNPEK2uztKsYIJqs'},
+    med: {price: 3.75, id: 'price_1NRqCtK4xNPEK2uzl8FbFtX9'},
+    lg: {price: 4.75, id: 'price_1NRqDTK4xNPEK2uzjkLCpjrB'},
+    xl: {price: 5.75, id: 'price_1NRqE7K4xNPEK2uzFZG4Ee8F'}
+}
+}  
+},
+{
+  name: 'Orange',
+product: 'orange',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRqEnK4xNPEK2uzSY1tNUIU'},
+    med: {price: 3.75, id: 'price_1NRqFOK4xNPEK2uznMULHXKS'},
+    lg: {price: 4.75, id: 'price_1NRqGHK4xNPEK2uzCa4W5LOJ'},
+    xl: {price: 5.75, id: 'price_1NRqHIK4xNPEK2uzKLr23JeJ'}
+}
+}  
+},
+{
+  name: 'Strawberry',
+product: 'strawberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRqIpK4xNPEK2uzdgH0pvXa'},
+    med: {price: 3.75, id: 'price_1NRqJeK4xNPEK2uzbQbwnzzT'},
+    lg: {price: 4.75, id: 'price_1NRqL1K4xNPEK2uzotqRbZax'},
+    xl: {price: 5.75, id: 'price_1NRqM2K4xNPEK2uz4z7AtpfY'}
+}
+}  
+},
+{
+  name: 'Watermelon',
+product: 'watermelon',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NS28iK4xNPEK2uzcWszq4oH'},
+  med: {price: 3.75, id: 'price_1NS2A8K4xNPEK2uzEQuYd9Cs'},
+  lg: {price: 4.75, id: 'price_1NS2AxK4xNPEK2uzQtgfodzc'},
+  xl: {price: 5.75, id: 'price_1NS2CWK4xNPEK2uzz88HVeLp'}
+}
+}  
+},
+{
+  name: 'Blue Rasberry',
+product: 'blue_rasberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NS2DPK4xNPEK2uz01qwjzdN'},
+  med: {price: 3.75, id: 'price_1NS2FWK4xNPEK2uzR4ZUrXUG'},
+  lg: {price: 4.75, id: 'price_1NS2GbK4xNPEK2uzxdGSVONC'},
+  xl: {price: 5.75, id: 'price_1NS2HbK4xNPEK2uzI31v33QK'}
+}
+}  
+},
+{
+  name: 'Kiwi Rasberry',
+product: 'kiwi_rasberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianIce: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NS2IiK4xNPEK2uzQF8hgn4m'},
+    med: {price: 3.75, id: 'price_1NS2JZK4xNPEK2uzUyuMwB2p'},
+    lg: {price: 4.75, id: 'price_1NS2KRK4xNPEK2uzphjypaPA'},
+    xl: {price: 5.75, id: 'price_1NS2LhK4xNPEK2uz0USlaFkK'}
+}
+}  
+},
+{
+  name: 'Berry Rasberry',
+product: 'berry_rasberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianIce: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NS2MjK4xNPEK2uzle0uW8gz'},
+    med: {price: 3.75, id: 'price_1NS2NeK4xNPEK2uzNF3IITu6'},
+    lg: {price: 4.75, id: 'price_1NS2OQK4xNPEK2uzrDAYepM4'},
+    xl: {price: 5.75, id: 'price_1NS2PHK4xNPEK2uzx5h29hqI'}
+}
+}  
+},
+{
+  name: 'Sour Apple',
+product: 'sour_apple',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianIce: {
+  small: { price: 2.75, id: 'price_1NS2Q2K4xNPEK2uzmsXfalnu'},
+  med: {price: 3.75, id: 'price_1NS2QnK4xNPEK2uzbg2cZb70'},
+  lg: {price: 4.75, id: 'price_1NS2RWK4xNPEK2uzfDPDIrI0'},
+  xl: {price: 5.75, id: 'price_1NS2SDK4xNPEK2uzIAGYjVWZ'}
+}
+}  
+}
 ];

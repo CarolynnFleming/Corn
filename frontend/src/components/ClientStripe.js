@@ -1,4 +1,7 @@
+
+
 // import { useState } from "react";
+
 import { loadStripe } from "@stripe/stripe-js";
 
 let stripePromise;
@@ -42,3 +45,6 @@ const CheckoutWithStripe = (lineItems, email) => {
 };
 
 export default CheckoutWithStripe;
+
+export default CheckoutWithStripe;
+
