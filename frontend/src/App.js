@@ -3,9 +3,12 @@ import HomeScreen from "./screens/HomeScreen";
 import OfferingScreen from "./screens/OfferingScreen";
 
 import { Link } from "react-router-dom";
-import About from "./screens/About.js";
+import About from "./screens/About";
+
+
 import ContactScreen from "./screens/ContactScreen";
 import facebook from './facebook.png'
+
 
 
 import CartScreen from "./screens/CartScreen";
