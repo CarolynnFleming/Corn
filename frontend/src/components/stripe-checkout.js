@@ -1,24 +1,24 @@
 import React, { useContext, useState } from "react";
-import { useStripe } from "@stripe/react-stripe-js";
+// import { useStripe } from "@stripe/react-stripe-js";
 import CartContext from "../Context/Cart/CartContext";
-import { fetchFromAPI } from "../helpers";
+// import { fetchFromAPI } from "../helpers";
 import CheckoutWithStripe from "./ClientStripe";
 
-const StripeCheckout = () => {
+const StripeCheckout = (fee) => {
   const [email, setEmail] = useState("");
   const { cartItems, clearCart } = useContext(CartContext);
-  const stripe = useStripe();
+  // const stripe = useStripe();
 
   const handleGuestCheckout = async (e) => {
     e.preventDefault();
     const line_items = cartItems.map((item) => {
-      const num = item.price * 100;
+      // const num =
+      //   item.price * 100 + (item.price + 0.3) / (1 - 0.029) - item.price;
       return {
         quantity: item.quantity,
-        price: item.id,
+        price: item.id + (item.price + 0.3) / (1 - 0.029) - item.price,
       };
     });
-    // npm audit fix --force
 
     const responseFromStripeCheckout = CheckoutWithStripe(line_items, email);
     console.log(
