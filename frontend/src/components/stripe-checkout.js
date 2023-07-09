@@ -16,7 +16,7 @@ const StripeCheckout = (fee) => {
       //   item.price * 100 + (item.price + 0.3) / (1 - 0.029) - item.price;
       return {
         quantity: item.quantity,
-        price: item.id + (item.price + 0.3) / (1 - 0.029) - item.price,
+        price: item.id,
       };
     });
 
