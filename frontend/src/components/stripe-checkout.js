@@ -1,63 +1,53 @@
-import React, { useContext, useState } from 'react';
-import { useStripe } from '@stripe/react-stripe-js';
-import CartContext from '../Context/Cart/CartContext'
-import { fetchFromAPI } from '../helpers';
+import React, { useContext, useState } from "react";
+// import { useStripe } from "@stripe/react-stripe-js";
+import CartContext from "../Context/Cart/CartContext";
+// import { fetchFromAPI } from "../helpers";
+import CheckoutWithStripe from "./ClientStripe";
 
-
-const StripeCheckout = () => {
-  const [email, setEmail] = useState('');
+const StripeCheckout = (fee) => {
+  const [email, setEmail] = useState("");
   const { cartItems, clearCart } = useContext(CartContext);
-  const stripe = useStripe();
+  // const stripe = useStripe();
+
   const handleGuestCheckout = async (e) => {
     e.preventDefault();
-    const line_items = cartItems.map(item => {
+    const line_items = cartItems.map((item) => {
+      // const num =
+      //   item.price * 100 + (item.price + 0.3) / (1 - 0.029) - item.price;
       return {
         quantity: item.quantity,
-        price_data: {
-          currency: 'usd',
-          unit_amount: item.price * 100, // amount is in cents
-          product_data: {
-            name: item.name,
-        
-          }
-        }
-      }
-    });
-    // npm audit fix --force
-
-    const response = await fetchFromAPI('create-checkout-session', {
-      body: { line_items, customer_email: email },
+        price: item.id,
+      };
     });
 
-    const { sessionId } = response;
-    const { error } = await stripe.redirectToCheckout({
-      sessionId
-    });
-    
-    if (error) {
-      console.log(error);
-    }
-  }
+    const responseFromStripeCheckout = CheckoutWithStripe(line_items, email);
+    console.log(
+      "RESPONSE FROM CLIENT SIDE STRIPE CHECKOUT",
+      responseFromStripeCheckout
+    );
+  };
 
   return (
     <form onSubmit={handleGuestCheckout}>
-      <div className='raw'>
-        <input 
-          type='email'
-          onChange={e => setEmail(e.target.value)}
-          placeholder='Email'
+      <div className="raw">
+        <input
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Email"
           value={email}
-          className='nomad-input'
+          className="nomad-input"
         />
       </div>
-      <div className='submit-btn'>
-        <button type='submit' className='button-85'>
+      <div className="submit-btn">
+        <button type="submit" className="button-85">
           Checkout
         </button>
-        <button className='button-85' onClick={clearCart}>CLEAR</button>
+        <button className="button-85" onClick={clearCart}>
+          CLEAR
+        </button>
       </div>
     </form>
   );
-}
+};
 
 export default StripeCheckout;
