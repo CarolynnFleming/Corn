@@ -25,27 +25,6 @@ const StripeCheckout = () => {
       "RESPONSE FROM CLIENT SIDE STRIPE CHECKOUT",
       responseFromStripeCheckout
     );
-
-    // const response = await fetchFromAPI("create-checkout-session", {
-    //   body: { line_items, customer_email: email },
-    // });
-
-    // price: {
-    //   currency: "usd",
-    //   unitAmount: item.price * 100, // amount is in cents
-    //   productData: {
-    //     name: item.name,
-    //   },
-    // },
-
-    // const { sessionId } = response;
-    // const { error } = await stripe.redirectToCheckout({
-    //   sessionId,
-    // });
-
-    // if (error) {
-    //   console.log(error);
-    // }
   };
 
   return (
