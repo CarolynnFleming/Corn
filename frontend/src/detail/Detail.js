@@ -147,6 +147,23 @@ export const Detail = () => {
             </option>
           </select>
         );
+        case "italianIce":
+          return(
+            <select value={selected} onChange={(e) => handleChange(e)}>
+            <option value="small">
+              Small - ${Bag.containers.italianIce.small.price.toFixed(2)}
+            </option>
+            <option value="med">
+              Medium - ${Bag.containers.italianIce.med.price.toFixed(2)}
+            </option>
+            <option value="lg">
+              Large - ${Bag.containers.italianIce.lg.price.toFixed(2)}
+            </option>
+            <option value="xl">
+              X-Large - ${Bag.containers.italianIce.xl.price.toFixed(2)}
+            </option>
+          </select>
+          )
 
       default:
         break;

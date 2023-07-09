@@ -267,4 +267,183 @@ export const products = [
       },
     },
   },
+  {
+    name: 'Lemon',
+  product: 'lemon',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+  italianice: {
+    type: 'Itallian Ice',
+    small: { price: 2.75, id: 'price_1NRpzSK4xNPEK2uz2i5Z04dG'},
+    med: {price: 3.75, id: 'price_1NRq0UK4xNPEK2uz9IpyKrHr'},
+    lg: {price: 4.75, id: 'price_1NRq1CK4xNPEK2uzjGL8zAaC'},
+    xl: {price: 5.75, id: 'price_1NRq22K4xNPEK2uzbjqAIOns'}
+  }
+}  
+},
+{
+  name: 'Lime',
+product: 'lime',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRq2eK4xNPEK2uz6c1XMaYO'},
+    med: {price: 3.75, id: 'price_1NRq3QK4xNPEK2uz2qA4cznA'},
+    lg: {price: 4.75, id: 'price_1NRq3zK4xNPEK2uz1rUWg7bX'},
+    xl: {price: 5.75, id: 'price_1NRq4kK4xNPEK2uzMZSDxalZ'}
+}
+}  
+},
+{
+  name: 'Grape',
+product: 'grape',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRq5kK4xNPEK2uzkvyNLCic'},
+  med: {price: 3.75, id: 'price_1NRq6wK4xNPEK2uz7CkVkP8b'},
+  lg: {price: 4.75, id: 'price_1NRq7aK4xNPEK2uzpunyKd9E'},
+  xl: {price: 5.75, id: 'price_1NRq8HK4xNPEK2uz97e7fSIm'}
+}
+}  
+},
+{
+  name: 'Mango',
+product: 'mango',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRq9HK4xNPEK2uzlkTlblsj'},
+    med: {price: 3.75, id: 'price_1NRqA9K4xNPEK2uzm1MEDh3I'},
+    lg: {price: 4.75, id: 'price_1NRqAuK4xNPEK2uz5rp18aXF'},
+    xl: {price: 5.75, id: 'price_1NRqBUK4xNPEK2uzHHyqKB7w'}
+}
+}  
+},
+{
+  name: 'Cherry',
+product: 'cherry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRqCDK4xNPEK2uztKsYIJqs'},
+    med: {price: 3.75, id: 'price_1NRqCtK4xNPEK2uzl8FbFtX9'},
+    lg: {price: 4.75, id: 'price_1NRqDTK4xNPEK2uzjkLCpjrB'},
+    xl: {price: 5.75, id: 'price_1NRqE7K4xNPEK2uzFZG4Ee8F'}
+}
+}  
+},
+{
+  name: 'Orange',
+product: 'orange',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRqEnK4xNPEK2uzSY1tNUIU'},
+    med: {price: 3.75, id: 'price_1NRqFOK4xNPEK2uznMULHXKS'},
+    lg: {price: 4.75, id: 'price_1NRqGHK4xNPEK2uzCa4W5LOJ'},
+    xl: {price: 5.75, id: 'price_1NRqHIK4xNPEK2uzKLr23JeJ'}
+}
+}  
+},
+{
+  name: 'Strawberry',
+product: 'strawberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: 'price_1NRqIpK4xNPEK2uzdgH0pvXa'},
+    med: {price: 3.75, id: 'price_1NRqJeK4xNPEK2uzbQbwnzzT'},
+    lg: {price: 4.75, id: 'price_1NRqL1K4xNPEK2uzotqRbZax'},
+    xl: {price: 5.75, id: 'price_1NRqM2K4xNPEK2uz4z7AtpfY'}
+}
+}  
+},
+{
+  name: 'Watermelon',
+product: 'watermelon',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: ''},
+  med: {price: 3.75, id: ''},
+  lg: {price: 4.75, id: ''},
+  xl: {price: 5.75, id: ''}
+}
+}  
+},
+{
+  name: 'Blue Rasberry',
+product: 'blue_rasberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianice: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: ''},
+  med: {price: 3.75, id: ''},
+  lg: {price: 4.75, id: ''},
+  xl: {price: 5.75, id: ''}
+}
+}  
+},
+{
+  name: 'Kiwi Rasberry',
+product: 'kiwi_rasberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianIce: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: ''},
+    med: {price: 3.75, id: ''},
+    lg: {price: 4.75, id: ''},
+    xl: {price: 5.75, id: ''}
+}
+}  
+},
+{
+  name: 'Berry Rasberry',
+product: 'berry_rasberry',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianIce: {
+  type: 'Itallian Ice',
+  small: { price: 2.75, id: ''},
+    med: {price: 3.75, id: ''},
+    lg: {price: 4.75, id: ''},
+    xl: {price: 5.75, id: ''}
+}
+}  
+},
+{
+  name: 'Sour Apple',
+product: 'sour_apple',
+image: '/public/iice.jpeg',
+countInStock: 1,
+containers: {
+italianIce: {
+  small: { price: 2.75, id: ''},
+  med: {price: 3.75, id: ''},
+  lg: {price: 4.75, id: ''},
+  xl: {price: 5.75, id: ''}
+}
+}  
+}
 ];

@@ -38,6 +38,12 @@ export default function BagScreen() {
                   {bags.containers.tins.threeGallon.price.toFixed(2)}
                 </span>
               )}
+              {container === "italianice" && (
+                <span>
+                  ${bags.containers.italianice.small.toFixed(2)} - $
+                  {bags.containers.italianice.xl.toFixed(2)}
+                </span>
+              )}
             </div>
           </div>
         </div>
