@@ -3,20 +3,21 @@ import { loadStripe } from "@stripe/stripe-js";
 
 let stripePromise;
 
-const getStripe = () => {
+const getStripe = async () => {
   if (!stripePromise) {
-    stripePromise = loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
+    stripePromise = await loadStripe(process.env.REACT_APP_PUBLISHABLE_KEY);
   }
-
+  console.log("RESPONSE OBJECT FROM STRIPE INSTANCE", stripePromise);
   return stripePromise;
 };
 
-const CheckoutWithStripe = ({ line_Items, email }) => {
+const CheckoutWithStripe = (lineItems, email) => {
+  console.log("LINE ITEMS IN CHECKOUT WITH STRIPE", lineItems);
   //   const [stripeError, setStripeError] = useState(null);
   //   const [isLoading, setLoading] = useState(false);
 
   const checkoutOptions = {
-    lineItems: line_Items,
+    lineItems,
     mode: "payment",
     successUrl: `${window.location.origin}/success`,
     cancelUrl: `${window.location.origin}/cancel`,

@@ -19,8 +19,32 @@ export const Detail = () => {
       return item;
   });
 
+  const createId = () => {
+    switch (container.toLowerCase()) {
+      case "bucket":
+      case "gng":
+        return Bag.containers[container][container].id;
+      case "tins":
+        return Bag.containers[container].sport.id;
+      default:
+        return Bag.containers[container].small.id;
+    }
+  };
+
+  const createPrice = () => {
+    switch (container.toLowerCase()) {
+      case "bucket":
+      case "gng":
+        return Bag.containers[container][container].price;
+      case "tins":
+        return Bag.containers[container].sport.price;
+      default:
+        return Bag.containers[container].small.price;
+    }
+  };
+
   const [bagItem, setBagItem] = useState({
-    id: cartItems.length + 1,
+    id: createId(),
     image: Bag.image,
     name: ` ${Bag.name} ${
       container === "Bucket" || "Grab & Go"
@@ -31,10 +55,7 @@ export const Detail = () => {
     } ${Bag.containers[container].type}`,
     container,
     quantity: 1,
-    price:
-      Bag.containers[container].small ||
-      Bag.containers[container].sport ||
-      Bag.containers[container][container],
+    price: createPrice(),
   });
 
   const [selected, setSelected] = useState({});
@@ -42,8 +63,6 @@ export const Detail = () => {
   useEffect(() => {
     console.log(bagItem);
   }, [bagItem]);
-
-  console.log("CAPITAL B BAG IN DETAIL", Bag);
 
   if (!Bag) {
     return <div> Product Not Found</div>;
@@ -56,21 +75,21 @@ export const Detail = () => {
     setSelected(e.target.value);
 
     setBagItem({
-      id: cartItems.length + 1,
+      id: Bag.containers[container][e.target.value].id,
       image: Bag.image,
       name: ` ${Bag.name} ${e.target.value} ${Bag.containers[container].type}`,
       container,
       quantity: 1,
-      price: Bag.containers[container][e.target.value],
+      price: Bag.containers[container][e.target.value].price,
     });
   };
 
   const Dropdown = () => {
     switch (container) {
       case "gng":
-        return <span>$ {Bag.containers.gng.gng.toFixed(2)}</span>;
+        return <span>$ {Bag.containers.gng.gng.price.toFixed(2)}</span>;
       case "bucket":
-        return <span>$ {Bag.containers.bucket.bucket.toFixed(2)}</span>;
+        return <span>$ {Bag.containers.bucket.bucket.price.toFixed(2)}</span>;
 
       case "bags":
         return (
@@ -81,16 +100,16 @@ export const Detail = () => {
             value={selected}
           >
             <option key={1} value="small">
-              Small - ${Bag.containers.bags.small.toFixed(2)}
+              Small - ${Bag.containers.bags.small.price.toFixed(2)}
             </option>
             <option key={2} value="med">
-              Medium - ${Bag.containers.bags.med.toFixed(2)}
+              Medium - ${Bag.containers.bags.med.price.toFixed(2)}
             </option>
             <option key={3} value="lg">
-              Large - ${Bag.containers.bags.lg.toFixed(2)}
+              Large - ${Bag.containers.bags.lg.price.toFixed(2)}
             </option>
             <option key={4} value="xl">
-              X-Large - ${Bag.containers.bags.xl.toFixed(2)}
+              X-Large - ${Bag.containers.bags.xl.price.toFixed(2)}
             </option>
           </select>
         );
@@ -98,16 +117,16 @@ export const Detail = () => {
         return (
           <select value={selected} onChange={(e) => handleChange(e)}>
             <option value="small">
-              Small - ${Bag.containers.mixes.small.toFixed(2)}
+              Small - ${Bag.containers.mixes.small.price.toFixed(2)}
             </option>
             <option value="med">
-              Medium - ${Bag.containers.mixes.med.toFixed(2)}
+              Medium - ${Bag.containers.mixes.med.price.toFixed(2)}
             </option>
             <option value="lg">
-              Large - ${Bag.containers.mixes.lg.toFixed(2)}
+              Large - ${Bag.containers.mixes.lg.price.toFixed(2)}
             </option>
             <option value="xl">
-              X-Large - ${Bag.containers.mixes.xl.toFixed(2)}
+              X-Large - ${Bag.containers.mixes.xl.price.toFixed(2)}
             </option>
           </select>
         );
@@ -115,16 +134,16 @@ export const Detail = () => {
         return (
           <select value={selected} onChange={(e) => handleChange(e)}>
             <option value="sport">
-              Sport Tin - ${Bag.containers.tins.sport.toFixed(2)}
+              Sport Tin - ${Bag.containers.tins.sport.price.toFixed(2)}
             </option>
             <option value="oneGallon">
-              One Gallon- ${Bag.containers.tins.oneGallon.toFixed(2)}
+              One Gallon- ${Bag.containers.tins.oneGallon.price.toFixed(2)}
             </option>
             <option value="twoGallon">
-              Two Gallon - ${Bag.containers.tins.twoGallon.toFixed(2)}
+              Two Gallon - ${Bag.containers.tins.twoGallon.price.toFixed(2)}
             </option>
             <option value="threeGallon">
-              Three Gallon - ${Bag.containers.tins.threeGallon.toFixed(2)}
+              Three Gallon - ${Bag.containers.tins.threeGallon.price.toFixed(2)}
             </option>
           </select>
         );
@@ -151,10 +170,13 @@ export const Detail = () => {
             <li>
               {container === "Bags" && (
                 <span>
-                  ${Bag.containers.bags.small.toFixed(2)} - ${Bag.containers.bags.xl.toFixed(2)}
+                  ${Bag.containers.bags.small.price.toFixed(2)} - $
+                  {Bag.containers.bags.xl.price.toFixed(2)}
                 </span>
               )}
-              {container === "bucket" && <span>$ {Bag.containers.bucket.bucket.toFixed(2)}</span>}
+              {container === "bucket" && (
+                <span>$ {Bag.containers.bucket.bucket.price.toFixed(2)}</span>
+              )}
             </li>
           </ul>
         </div>
@@ -184,7 +206,9 @@ export const Detail = () => {
               <li>
                 <button
                   className="button-85 block"
-                  onClick={() => isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)}
+                  onClick={() =>
+                    isInCart(Bag) ? increase(bagItem) : addToCart(bagItem)
+                  }
                 >
                   {isInCart(Bag) ? "Add More" : "Add To Cart"}
                 </button>
