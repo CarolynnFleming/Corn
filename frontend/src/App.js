@@ -7,7 +7,6 @@ import About from "./screens/About.js";
 import ContactScreen from "./screens/ContactScreen";
 import facebook from './facebook.png'
 
-import About from "./screens/About";
 
 import CartScreen from "./screens/CartScreen";
 import Header from "./components/Header";
