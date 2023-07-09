@@ -19,7 +19,7 @@ const Checkout = () => {
       <h2>Items Total:</h2>
       <h2>{total}</h2>
       <h2>Stripe Service Fee:</h2>
-      <h2>{stripeServiceFee}</h2>
+      <h2>{stripeServiceFee.toFixed(2)}</h2>
       <h1>Total Payment:</h1>
       <h2>{formatCurrency(total + stripeServiceFee)}</h2>
       <hr />
