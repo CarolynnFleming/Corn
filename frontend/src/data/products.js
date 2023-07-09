@@ -274,7 +274,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
   italianice: {
-    type: 'Itallian Ice',
+    type: 'Italian Ice',
     small: { price: 2.75, id: 'price_1NRpzSK4xNPEK2uz2i5Z04dG'},
     med: {price: 3.75, id: 'price_1NRq0UK4xNPEK2uz9IpyKrHr'},
     lg: {price: 4.75, id: 'price_1NRq1CK4xNPEK2uzjGL8zAaC'},
@@ -289,7 +289,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NRq2eK4xNPEK2uz6c1XMaYO'},
     med: {price: 3.75, id: 'price_1NRq3QK4xNPEK2uz2qA4cznA'},
     lg: {price: 4.75, id: 'price_1NRq3zK4xNPEK2uz1rUWg7bX'},
@@ -304,7 +304,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NRq5kK4xNPEK2uzkvyNLCic'},
   med: {price: 3.75, id: 'price_1NRq6wK4xNPEK2uz7CkVkP8b'},
   lg: {price: 4.75, id: 'price_1NRq7aK4xNPEK2uzpunyKd9E'},
@@ -319,7 +319,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NRq9HK4xNPEK2uzlkTlblsj'},
     med: {price: 3.75, id: 'price_1NRqA9K4xNPEK2uzm1MEDh3I'},
     lg: {price: 4.75, id: 'price_1NRqAuK4xNPEK2uz5rp18aXF'},
@@ -334,7 +334,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NRqCDK4xNPEK2uztKsYIJqs'},
     med: {price: 3.75, id: 'price_1NRqCtK4xNPEK2uzl8FbFtX9'},
     lg: {price: 4.75, id: 'price_1NRqDTK4xNPEK2uzjkLCpjrB'},
@@ -349,7 +349,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NRqEnK4xNPEK2uzSY1tNUIU'},
     med: {price: 3.75, id: 'price_1NRqFOK4xNPEK2uznMULHXKS'},
     lg: {price: 4.75, id: 'price_1NRqGHK4xNPEK2uzCa4W5LOJ'},
@@ -364,7 +364,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NRqIpK4xNPEK2uzdgH0pvXa'},
     med: {price: 3.75, id: 'price_1NRqJeK4xNPEK2uzbQbwnzzT'},
     lg: {price: 4.75, id: 'price_1NRqL1K4xNPEK2uzotqRbZax'},
@@ -379,7 +379,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NS28iK4xNPEK2uzcWszq4oH'},
   med: {price: 3.75, id: 'price_1NS2A8K4xNPEK2uzEQuYd9Cs'},
   lg: {price: 4.75, id: 'price_1NS2AxK4xNPEK2uzQtgfodzc'},
@@ -394,7 +394,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NS2DPK4xNPEK2uz01qwjzdN'},
   med: {price: 3.75, id: 'price_1NS2FWK4xNPEK2uzR4ZUrXUG'},
   lg: {price: 4.75, id: 'price_1NS2GbK4xNPEK2uzxdGSVONC'},
@@ -409,7 +409,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianIce: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NS2IiK4xNPEK2uzQF8hgn4m'},
     med: {price: 3.75, id: 'price_1NS2JZK4xNPEK2uzUyuMwB2p'},
     lg: {price: 4.75, id: 'price_1NS2KRK4xNPEK2uzphjypaPA'},
@@ -424,7 +424,7 @@ image: '/public/iice.jpeg',
 countInStock: 1,
 containers: {
 italianIce: {
-  type: 'Itallian Ice',
+  type: 'Italian Ice',
   small: { price: 2.75, id: 'price_1NS2MjK4xNPEK2uzle0uW8gz'},
     med: {price: 3.75, id: 'price_1NS2NeK4xNPEK2uzNF3IITu6'},
     lg: {price: 4.75, id: 'price_1NS2OQK4xNPEK2uzrDAYepM4'},
