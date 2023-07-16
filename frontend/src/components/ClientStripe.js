@@ -26,6 +26,7 @@ const CheckoutWithStripe = (lineItems, email) => {
     cancelUrl: `${window.location.origin}/cancel`,
     shippingAddressCollection: { allowedCountries: ["GB", "US"] },
     customerEmail: email,
+    shippingOptions: [{shippingRate: 'shr_1NRmqWK4xNPEK2uzintipm7x'}]
   };
 
   const redirectToCheckout = async () => {

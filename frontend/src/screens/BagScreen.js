@@ -18,6 +18,10 @@ export default function BagScreen() {
             <Link to={`/${container}/${bags.product}`}>
               <h2>{bags.name}</h2>
             </Link>
+            {/* <span>
+                  ${bags.containers.bags.small.price.toFixed(2)} - $
+                  {bags.containers.bags.xl.price.toFixed(2)}
+                </span> */}
 
             <div className="detail">
               {container === "Bags" && (
@@ -43,6 +47,13 @@ export default function BagScreen() {
                 <span>
                   ${bags.containers.italianice.small.price.toFixed(2)} - $
                   {bags.containers.italianice.xl.price.toFixed(2)}
+
+                </span>
+              )}
+                {container === "mixes" && (
+                <span>
+                  ${bags.containers.mixes.small.price.toFixed(2)} - $
+                  {bags.containers.mixes.xl.price.toFixed(2)}
 
                 </span>
               )}
