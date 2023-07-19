@@ -9,8 +9,10 @@ export default function Turnstyle () {
     return (
   <div
     style={{
+      marginTop:'170px',
       display: 'flex',
       justifyContent: 'center',
+      opacity: 0.8,
       // background: 'linear-gradient(to bottom, #16235e 0%, #020223 100%)',
     }}
   >

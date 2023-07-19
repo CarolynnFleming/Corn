@@ -53,12 +53,12 @@ const Ul = styled.ul`
   @media (max-width: 863px) {
     flex-flow: column nowrap;
     background-color: #510d0a;
-    opacity: 0.8;
+    opacity: 1;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 50vh;
+    height: 65vh;
     width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
