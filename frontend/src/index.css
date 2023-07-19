@@ -86,7 +86,10 @@ h2{
   animation: jump-shaking 0.83s infinite;
  
 }
-
+.ksale{
+  height: 30px;
+  width: 30px;
+}
 a{
   text-decoration: none;
   color: #f3b61f;
@@ -405,20 +408,20 @@ img.large{
 .first {
   color: whitesmoke;
   font-family: Alegreya Sans SC;
-  border: 1rem #690500;
-  background-color: #690500;
-  height: 22rem;
-  border-radius: 1rem;
+  /* border: 1rem #690500;
+  background-color: #690500; */
+  /* height: 22rem; */
+  /* border-radius: 1rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
 } 
 
 .goldenrule{
-  margin-top: 13rem;
+  margin-top: 1rem;
 }
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
