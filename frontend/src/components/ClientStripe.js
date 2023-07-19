@@ -26,7 +26,7 @@ const CheckoutWithStripe = (lineItems, email) => {
     cancelUrl: `${window.location.origin}/cancel`,
     shippingAddressCollection: { allowedCountries: ["GB", "US"] },
     customerEmail: email,
-    
+  }
 
   const redirectToCheckout = async () => {
     // setLoading(true);
