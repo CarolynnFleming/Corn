@@ -113,7 +113,10 @@ header a {
   font-weight: bold;
  
 }
-
+.red{
+  color:red;
+  font-size: 30px;
+}
 .row{
   display: flex;
   flex-wrap: wrap;
