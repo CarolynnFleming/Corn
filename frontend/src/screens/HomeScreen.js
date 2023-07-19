@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 // import dImage from '../Computer.jpg';
 // import mImage from '../iPhone.jpg';
-
+import Turnstyle from '../components/Turnstyle';
 
 export default function HomeScreen() {
 
@@ -25,7 +25,7 @@ export default function HomeScreen() {
    
         <div className='home-card'>
         
-        <img className="home-popcorn"src="./public/popcorn.gif" alt="popcorn"/>
+        <Turnstyle/>
        
         
        <div className='goldenrule'>
