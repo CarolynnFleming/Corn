@@ -8,7 +8,13 @@ export default function BagScreen() {
     if (item?.containers[container.toLowerCase()] !== undefined) return item;
   });
   return (
+    <div>
+    <Link className="back" to='/offeringscreen'>
+        Back
+      </Link>
     <div className="row center">
+      
+    
       {bag.map((bags) => (
         <div key={bags.product} className="card">
           <Link to={`/${container}/${bags.product}`}>
@@ -61,6 +67,7 @@ export default function BagScreen() {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }

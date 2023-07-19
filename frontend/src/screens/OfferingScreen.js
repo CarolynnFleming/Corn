@@ -24,6 +24,7 @@ export default function OfferingScreen() {
                  <h2>{offering.name}</h2>
              </Link>
            <div className="detail">{offering.flavors} Flavors Available</div>
+           <div className="red">{offering.Alert}</div>
          </div>
      </div>
 

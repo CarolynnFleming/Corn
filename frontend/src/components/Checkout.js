@@ -15,14 +15,13 @@ const Checkout = () => {
 
   return (
     <div className="card-body">
-      <h2>Items Count:</h2>
-      <h2>{itemCount}</h2>
-      <h2>Items Total:</h2>
-      <h2>{total}</h2>
-      <h2>Stripe Service Fee:</h2>
-      <h2>{stripeServiceFee.toFixed(2)}</h2>
-      <h1>Total Payment:</h1>
-      <h2>{formatCurrency(total + stripeServiceFee)}</h2>
+      <span>Items Count:  {itemCount}</span><br/>
+      
+      <span>Items Total: {total}</span><br/>
+      <span>Service Fee: {stripeServiceFee.toFixed(2)}</span><br/>
+      <br/>
+      <span>Total Payment: {formatCurrency(total + stripeServiceFee)}</span><br/>
+     
       <hr />
       <StripeCheckout />
     </div>

@@ -13,7 +13,7 @@ const Header = () => {
           <img className="popcorn" src={popcorn} alt="popcorn" />
         </Link>
         <Link to="/" className="brand">
-          WHATS POPPING
+          WHAT'S POPPING
         </Link>
       </div>
 
