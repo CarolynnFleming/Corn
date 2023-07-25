@@ -15,9 +15,9 @@ const Checkout = () => {
 
   return (
     <div className="card-body">
-      <span>Items Count:  {itemCount}</span><br/>
+      <span>Items in Cart:  {itemCount}</span><br/>
       
-      <span>Items Total: {total}</span><br/>
+      <span>Cart Total: ${total.toFixed(2)}</span><br/>
       <span>Service Fee: {stripeServiceFee.toFixed(2)}</span><br/>
       <br/>
       <span>Total Payment: {formatCurrency(total + stripeServiceFee)}</span><br/>
