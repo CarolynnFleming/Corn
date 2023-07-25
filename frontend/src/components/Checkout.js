@@ -20,7 +20,7 @@ const Checkout = () => {
       <span>Cart Total: ${total.toFixed(2)}</span><br/>
       <span>Service Fee: {stripeServiceFee.toFixed(2)}</span><br/>
       <br/>
-      <span>Total Payment: {formatCurrency(total + stripeServiceFee)}</span><br/>
+      <span>Total Payment: ${formatCurrency(total + stripeServiceFee)}</span><br/>
      
       <hr />
       <StripeCheckout />
