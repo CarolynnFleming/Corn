@@ -6,7 +6,7 @@ const offerings = [
     image: "/public/bags.jpeg",
     flavors: 4,
     sizes: 4,
-    Alert: 'For Pick Up Only'
+    Alert: 'Instore Pick Up Only'
   },
   {
     _id: "3",
@@ -15,7 +15,7 @@ const offerings = [
     image: "/public/Mix.jpg",
     flavors: 3,
     sizes: 4,
-    Alert: 'For Pick Up Only'
+    Alert: 'Instore Pick Up Only'
   },
   {
     _id: "4",
@@ -31,7 +31,7 @@ const offerings = [
     name: "Grab & Go Containers",
     location: "/gng",
     image: "/public/grabngo.jpg",
-    flavors: 7,
+    flavors: 10,
     size: 1,
     Alert: ''
   },
@@ -51,7 +51,7 @@ const offerings = [
     image: "/public/iice.jpeg",
     flavors: 12,
     size: 4,
-    Alert: 'For Pick Up Only'
+    Alert: 'Instore Pick Up Only'
   },
 ];
 
