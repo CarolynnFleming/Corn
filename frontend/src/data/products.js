@@ -268,6 +268,45 @@ export const products = [
     },
   },
   {
+    name:'Cheesy Vinagar',
+    product: 'cheesy_vinegar',
+    image:'',
+    countInStock: 1,
+    containers:{
+      gng: {
+        type: " Grab & Go",
+        gng: { price: 4.50, id: ''},
+      },
+    },
+
+  },
+  {
+    name:'Banana Pudding',
+    product: 'banana_pudding',
+    image:'/public/6.jpg',
+    countInStock: 1,
+    containers:{
+      gng: {
+        type: " Grab & Go",
+        gng: { price: 5.50, id: ''},
+      },
+    },
+
+  },
+  {
+    name:'Cheesy Dill',
+    product: 'cheesy_dill',
+    image:'/public/cDill.jpeg',
+    countInStock: 1,
+    containers:{
+      gng: {
+        type: " Grab & Go",
+        gng: { price: 4.50, id: ''},
+      },
+    },
+
+  },
+  {
     name: 'Lemon',
   product: 'lemon',
 image: '/public/iice.jpeg',
