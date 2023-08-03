@@ -7,7 +7,7 @@ import About from "./screens/About";
 
 
 import ContactScreen from "./screens/ContactScreen";
-import facebook from './facebook.png'
+import facebook from './facebook.png';
 
 
 
