@@ -39,7 +39,7 @@ function App() {
             <Route exact path="/" element={<HomeScreen />} />
           </Routes>
         </main>
-        <footer className="bottom">All rights reserved
+        <footer className="bottom">© 2023 What's Popping Popcorn
        <Link to="https://www.facebook.com/Whatspoppin11517?mibextid=LQQJ4d"> <img className="facebook" src={facebook} alt="facebook icon"/></Link></footer>
         
       </div>
