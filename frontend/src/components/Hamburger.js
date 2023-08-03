@@ -5,11 +5,12 @@ import RightHeader from './RightHeader';
 const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
-  position: fixed;
+  position: static;
   top: 15px;
   right: 20px;
   z-index: 20;
   display: none;
+  
   @media (max-width: 863px) {
     display: flex;
     justify-content: space-around;
