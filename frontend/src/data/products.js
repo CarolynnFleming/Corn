@@ -268,19 +268,6 @@ export const products = [
     },
   },
   {
-    name:'Cheesy Vinagar',
-    product: 'cheesy_vinegar',
-    image:'',
-    countInStock: 1,
-    containers:{
-      gng: {
-        type: " Grab & Go",
-        gng: { price: 4.50, id: ''},
-      },
-    },
-
-  },
-  {
     name:'Banana Pudding',
     product: 'banana_pudding',
     image:'/public/6.jpg',
