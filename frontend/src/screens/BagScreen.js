@@ -16,7 +16,7 @@ export default function BagScreen() {
       
     
       {bag.map((bags) => (
-        <div key={bags.product} className="card-body">
+        <div key={bags.product} className="card">
           <Link to={`/${container}/${bags.product}`}>
             <img className="flowers" src={bags.image} alt="popcorn bags" />
           </Link>
