@@ -133,7 +133,7 @@ export const products = [
   {
     name: "Nutty Cramel",
     product: "nutty_caramel",
-    image: "public/Mix.jpg",
+    image: "/public/Mix.jpg",
     countInStock: 1,
     containers: {
       bags: {
