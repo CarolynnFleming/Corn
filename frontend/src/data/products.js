@@ -3,7 +3,7 @@ export const products = [
     name: "Cheese",
     product: "cheese",
     image: "/public/Cheddar-popcorn.jpg",
-    countInStock: 1,
+    countInStock: 2,
     containers: {
       bags: {
         type: "Bag",
