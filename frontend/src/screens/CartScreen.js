@@ -20,9 +20,9 @@ const CartScreen = () => {
   return (
     <>
       <Heading>
-        <h1>
+        <h1 className="bob">
           Shopping Cart
-          <span>({cartCount()})</span>
+          <span className="bob">({cartCount()})</span>
         </h1>
       </Heading>
 

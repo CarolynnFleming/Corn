@@ -2,8 +2,13 @@ export const products = [
   {
     name: "Cheese",
     product: "cheese",
+
+    image: "/public/Cheese.jpeg",
+    countInStock: 1,
+
     image: "/public/Cheddar-popcorn.jpg",
     countInStock: 2,
+
     containers: {
       bags: {
         type: "Bag",
@@ -31,9 +36,42 @@ export const products = [
     },
   },
   {
+    name: "Cheesy Caramel",
+    extra: "Mix",
+    product: "cheesy_caramel_mix",
+    image: "/public/CheesyCaramelCheese.jpeg",
+    countInStock: 1,
+    containers: {
+      tins: {
+        type: "Tin",
+        sport: { price: 33.25, id: "price_1NRk1jK4xNPEK2uzmL49EBB9" },
+        oneGallon: { price: 31.75, id: "price_1NRk36K4xNPEK2uzkD0wmLcO" },
+        twoGallon: { price: 50.5, id: "price_1NRk52K4xNPEK2uzuTaQuN4z" },
+        threeGallon: { price: 65.25, id: "price_1NRk61K4xNPEK2uzk1EM4lCI" },
+      },
+
+      gng: {
+        type: "Grab & Go",
+        gng: { price: 5.75, id: "price_1NRk7UK4xNPEK2uznjKd8g07" },
+      },
+      bucket: {
+        type: "Bucket",
+        bucket: { price: 23.99, id: "price_1NRkA4K4xNPEK2uz1uXEArC7" },
+      },
+
+      mixes: {
+        type: "Mixed Bag",
+        small: { price: 6.75, id: "price_1NRkSOK4xNPEK2uzM95UvYjJ" },
+        med: { price: 9, id: "price_1NRkT2K4xNPEK2uzDg2tBC4E" },
+        lg: { price: 13.25, id: "price_1NRkUQK4xNPEK2uzh2ncb0QE" },
+        xl: { price: 15.75, id: "price_1NRkVMK4xNPEK2uz1vYDmIHN" },
+      },
+    },
+  },
+  {
     name: "Caramel",
     product: "caramel",
-    image: "/public/caramel.jpeg",
+    image: "/public/Caramel.jpeg",
     countInStock: 1,
     containers: {
       bags: {
@@ -63,7 +101,7 @@ export const products = [
   {
     name: "Cheesy Caramel",
     product: "cheesy_caramel",
-    image: "/public/Mix.jpg",
+    image: "/public/CheesyCaramel.jpeg",
     countInStock: 1,
     containers: {
       bags: {
@@ -98,42 +136,15 @@ export const products = [
       },
     },
   },
+  
   {
-    name: "Cheesy Caramel Mix",
-    product: "cheesy_caramel_mix",
-    image: "/public/Mix.jpg",
-    countInStock: 1,
-    containers: {
-      tins: {
-        type: "Tin",
-        sport: { price: 33.25, id: "price_1NRk1jK4xNPEK2uzmL49EBB9" },
-        oneGallon: { price: 31.75, id: "price_1NRk36K4xNPEK2uzkD0wmLcO" },
-        twoGallon: { price: 50.5, id: "price_1NRk52K4xNPEK2uzuTaQuN4z" },
-        threeGallon: { price: 65.25, id: "price_1NRk61K4xNPEK2uzk1EM4lCI" },
-      },
-
-      gng: {
-        type: "Grab & Go",
-        gng: { price: 5.75, id: "price_1NRk7UK4xNPEK2uznjKd8g07" },
-      },
-      bucket: {
-        type: "Bucket",
-        bucket: { price: 23.99, id: "price_1NRkA4K4xNPEK2uz1uXEArC7" },
-      },
-
-      mixes: {
-        type: "Mixed Bag",
-        small: { price: 6.75, id: "price_1NRkSOK4xNPEK2uzM95UvYjJ" },
-        med: { price: 9, id: "price_1NRkT2K4xNPEK2uzDg2tBC4E" },
-        lg: { price: 13.25, id: "price_1NRkUQK4xNPEK2uzh2ncb0QE" },
-        xl: { price: 15.75, id: "price_1NRkVMK4xNPEK2uz1vYDmIHN" },
-      },
-    },
-  },
-  {
-    name: "Nutty Cramel",
+    name: "Nutty Caramel",
     product: "nutty_caramel",
+
+    image: "/public/NuttyCaramel.jpeg",
+
     image: "/public/Mix.jpg",
+
     countInStock: 1,
     containers: {
       bags: {
@@ -170,9 +181,10 @@ export const products = [
     },
   },
   {
-    name: "Nutty Caramel Mix",
+    name: "Nutty Caramel",
+    extra: "Mix",
     product: "nutty_caramel_mix",
-    image: "/public/Mix.jpg",
+    image: "/public/NuttyCaramelCheese.jpeg",
     countInStock: 1,
     containers: {
       tins: {
@@ -202,7 +214,7 @@ export const products = [
   {
     name: "Poppin Mix",
     product: "poppin_mix",
-    image: "/public/Mix.jpg",
+    image: "/public/PoppinMix.jpeg",
     countInStock: 1,
     containers: {
       tins: {
@@ -246,7 +258,7 @@ export const products = [
   {
     name: "Caramel Pecan",
     product: "caramel_pecan",
-    image: "/public/caramel.jpeg",
+    image: "/public/CaramelPecan.jpeg",
     countInStock: 1,
     containers: {
       gng: {
@@ -268,9 +280,28 @@ export const products = [
     },
   },
   {
+
+    name:'Spicy Buffalo',
+    product: 'cheesy_vinegar',
+    image:'/public/SpicyBuffalo.jpeg',
+    countInStock: 1,
+    containers:{
+      gng: {
+        type: " Grab & Go",
+        gng: { price: 4.50, id: ''},
+      },
+    },
+
+  },
+  {
+    name:'Caramel Apple',
+    product: 'caramel_apple',
+    image:'/public/CaramelApple.jpeg',
+
     name:'Banana Pudding',
     product: 'banana_pudding',
     image:'/public/6.jpg',
+
     countInStock: 1,
     containers:{
       gng: {
@@ -281,9 +312,9 @@ export const products = [
 
   },
   {
-    name:'Cheesy Dill',
+    name:'Dill',
     product: 'cheesy_dill',
-    image:'/public/cDill.jpeg',
+    image:'/public/Dill.jpeg',
     countInStock: 1,
     containers:{
       gng: {
@@ -296,7 +327,7 @@ export const products = [
   {
     name: 'Lemon',
   product: 'lemon',
-image: '/public/iice.jpeg',
+image: '/public/lemon.jpeg',
 countInStock: 1,
 containers: {
   italianice: {
@@ -311,7 +342,7 @@ containers: {
 {
   name: 'Lime',
 product: 'lime',
-image: '/public/iice.jpeg',
+image: '/public/lime.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -326,7 +357,7 @@ italianice: {
 {
   name: 'Grape',
 product: 'grape',
-image: '/public/iice.jpeg',
+image: '/public/grape.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -341,7 +372,7 @@ italianice: {
 {
   name: 'Mango',
 product: 'mango',
-image: '/public/iice.jpeg',
+image: '/public/mango.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -356,7 +387,7 @@ italianice: {
 {
   name: 'Cherry',
 product: 'cherry',
-image: '/public/iice.jpeg',
+image: '/public/cherry.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -371,7 +402,7 @@ italianice: {
 {
   name: 'Orange',
 product: 'orange',
-image: '/public/iice.jpeg',
+image: '/public/orange.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -386,7 +417,7 @@ italianice: {
 {
   name: 'Strawberry',
 product: 'strawberry',
-image: '/public/iice.jpeg',
+image: '/public/strawberry.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -401,7 +432,7 @@ italianice: {
 {
   name: 'Watermelon',
 product: 'watermelon',
-image: '/public/iice.jpeg',
+image: '/public/watermelon.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -416,7 +447,7 @@ italianice: {
 {
   name: 'Blue Rasberry',
 product: 'blue_rasberry',
-image: '/public/iice.jpeg',
+image: '/public/blueras.jpeg',
 countInStock: 1,
 containers: {
 italianice: {
@@ -431,7 +462,7 @@ italianice: {
 {
   name: 'Kiwi Rasberry',
 product: 'kiwi_rasberry',
-image: '/public/iice.jpeg',
+image: '/public/kiwi.jpeg',
 countInStock: 1,
 containers: {
 italianIce: {
@@ -446,7 +477,7 @@ italianIce: {
 {
   name: 'Berry Rasberry',
 product: 'berry_rasberry',
-image: '/public/iice.jpeg',
+image: '/public/berryras.jpeg',
 countInStock: 1,
 containers: {
 italianIce: {
@@ -461,7 +492,7 @@ italianIce: {
 {
   name: 'Sour Apple',
 product: 'sour_apple',
-image: '/public/iice.jpeg',
+image: '/public/sourapp.jpeg',
 countInStock: 1,
 containers: {
 italianIce: {

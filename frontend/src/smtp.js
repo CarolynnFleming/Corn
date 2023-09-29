@@ -54,7 +54,7 @@ const StyledContactForm = styled.div`
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     font-size: 16px;
     input {
       width: 100%;
@@ -86,7 +86,7 @@ const StyledContactForm = styled.div`
     }
    button{
     margin: 1rem;
-    width: 35rem;
+    width: 50%;
     justify-content:center;
    }
   }`;

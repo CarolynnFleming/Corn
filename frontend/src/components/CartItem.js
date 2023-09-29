@@ -15,7 +15,7 @@ export default function CartItem({ product }) {
       <CartImage src={product.image} alt={product.name} />
       <div>
         <h2>{`${product.name}`}</h2>
-        <h1>{formatCurrency(product.price)}</h1>
+        <h1 className="bob">{formatCurrency(product.price)}</h1>
       </div>
 
       <BtnContainer>
@@ -31,7 +31,7 @@ export default function CartItem({ product }) {
           </button>
         )}
         <div>
-          <h1>Qty: {product.quantity}</h1>
+          <h1 className="lead">Qty:{product.quantity}</h1>
         </div>
 
         <button
