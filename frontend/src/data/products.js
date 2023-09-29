@@ -2,8 +2,13 @@ export const products = [
   {
     name: "Cheese",
     product: "cheese",
+
     image: "/public/Cheese.jpeg",
     countInStock: 1,
+
+    image: "/public/Cheddar-popcorn.jpg",
+    countInStock: 2,
+
     containers: {
       bags: {
         type: "Bag",
@@ -135,7 +140,11 @@ export const products = [
   {
     name: "Nutty Caramel",
     product: "nutty_caramel",
+
     image: "/public/NuttyCaramel.jpeg",
+
+    image: "/public/Mix.jpg",
+
     countInStock: 1,
     containers: {
       bags: {
@@ -271,6 +280,7 @@ export const products = [
     },
   },
   {
+
     name:'Spicy Buffalo',
     product: 'cheesy_vinegar',
     image:'/public/SpicyBuffalo.jpeg',
@@ -287,6 +297,11 @@ export const products = [
     name:'Caramel Apple',
     product: 'caramel_apple',
     image:'/public/CaramelApple.jpeg',
+
+    name:'Banana Pudding',
+    product: 'banana_pudding',
+    image:'/public/6.jpg',
+
     countInStock: 1,
     containers:{
       gng: {
