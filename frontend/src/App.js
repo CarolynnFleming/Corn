@@ -8,7 +8,7 @@ import About from "./screens/About";
 
 import ContactScreen from "./screens/ContactScreen";
 import facebook from './facebook.png';
-
+import HomeScreen from "./screens/HomeScreen";
 
 
 import CartScreen from "./screens/CartScreen";
@@ -38,7 +38,7 @@ function App() {
             <Route exact path="/canceled" element={<Fail />} />
             <Route exact path="/:container" element={<BagScreen />} />
             <Route exact path="/:container/:product" element={<Detail />} />
-            
+            <Route exact path="/" element={<HomeScreen />} />
           </Routes>
           <MainBanner/>
         </main>
