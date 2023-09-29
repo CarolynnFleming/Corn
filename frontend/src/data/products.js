@@ -138,9 +138,6 @@ export const products = [
     product: "nutty_caramel",
 
     image: "/public/NuttyCaramel.jpeg",
-
-    image: "/public/Mix.jpg",
-
     countInStock: 1,
     containers: {
       bags: {
