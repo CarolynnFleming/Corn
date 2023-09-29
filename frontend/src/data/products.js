@@ -5,10 +5,6 @@ export const products = [
 
     image: "/public/Cheese.jpeg",
     countInStock: 1,
-
-    image: "/public/Cheddar-popcorn.jpg",
-    countInStock: 2,
-
     containers: {
       bags: {
         type: "Bag",
@@ -297,11 +293,6 @@ export const products = [
     name:'Caramel Apple',
     product: 'caramel_apple',
     image:'/public/CaramelApple.jpeg',
-
-    name:'Banana Pudding',
-    product: 'banana_pudding',
-    image:'/public/6.jpg',
-
     countInStock: 1,
     containers:{
       gng: {
