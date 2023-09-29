@@ -47,6 +47,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+
   li {
     padding: 18px 10px;
   }
@@ -59,11 +60,12 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 65vh;
-    width: 200px;
+    width: 50rem;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     li {
       color: #bbd8b3;
+      padding: 18px 10px;
     }
   }
 `;

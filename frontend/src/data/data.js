@@ -1,5 +1,14 @@
 const offerings = [
   {
+    _id: "69",
+    name: "Grab & Go Containers",
+    location: "/gng",
+    image: "/public/gng.jpeg",
+    flavors: 10,
+    size: 1,
+    Alert: ''
+  },
+  {
     _id: "1",
     name: "Bags",
     location: "/bags",
@@ -26,15 +35,7 @@ const offerings = [
     size: 1,
     Alert: ''
   },
-  {
-    _id: "69",
-    name: "Grab & Go Containers",
-    location: "/gng",
-    image: "/public/grabngo.jpg",
-    flavors: 10,
-    size: 1,
-    Alert: ''
-  },
+  
   {
     _id: "420",
     name: "Tins",

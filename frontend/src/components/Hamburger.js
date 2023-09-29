@@ -38,7 +38,7 @@ const StyledBurger = styled.div`
 
 const Hamburger = () => {
   const [open, setOpen] = useState(false)
-  
+ 
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>

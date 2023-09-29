@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomeScreen from "./screens/HomeScreen";
+
 import OfferingScreen from "./screens/OfferingScreen";
 
 import { Link } from "react-router-dom";
@@ -17,11 +17,13 @@ import Fail from "./components/Fail";
 import Yay from "./components/Yay";
 import { Detail } from "./detail/Detail";
 import BagScreen from "./screens/BagScreen";
+import MainBanner from "./components/banners/MainBanner";
 function App() {
   return (
     <BrowserRouter>
       <div className="grid-container">
         <Header />
+        
         <main>
           <Routes>
             <Route exact path="/about" element={<About />}></Route>
@@ -36,8 +38,9 @@ function App() {
             <Route exact path="/canceled" element={<Fail />} />
             <Route exact path="/:container" element={<BagScreen />} />
             <Route exact path="/:container/:product" element={<Detail />} />
-            <Route exact path="/" element={<HomeScreen />} />
+            
           </Routes>
+          <MainBanner/>
         </main>
         <footer className="bottom">© 2023 What's Popping Popcorn
        <Link to="https://www.facebook.com/Whatspoppin11517?mibextid=LQQJ4d"> <img className="facebook" src={facebook} alt="facebook icon"/></Link></footer>

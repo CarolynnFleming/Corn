@@ -22,7 +22,7 @@ export default function BagScreen() {
           </Link>
           <div className="card-body">
             <Link to={`/${container}/${bags.product}`}>
-              <h2>{bags.name}</h2>
+              <h2>{bags.name}<br/>{bags.extra}</h2>
             </Link>
             {/* <span>
                   ${bags.containers.bags.small.price.toFixed(2)} - $
