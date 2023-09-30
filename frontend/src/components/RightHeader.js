@@ -18,11 +18,6 @@ const RightHeader = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <Link className="rainbow-4" to="/about">
-          About
-        </Link>
-      </li>
-      <li>
         <Link className="rainbow-4" to="/offeringscreen">
           Flavors
         </Link>
