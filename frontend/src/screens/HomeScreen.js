@@ -3,7 +3,7 @@ import MainBanner from "../components/banners/MainBanner";
 import SecondBanner from "../components/banners/SecondBanner";
 import ThirdBanner from "../components/banners/ThirdBanner";
 import SixthBanner from "../components/banners/SixthBanner";
-import FifthBanner from "../components/banners/ThirdBanner";
+import FifthBanner from "../components/banners/FithBanner";
 
 export default function HomeScreen() {
 
