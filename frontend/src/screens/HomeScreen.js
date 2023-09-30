@@ -8,6 +8,9 @@ export default function HomeScreen() {
    
         <div>
         <MainBanner/>
+       <SeconeBanner/>
+       <FourthBanner/>
+      <ThirdBanner/>
        
        
       
