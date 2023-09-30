@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import OfferingScreen from "./screens/OfferingScreen";
 
 import { Link } from "react-router-dom";
-import About from "./screens/About";
+
 
 
 import ContactScreen from "./screens/ContactScreen";
@@ -26,7 +26,7 @@ function App() {
         
         <main>
           <Routes>
-            <Route exact path="/about" element={<About />}></Route>
+            
             <Route
               exact
               path="/offeringscreen"
