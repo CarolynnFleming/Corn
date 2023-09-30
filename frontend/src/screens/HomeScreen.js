@@ -1,6 +1,6 @@
 import FourthBanner from "../components/banners/FourthBanner";
 import MainBanner from "../components/banners/MainBanner";
-import SeconeBanner from "../components/banners/SeconeBanner";
+import SecondBanner from "../components/banners/SecondBanner";
 import ThirdBanner from "../components/banners/ThirdBanner";
 
 
@@ -11,7 +11,7 @@ export default function HomeScreen() {
    
         <div>
         <MainBanner/>
-       <SeconeBanner/>
+       <SecondBanner/>
        <FourthBanner/>
       <ThirdBanner/>
        
