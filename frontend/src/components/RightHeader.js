@@ -47,6 +47,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  z-index: 99;
 
   li {
     padding: 18px 10px;
@@ -59,8 +60,8 @@ const Ul = styled.ul`
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
-    height: 65vh;
-    width: 30rem;
+    height: 100vh;
+    width: 34rem;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     li {
