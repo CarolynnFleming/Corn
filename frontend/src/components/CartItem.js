@@ -8,7 +8,7 @@ import Minus from "../assets/minus.png";
 import { formatCurrency } from "../price";
 
 export default function CartItem({ product }) {
-  const { removeFromCart, increase, decrease } = useContext(CartContext);
+  const { removeFromCart, increase, decrease,total } = useContext(CartContext);
 
   return (
     <SingleCartItem>
