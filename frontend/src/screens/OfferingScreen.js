@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import offerings from '../data/data';
+import Des1 from '../components/banners/Des1';
+import Des2 from '../components/banners/Des2';
 
 
 
@@ -14,6 +16,7 @@ export default function OfferingScreen() {
   //     <MessageBox variant='danger'>{error}</MessageBox>
   //  ):( 
    <div className="row center">
+    <Des1/>
         {offerings.map((offering) =>(
          <div key={offering.location} className="card">
          <Link to={offering.location}>
@@ -29,6 +32,7 @@ export default function OfferingScreen() {
      </div>
 
         ))}
+          <Des2/>
         </div>
     //  )}
    
