@@ -3,6 +3,8 @@ import { useContext } from "react";
 import CartContext from "../Context/Cart/CartContext";
 import styled from "styled-components";
 import Checkout from "../components/Checkout";
+import Des1 from "../components/banners/Des1";
+import Des2 from "../components/banners/Des2";
 
 
 const CartScreen = () => {
@@ -19,6 +21,7 @@ const CartScreen = () => {
 
   return (
     <>
+    <Des1/>
       <Heading>
         <h1 className="bob">
           Shopping Cart
@@ -48,6 +51,7 @@ const CartScreen = () => {
         <div>{cartItems.length > 0 && <Checkout />}</div>
         
       </Layout>
+          <Des2/>
     </>
   );
 };
