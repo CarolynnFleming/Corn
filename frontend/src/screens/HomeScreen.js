@@ -21,7 +21,7 @@ export default function HomeScreen() {
           
         <MainBanner/>
         <Des2/>
-       <SeconeBanner/>
+       <SecondBanner/>
        <Des3/>
        <FourthBanner/>
        <Des4/>
