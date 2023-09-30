@@ -38,9 +38,9 @@ export default function CartItem({ product }) {
           <Icon src={Plus} alt="plus" />
         </button>
       </BtnContainer>
-            <div><span>Service Fee: { formatCurrency (stripeServiceFee.toFixed(2))}</span><br/><h2>{`${product.name}`}</h2>
+          <h2>{`${product.name}`}</h2>
         <h1 className="bob">{formatCurrency(product.price)}</h1>
-      </div>
+      
     </SingleCartItem>
   );
 }
