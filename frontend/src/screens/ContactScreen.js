@@ -1,8 +1,11 @@
 import React from 'react'
 import Smtp from '../smtp'
+import Des2 from '../components/banners/Des2'
+import Des1 from '../components/banners/Des1'
 export default function ContactScreen() {
   return (
     <div className="row center">
+    <Des1/>
       <div className="center">
         <h1 className='bob'>
             You can reach us at
@@ -14,6 +17,7 @@ export default function ContactScreen() {
         <h1 className='bob'>send us an email below <br/>we will get back to you as soon as possible</h1>
         <Smtp/>
     </div>
+    <Des2/>
     </div>
   )
 }
