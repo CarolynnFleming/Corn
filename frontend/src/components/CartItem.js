@@ -39,7 +39,7 @@ export default function CartItem({ product }) {
         </button>
       </BtnContainer>
         <div>  <h2>{`${product.name}`}</h2>
-        <h1 className="bob">{formatCurrency(total + stripeServiceFee)}</h1>
+        <h1 className="bob">{total.toFixed(2)}</h1>
             </div>
     </SingleCartItem>
   );
