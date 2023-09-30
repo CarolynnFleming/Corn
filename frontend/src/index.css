@@ -58,6 +58,8 @@ footer {
   grid-area: footer;
   background-color: #c60000;
   color: #f1b534;
+font-size: 1.5rem;
+
   
 }
 .bottom{
