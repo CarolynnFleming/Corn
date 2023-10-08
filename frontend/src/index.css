@@ -55,11 +55,11 @@ main {
   padding: 1rem
 }
 footer {
+  
   grid-area: footer;
   background-color: #c60000;
   color: #f1b534;
-font-size: 1.5rem;
-
+  /* font-size: 1.9rem; */
   
 }
 .bottom{
@@ -387,10 +387,7 @@ img.medium {
   padding:1rem;
   font-size: 3rem;
 }
-.ice{
- padding: 1rem;
-  border-radius: 2rem;
-}
+
 .about{
   font-size: 2rem;
 }
@@ -455,7 +452,7 @@ img.large{
   font-size: 2rem;
 }
 .bob{
-  font-size: 2.5rem;
+  font-size: 1.9rem;
 }
 .drama{
   font-size: 2rem;
@@ -475,7 +472,18 @@ img.large{
   width: 400px;
   height: 400px
 }
-
+.secondban{
+/* background-color: rgba(255,186,8,.2); */
+padding: 10px;
+ 
+ border-radius: .5rem;
+ font-family: chewy;
+ color: #9d4edd;
+ font-size: 3rem;
+ .custyIndent{
+  padding-left: 15px
+ }
+}
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
@@ -511,8 +519,8 @@ img.large{
 }
 
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 844px)
-	and ( min-device-width: 390px) {
+@media screen and (max-device-width: 390px)
+	and ( orientation: portrait) {
     .ban {
       
       display: flex; 
@@ -548,7 +556,7 @@ img.large{
 @media screen
 	and (max-device-width: 640px) {
     .ban {
-    
+      
       display: flex; 
       flex-direction: row;
       align-items: center;
@@ -565,7 +573,7 @@ img.large{
 @media screen and (min-device-width: 320px)
 	and (-webkit-min-device-pixel-ratio: 2) {
     .ban {
-     
+      
       display: flex; 
       flex-direction: row;
       align-items: center;
@@ -583,7 +591,7 @@ img.large{
 	and (device-width: 320px)
 	and (-webkit-min-device-pixel-ratio: 2) {
     .ban {
-      
+     
       display: flex; 
       flex-direction: row;
       align-items: center;
@@ -610,150 +618,68 @@ img.large{
         width: 200px;
         height:200px
       }
-    }
-    
-}
-.thirdban{
       
-      display: flex; 
-          flex-direction: row;
-          align-items: start;
-           justify-content: start;
-    .image {
-      width: 300px;
-      height: 200px;
-      border-radius: 10px;
-    
     }
     
-    .right-arrow {
-      position:absolute;
-      right: 420px;
-      font-size: 3rem;
-      color:#ff7b00;
-      z-index: 2;
-      cursor: pointer;
-      user-select: none;
-    }
-    
-    .left-arrow {
-      position: absolute;
-      
-      left: 1px;
-      font-size: 3rem;
-      color:#ff7b00;
-      z-index: 2;
-      cursor: pointer;
-      user-select: none;
-    }
-    
-    .slide {
-      opacity: 0;
-      transition-duration: 1s ease;
-    }
-    
-    .slide.active {
-      opacity: 1;
-      transition-duration: 1s;
-      transform: scale(1.08);
-    }
-    
-}
-.thirdban{
+
+.saying{
   
-  display: flex; 
-      flex-direction: row;
-      align-items: center;
-       justify-content: center;
-.image {
-  width: 300px;
-  height: 200px;
-  border-radius: 10px;
-
-}
-
-.right-arrow {
-  position:absolute;
-  right: 15px;
-  font-size: 3rem;
-  color:black;
-  z-index: 2;
-  cursor: pointer;
-  user-select: none;
-}
-
-.left-arrow {
-  position: absolute;
-  
-  left: 5px;
-  font-size: 4rem;
-  color:black;
-  z-index: 2;
-  cursor: pointer;
-  user-select: none;
-}
-
-.slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.slide.active {
-  opacity: 1;
-  transition-duration: 1s;
-  transform: scale(1.08);
-}
-}
+  padding-left: 20px;
+}}
 .fourthban {
-  
+  padding: 1rem;
   border-radius: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   .pic{
-    width: 50%;
+    width: 40%;
+    height: 40%;
   }
 .cornn{
   width: 40%;
+  height: 40%;
 }
+
 }
-.secondban{
-/* background-color: rgba(255,186,8,.2); */
-padding: 10px;
- 
- border-radius: .5rem;
- .custyIndent{
-  padding-left: 15px
- }
+.cornn{
+  width:30%
+}
+.bet2{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: end;
+  .picice{
+   width: 30%;
+  }
 }
 .fifthban{
  
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: 1.5rem;
-  color: #ffba08;
-  font-family: chewy;
-  .wordone{
+  flex-direction: column;
+  justify-content: center;
+ 
+  .www{
   
-    width: 40%;
-    justify-content: center;
+    width: 100%;
+    height: 100%;;
+  
   }
-  .wordtwo{
-    width: 40%;
-    justify-content: center;
-    
-  }
+ 
 }
 .done {
   display: flex;
   flex-direction: column;
-  align-self: center;
   justify-content: center;
+  align-items: center;
+ 
   
-  .ugh{
-    font-size: 1.5rem;
-    
+  .shop{
+   margin-left: 170px;
+    width:50%;
+    height:50%;
+    border-radius: 300px;
   }
 }
 .dec1{
@@ -762,8 +688,8 @@ padding: 10px;
  align-items: start;
  justify-content: left;
  .a{
-  width: 150px;
   height: 150px;
+  width: 150px;
  }
 }
 .dec2{
@@ -772,8 +698,56 @@ padding: 10px;
  align-items: end;
  justify-content: right;
  .b{
-  width: 150px;
   height: 150px;
+  width: 150px;
+  
  }
 }
+.gng{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .video{
+   
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+ 
+}
+.back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.b1ban{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .b1{
+    width:100%;
+    height: 100%
+}
+}
+.fix{
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+@media (min-width: 1024px) {
+  .fix {
+    margin: 150px;
+  }
+  
+}
+.remove{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 ;
