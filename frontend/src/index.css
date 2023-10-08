@@ -627,7 +627,7 @@ padding: 10px;
   padding-left: 20px;
 }}
 .fourthban {
-  padding: 1rem;
+  
   border-radius: 2rem;
   display: flex;
   flex-direction: row;
@@ -642,9 +642,7 @@ padding: 10px;
 }
 
 }
-.cornn{
-  width:30%
-}
+
 .bet2{
   display: flex;
   flex-direction: row;
