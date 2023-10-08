@@ -1,7 +1,7 @@
 import FifthBanner from "../components/banners/FifthBanner";
 // import FourthBanner from "../components/banners/FourthBanner";
 import MainBanner from "../components/banners/MainBanner";
-import SeconeBanner from "../components/banners/SeconeBanner";
+import SeconBanner from "../components/banners/SeconeBanner";
 import SixthBanner from "../components/banners/SixthBanner";
 import ThirdBanner from "../components/banners/ThirdBanner";
 import Des1 from "../components/banners/Des1";
@@ -28,7 +28,7 @@ export default function HomeScreen() {
           
         <MainBanner/>
         <Des2/>
-        <SeconeBanner/>
+        <SecondBanner/>
         {/* <Inbetween1/> */}
         <Ew/>
         <Words/>
