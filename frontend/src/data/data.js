@@ -4,6 +4,7 @@ const offerings = [
     name: "Grab & Go Containers",
     location: "/gng",
     image: "/public/gng.jpeg",
+    flavors: 'Different',
     size: 1,
     Alert: ''
   },
