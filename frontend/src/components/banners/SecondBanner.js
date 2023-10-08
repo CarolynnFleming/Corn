@@ -1,10 +1,8 @@
 import React from 'react'
-
-export default function SecondBanner() {
+import b1 from '../../assets/b1.jpg'
+export default function SeconeBanner() {
   return (
-    <div className='secondban'>  
-    <span className='row center bob'>We’re a business dedicated to having the best Gourmet Popcorn 
-    and Italian Ice flavors in the U.S.A!!!!</span>
+    <div className='b1ban' > <img className='b1'src={b1} alt='b1'/>
     </div>
   )
 }
