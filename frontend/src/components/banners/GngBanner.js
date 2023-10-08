@@ -7,7 +7,7 @@ export default function GngBanner() {
        <Link to='/offeringscreen' onClick={() => {
     window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
   }}>
-       <video autoPlay loop muted className='video'>
+       <video autoPlay loop muted playsInline className='video'>
         <source src={grab} type='video/mp4'/>
        </video>
        </Link>
