@@ -4,7 +4,7 @@ export default function ThirdBanner() {
   return (
     
     <div className='gng'>
-        <video autoPlay loop muted className='video'>
+        <video autoPlay loop muted playsInline className='video'>
      <source src={popslide} type='video/mp4'/>
     </video>
        
