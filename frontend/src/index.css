@@ -633,12 +633,12 @@ padding: 10px;
   flex-direction: row;
   justify-content: space-between;
   .pic{
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 60%;
   }
 .cornn{
-  width: 40%;
-  height: 40%;
+  width: 45%;
+  height: 60%;
 }
 
 }
@@ -676,7 +676,7 @@ padding: 10px;
  
   
   .shop{
-   margin-left: 170px;
+   margin-left: 120px;
     width:50%;
     height:50%;
     border-radius: 300px;
