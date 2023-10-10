@@ -26,7 +26,8 @@ function App() {
         
         <main>
           <Routes>
-            
+            <Route exact path="/" element={<HomeScreen />} />
+         
             <Route
               
               path="/offeringscreen"
@@ -37,10 +38,8 @@ function App() {
             <Route  path="/success" element={<Yay />} />
             <Route  path="/canceled" element={<Fail />} />
             <Route  path="/:container" element={<BagScreen />} />
-            <Route  path="/:container/:product" element={<Detail />} />
-            <Route exact path="/" element={<HomeScreen />} />
-          </Routes>
-        
+            <Route  path="/:container/:product" element={<Detail />} / 
+                </Routes>
         </main>
         <footer className="bottom">© 2023 What's Poppin Gourmet Popcorn and Italian Ice
        <Link to="https://www.facebook.com/Whatspoppin11517?mibextid=LQQJ4d"> <img className="facebook" src={facebook} alt="facebook icon"/></Link></footer>
