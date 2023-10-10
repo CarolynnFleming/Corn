@@ -38,7 +38,7 @@ function App() {
             <Route  path="/success" element={<Yay />} />
             <Route  path="/canceled" element={<Fail />} />
             <Route  path="/:container" element={<BagScreen />} />
-            <Route  path="/:container/:product" element={<Detail />} / 
+            <Route  path="/:container/:product" element={<Detail />} />
                 </Routes>
         </main>
         <footer className="bottom">© 2023 What's Poppin Gourmet Popcorn and Italian Ice
