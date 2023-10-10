@@ -28,16 +28,16 @@ function App() {
           <Routes>
             
             <Route
-              exact
+              
               path="/offeringscreen"
               element={<OfferingScreen />}
             ></Route>
-            <Route exact path="/cartscreen" element={<CartScreen />}></Route>
-            <Route exact path="/contactscreen" element={<ContactScreen />}></Route>
-            <Route exact path="/success" element={<Yay />} />
-            <Route exact path="/canceled" element={<Fail />} />
-            <Route exact path="/:container" element={<BagScreen />} />
-            <Route exact path="/:container/:product" element={<Detail />} />
+            <Route path="/cartscreen" element={<CartScreen />}></Route>
+            <Route  path="/contactscreen" element={<ContactScreen />}></Route>
+            <Route  path="/success" element={<Yay />} />
+            <Route  path="/canceled" element={<Fail />} />
+            <Route  path="/:container" element={<BagScreen />} />
+            <Route  path="/:container/:product" element={<Detail />} />
             <Route exact path="/" element={<HomeScreen />} />
           </Routes>
         
