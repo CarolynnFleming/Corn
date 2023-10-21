@@ -23,7 +23,7 @@ export default function HomeScreen() {
 
   return(
    
-        <div  >
+        <div className="grid-container" >
           <Des1/>
           
         <MainBanner/>
