@@ -8,7 +8,7 @@ export default function BagScreen() {
     if (item?.containers[container.toLowerCase()] !== undefined) return item;
   });
   return (
-    <div>
+    <div className="grid-container">
     <Link className="back" to='/offeringscreen'>
         Back
       </Link>
