@@ -674,10 +674,10 @@ padding: 10px;
  
   
   .shop{
-   margin-left: 120px;
-    width:50%;
-    height:50%;
-    border-radius: 300px;
+   margin-left: 70px;
+    width:80%;
+    height:80%;
+    border-radius: 200px;
   }
 }
 .dec1{
@@ -708,10 +708,12 @@ padding: 10px;
   justify-content: center;
 
   .video{
-   
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+   display: flex;
+justify-content: center;
+align-items: center;
+    width: 800%;
+    height: 80%;
+    border-radius: 20px;
   }
  
 }
@@ -726,8 +728,8 @@ padding: 10px;
   justify-content: center;
   align-items: center;
   .b1{
-    width:100%;
-    height: 100%
+    width:80%;
+    height: 80%
 }
 }
 .fix{
