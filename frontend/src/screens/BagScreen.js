@@ -12,7 +12,7 @@ export default function BagScreen() {
     <Link className="back" to='/offeringscreen'>
         Back
       </Link>
-    <div className="row center">
+    <div className="row center grid-container">
       
     
       {bag.map((bags) => (
