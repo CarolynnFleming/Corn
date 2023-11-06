@@ -7,11 +7,13 @@ import StripeCheckout from "./stripe-checkout";
 const Checkout = () => {
   const { itemCount, total } = useContext(CartContext);
   const [stripeServiceFee, setStripeServiceFee] = useState(0);
-
+  const [tax, setTax] = useState(0);
   useEffect(() => {
     setStripeServiceFee((total + 0.3) / (1 - 0.029) - total);
   }, [total]);
-
+  useEffect(() => {
+  setTax((total * 0.0725 ));
+}, [total])
 
   return (
     <div className="card">
@@ -23,7 +25,7 @@ const Checkout = () => {
 
       <span>Cart Total: ${total.toFixed(2)}</span><br/>
       <span>Service Fee: { formatCurrency (stripeServiceFee.toFixed(2))}</span><br/>
-
+      <span>Sales Tax: {formatCurrency (tax.toFixed(2))}</span>
       <br/>
       <span>Total Payment: {formatCurrency(total + stripeServiceFee)}</span><br/>
      
